@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/state_machine/state_machine.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/state_machine/state_machine.srcs/sim_1/new/read_data.v,1521972293,verilog,,D:/Users/Kacper/Documents/SystemyRekonfigurowalne/state_machine/state_machine.srcs/sim_1/new/save_data.v,,read_data,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/state_machine/state_machine.srcs/sim_1/new/save_data.v,1521935668,verilog,,D:/Users/Kacper/Documents/SystemyRekonfigurowalne/state_machine/state_machine.srcs/sim_1/new/tb_machine.v,,save_data,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/state_machine/state_machine.srcs/sim_1/new/tb_machine.v,1521972947,verilog,,,,tb_machine,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/state_machine/state_machine.srcs/sources_1/new/machine.v,1521936031,verilog,,D:/Users/Kacper/Documents/SystemyRekonfigurowalne/state_machine/state_machine.srcs/sim_1/new/read_data.v,,machine,,,,,,,,

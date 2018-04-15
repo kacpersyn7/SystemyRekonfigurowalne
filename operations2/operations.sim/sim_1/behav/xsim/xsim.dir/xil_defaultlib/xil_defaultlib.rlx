@@ -1,0 +1,18 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sim_1/new/tb_mainmodule.v,1523224763,verilog,,,,tb_mainmodule,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd,1523013485,vhdl,,,,c_addsub_0,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/ip/c_addsub_DE_1/sim/c_addsub_DE.vhd,1523023148,vhdl,,,,c_addsub_de,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/ip/c_addsub_EF/sim/c_addsub_EF.vhd,1523024834,vhdl,,,,c_addsub_ef,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/ip/c_addsub_all/sim/c_addsub_all.vhd,1523023294,vhdl,,,,c_addsub_all,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd,1523025510,vhdl,,,,mult_gen_0,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/ip/mult_gen_2/sim/mult_gen_2.vhd,1523025571,vhdl,,,,mult_gen_2,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/ip/mult_gen_test/sim/mult_gen_test.vhd,1523028234,vhdl,,,,mult_gen_test,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/new/delay_line.v,1522054836,verilog,,D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/new/left.v,,delay_line,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/new/left.v,1523224392,verilog,,D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/new/mainmodule.v,,left,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/new/mainmodule.v,1523029223,verilog,,D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/new/register.v,,mainmodule,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/new/register.v,1520849952,verilog,,D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/new/right.v,,register,,,,,,,,
+D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sources_1/new/right.v,1523025484,verilog,,D:/Users/Kacper/Documents/SystemyRekonfigurowalne/operations/operations.srcs/sim_1/new/tb_mainmodule.v,,right,,,,,,,,

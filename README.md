@@ -1,0 +1,1 @@
+# SystemyRekonfigurowalne ¯\_ツ_/¯

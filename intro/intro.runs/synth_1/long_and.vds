@@ -1,0 +1,415 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Mar  5 10:04:36 2018
+# Process ID: 12566
+# Current directory: /home/lsriw/sr/SynowiecKacper/intro/intro.runs/synth_1
+# Command line: vivado -log long_and.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source long_and.tcl
+# Log file: /home/lsriw/sr/SynowiecKacper/intro/intro.runs/synth_1/long_and.vds
+# Journal file: /home/lsriw/sr/SynowiecKacper/intro/intro.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source long_and.tcl -notrace
+Command: synth_design -top long_and -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12575 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1303.488 ; gain = 88.996 ; free physical = 3971 ; free virtual = 22058
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'long_and' [/home/lsriw/sr/SynowiecKacper/intro/intro.srcs/sources_1/new/led_button.v:21]
+	Parameter LENGTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'long_and' (1#1) [/home/lsriw/sr/SynowiecKacper/intro/intro.srcs/sources_1/new/led_button.v:21]
+WARNING: [Synth 8-3330] design long_and has an empty top module
+WARNING: [Synth 8-3917] design long_and has port led driven by constant 0
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[7]
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[6]
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[5]
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[4]
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[3]
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[2]
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[1]
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1345.020 ; gain = 130.527 ; free physical = 3984 ; free virtual = 22071
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1345.020 ; gain = 130.527 ; free physical = 3983 ; free virtual = 22070
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command '<!DOCTYPE' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:1]
+CRITICAL WARNING: [Designutils 20-1307] Command '<html' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:3]
+CRITICAL WARNING: [Designutils 20-1307] Command '<head>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:4]
+CRITICAL WARNING: [Designutils 20-1307] Command '<title>Wydział' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:5]
+CRITICAL WARNING: [Designutils 20-1307] Command '<link' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:6]
+CRITICAL WARNING: [Designutils 20-1307] Command '<meta' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:7]
+CRITICAL WARNING: [Designutils 20-1307] Command '<meta' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:8]
+CRITICAL WARNING: [Designutils 20-1307] Command '<link' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:9]
+CRITICAL WARNING: [Designutils 20-1307] Command '<script' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:10]
+CRITICAL WARNING: [Common 17-1550] Command failed: invalid command name "M.yui"
+ [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:11]
+CRITICAL WARNING: [Common 17-1550] Command failed: invalid command name "M.yui"
+ [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:11]
+CRITICAL WARNING: [Designutils 20-1307] Command '//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/upel.agh.edu.pl\/weaiib","sesskey":"PWVJbjGBy4","themerev":"1519605006","slasharguments":1,"theme":"celupel","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1519605006","admin":"admin","svgicons":true,"usertimezone":"Europa \/ Warszawa","contextid":1};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/upel.agh.edu.pl\/weaiib\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/upel.agh.edu.pl\/weaiib\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/upel.agh.edu.pl\/weaiib\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/upel.agh.edu.pl\/weaiib\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/upel.agh.edu.pl\/weaiib\/theme\/yui_combo.php?m\/1519605006\/","combine":true,"comboBase":"https:\/\/upel.agh.edu.pl\/weaiib\/theme\/yui_combo.php?","ext":false,"root":"m\/1519605006\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/upel.agh.edu.pl\/weaiib\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/upel.agh.edu.pl\/weaiib\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1519605006\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/upel.agh.edu.pl\/weaiib\/lib\/javascript.php\/1519605006\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/upel.agh.edu.pl\/weaiib\/lib\/javascript.php\/1519605006\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.1\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:11]
+CRITICAL WARNING: [Designutils 20-1307] Command 'CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/upel.agh.edu.pl\/weaiib","sesskey":"PWVJbjGBy4","themerev":"1519605006","slasharguments":1,"theme":"celupel","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1519605006","admin":"admin","svgicons":true,"usertimezone":"Europa \/ Warszawa","contextid":1};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/upel.agh.edu.pl\/weaiib\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/upel.agh.edu.pl\/weaiib\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/upel.agh.edu.pl\/weaiib\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/upel.agh.edu.pl\/weaiib\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/upel.agh.edu.pl\/weaiib\/theme\/yui_combo.php?m\/1519605006\/","combine":true,"comboBase":"https:\/\/upel.agh.edu.pl\/weaiib\/theme\/yui_combo.php?","ext":false,"root":"m\/1519605006\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/upel.agh.edu.pl\/weaiib\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/upel.agh.edu.pl\/weaiib\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1519605006\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/upel.agh.edu.pl\/weaiib\/lib\/javascript.php\/1519605006\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/upel.agh.edu.pl\/weaiib\/lib\/javascript.php\/1519605006\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.1\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:11]
+CRITICAL WARNING: [Designutils 20-1307] Command 'variable' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:11]
+CRITICAL WARNING: [Designutils 20-1307] Command '</script>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:21]
+CRITICAL WARNING: [Designutils 20-1307] Command '<!--' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:23]
+CRITICAL WARNING: [Designutils 20-1307] Command '<script' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:24]
+CRITICAL WARNING: [Designutils 20-1307] Command '<script>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:25]
+CRITICAL WARNING: [Designutils 20-1307] Command 'window.dataLayer' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:26]
+CRITICAL WARNING: [Designutils 20-1307] Command 'function' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:27]
+CRITICAL WARNING: [Designutils 20-1307] Command 'gtag('js',' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:28]
+CRITICAL WARNING: [Designutils 20-1307] Command 'gtag('config',' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:30]
+CRITICAL WARNING: [Designutils 20-1307] Command '</script>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:31]
+CRITICAL WARNING: [Designutils 20-1307] Command '<meta' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:32]
+CRITICAL WARNING: [Designutils 20-1307] Command '<meta' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:33]
+CRITICAL WARNING: [Designutils 20-1307] Command '<script' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:35]
+CRITICAL WARNING: [Designutils 20-1307] Command '</head>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:37]
+CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '<body  id="page-login-index" class="format-site  path-login dir-ltr lang-pl yui-skin-sam yui3-skin-sam upel-agh-edu-pl--weaiib pagelayout-login course-1 context-1 notloggedin ">
+
+<div id="page-wrapper ... (truncated) ' found in constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:39]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:43]
+CRITICAL WARNING: [Designutils 20-1307] Command '<a' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:44]
+CRITICAL WARNING: [Designutils 20-1307] Command '</div><script' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:45]
+CRITICAL WARNING: [Designutils 20-1307] Command '<script' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:46]
+CRITICAL WARNING: [Common 17-1550] Command failed: invalid command name "document.body.className"
+ [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:47]
+CRITICAL WARNING: [Common 17-1550] Command failed: invalid command name "document.body.className"
+ [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:47]
+CRITICAL WARNING: [Designutils 20-1307] Command '//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:47]
+CRITICAL WARNING: [Designutils 20-1307] Command 'CDATA[
+document.body.className += ' jsenabled';
+//]' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:47]
+CRITICAL WARNING: [Designutils 20-1307] Command 'document.body.className' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:47]
+CRITICAL WARNING: [Designutils 20-1307] Command '</script>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:50]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:55]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:56]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:57]
+CRITICAL WARNING: [Designutils 20-1307] Command '<section' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:58]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:60]
+CRITICAL WARNING: [Designutils 20-1307] Command '<!--' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:62]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:66]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:67]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:70]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:71]
+CRITICAL WARNING: [Designutils 20-1307] Command '<img' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:72]
+CRITICAL WARNING: [Designutils 20-1307] Command '</div>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:73]
+CRITICAL WARNING: [Designutils 20-1307] Command '</div>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:74]
+CRITICAL WARNING: [Designutils 20-1307] Command '</div>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:75]
+CRITICAL WARNING: [Designutils 20-1307] Command '</div>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:76]
+CRITICAL WARNING: [Designutils 20-1307] Command '<!--' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:81]
+CRITICAL WARNING: [Designutils 20-1307] Command '</div>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:83]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:85]
+CRITICAL WARNING: [Designutils 20-1307] Command '<span' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:86]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:87]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:88]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:89]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:90]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:91]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:92]
+CRITICAL WARNING: [Designutils 20-1307] Command '<h2>Wydział' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:93]
+CRITICAL WARNING: [Designutils 20-1307] Command '<hr>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:94]
+CRITICAL WARNING: [Designutils 20-1307] Command '</div>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:95]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:99]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:100]
+CRITICAL WARNING: [Designutils 20-1307] Command '<form' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:101]
+CRITICAL WARNING: [Designutils 20-1307] Command '<input' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:102]
+CRITICAL WARNING: [Designutils 20-1307] Command '<script>document.getElementById('anchor').value' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:103]
+CRITICAL WARNING: [Designutils 20-1307] Command '<label' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:105]
+CRITICAL WARNING: [Designutils 20-1307] Command 'Nazwa' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:106]
+CRITICAL WARNING: [Designutils 20-1307] Command '</label>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:107]
+CRITICAL WARNING: [Designutils 20-1307] Command '<input' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:108]
+CRITICAL WARNING: [Designutils 20-1307] Command 'class="form-control"' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:109]
+CRITICAL WARNING: [Designutils 20-1307] Command 'value=""' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:110]
+CRITICAL WARNING: [Designutils 20-1307] Command 'placeholder="Nazwa' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:111]
+CRITICAL WARNING: [Designutils 20-1307] Command '<label' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:112]
+CRITICAL WARNING: [Designutils 20-1307] Command '<input' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:113]
+CRITICAL WARNING: [Designutils 20-1307] Command 'class="form-control"' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:114]
+CRITICAL WARNING: [Designutils 20-1307] Command 'placeholder="Hasło">' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:115]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:117]
+CRITICAL WARNING: [Designutils 20-1307] Command '<input' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:118]
+CRITICAL WARNING: [Designutils 20-1307] Command '<label' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:119]
+CRITICAL WARNING: [Designutils 20-1307] Command '</div>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:120]
+CRITICAL WARNING: [Designutils 20-1307] Command '<button' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:122]
+CRITICAL WARNING: [Designutils 20-1307] Command '</form>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:123]
+CRITICAL WARNING: [Designutils 20-1307] Command '</div>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:124]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:126]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:127]
+CRITICAL WARNING: [Designutils 20-1307] Command '<p><a' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:128]
+CRITICAL WARNING: [Designutils 20-1307] Command '</div>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:129]
+CRITICAL WARNING: [Designutils 20-1307] Command '<div' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:131]
+CRITICAL WARNING: [Designutils 20-1307] Command 'Przyjmowanie' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:132]
+CRITICAL WARNING: [Designutils 20-1307] Command '<a' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:133]
+CRITICAL WARNING: [Designutils 20-1307] Command 'data-container="body"' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:134]
+CRITICAL WARNING: [Designutils 20-1307] Command 'data-placement="right"' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:135]
+CRITICAL WARNING: [Designutils 20-1307] Command '&lt' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:137]
+CRITICAL WARNING: [Designutils 20-1307] Command '&lt' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:139]
+CRITICAL WARNING: [Designutils 20-1307] Command '&lt' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:140]
+CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '<i class="icon fa fa-question-circle text-info fa-fw " aria-hidden="true" title="Pomoc dla &amp;quot;Przyjmowanie cookies (ciasteczek) musi być włączone w Twojej przeglądarce&amp;quot;" aria-label ... (truncated) ' found in constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:142]
+CRITICAL WARNING: [Designutils 20-1307] Command '</a>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:143]
+CRITICAL WARNING: [Designutils 20-1307] Command '</div>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:144]
+CRITICAL WARNING: [Designutils 20-1307] Command '</div>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:146]
+CRITICAL WARNING: [Designutils 20-1307] Command '</div>' is not supported in the xdc constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:147]
+INFO: [Common 17-14] Message 'Designutils 20-1307' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:147]
+CRITICAL WARNING: [Common 17-1550] Command failed: invalid command name "//"
+ [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:212]
+CRITICAL WARNING: [Common 17-1550] Command failed: invalid command name "//"
+ [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:212]
+CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+loader.setUp(function(videojs) {
+videojs.options.flash.swf = "https://upel.agh.edu.pl/weaiib/med ... (truncated) ' found in constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:243]
+CRITICAL WARNING: [Common 17-1550] Command failed: invalid command name "M.str"
+ [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:297]
+CRITICAL WARNING: [Common 17-1550] Command failed: invalid command name "M.str"
+ [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:297]
+CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\n\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\" ... (truncated) ' found in constraint file. [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc:302]
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/intro/ZYBO_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1610.785 ; gain = 0.000 ; free physical = 3768 ; free virtual = 21831
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1610.785 ; gain = 396.293 ; free physical = 3827 ; free virtual = 21895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1610.785 ; gain = 396.293 ; free physical = 3827 ; free virtual = 21895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1610.785 ; gain = 396.293 ; free physical = 3829 ; free virtual = 21897
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1610.785 ; gain = 396.293 ; free physical = 3829 ; free virtual = 21896
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3330] design long_and has an empty top module
+WARNING: [Synth 8-3917] design long_and has port led driven by constant 0
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[7]
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[6]
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[5]
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[4]
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[3]
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[2]
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[1]
+WARNING: [Synth 8-3331] design long_and has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1610.785 ; gain = 396.293 ; free physical = 3829 ; free virtual = 21896
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1627.770 ; gain = 413.277 ; free physical = 3686 ; free virtual = 21774
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1627.770 ; gain = 413.277 ; free physical = 3686 ; free virtual = 21774
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1637.785 ; gain = 423.293 ; free physical = 3685 ; free virtual = 21773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1637.785 ; gain = 423.293 ; free physical = 3685 ; free virtual = 21773
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1637.785 ; gain = 423.293 ; free physical = 3685 ; free virtual = 21773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1637.785 ; gain = 423.293 ; free physical = 3685 ; free virtual = 21773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1637.785 ; gain = 423.293 ; free physical = 3685 ; free virtual = 21773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1637.785 ; gain = 423.293 ; free physical = 3685 ; free virtual = 21773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1637.785 ; gain = 423.293 ; free physical = 3685 ; free virtual = 21773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     1|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1637.785 ; gain = 423.293 ; free physical = 3685 ; free virtual = 21773
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1637.785 ; gain = 157.527 ; free physical = 3744 ; free virtual = 21831
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:54 . Memory (MB): peak = 1637.793 ; gain = 423.293 ; free physical = 3744 ; free virtual = 21831
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+12 Infos, 20 Warnings, 112 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:55 . Memory (MB): peak = 1642.785 ; gain = 453.121 ; free physical = 3727 ; free virtual = 21814
+INFO: [Common 17-1381] The checkpoint '/home/lsriw/sr/SynowiecKacper/intro/intro.runs/synth_1/long_and.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file long_and_utilization_synth.rpt -pb long_and_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1642.785 ; gain = 0.000 ; free physical = 3727 ; free virtual = 21815
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  5 10:05:43 2018...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Apr  8 23:06:23 2018
+# Process ID: 14780
+# Current directory: D:/Users/Kacper/Documents/SystemyRekonfigurowalne/accumulator/accumulator.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/Users/Kacper/Documents/SystemyRekonfigurowalne/accumulator/accumulator.sim/sim_1/behav/xsim/xsim.dir/tb_accu_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Users/Kacper/Documents/SystemyRekonfigurowalne/accumulator/accumulator.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/Users/Kacper/Documents/SystemyRekonfigurowalne/accumulator/accumulator.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/Users/Kacper/Documents/SystemyRekonfigurowalne/accumulator/accumulator.sim/sim_1/behav/xsim/xsim.dir/tb_accu_behav/webtalk/xsim_webtalk.tcl -notrace

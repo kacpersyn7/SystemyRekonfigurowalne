@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="c_addsub_EF_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1523024835">
+  <File Type="PA-TCL" Name="c_addsub_EF.tcl"/>
+  <File Type="REPORTS-TCL" Name="c_addsub_EF_reports.tcl"/>
+  <File Type="RDS-RDS" Name="c_addsub_EF.vds"/>
+  <File Type="RDS-UTIL" Name="c_addsub_EF_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="c_addsub_EF_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="c_addsub_EF.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/c_addsub_EF">
+    <File Path="$PSRCDIR/sources_1/ip/c_addsub_EF/c_addsub_EF.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="c_addsub_EF"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/c_addsub_EF">
+    <File Path="$PSRCDIR/sources_1/ip/c_addsub_EF/c_addsub_EF.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="c_addsub_EF"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Mar 11 21:57:42 2018
+# Process ID: 6061
+# Current directory: /home/kacper/SystemyRekonfigurowalne/First/intro/intro.runs/synth_1
+# Command line: vivado -log gates.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gates.tcl
+# Log file: /home/kacper/SystemyRekonfigurowalne/First/intro/intro.runs/synth_1/gates.vds
+# Journal file: /home/kacper/SystemyRekonfigurowalne/First/intro/intro.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source gates.tcl -notrace

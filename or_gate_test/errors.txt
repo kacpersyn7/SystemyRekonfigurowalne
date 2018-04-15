@@ -1,0 +1,8 @@
+Blad dla: 0000010000
+Blad dla: 0000100000
+Blad dla: 0010000000
+Blad dla: 0010010000
+Blad dla: 0010100000
+Blad dla: 0100000000
+Blad dla: 0100010000
+Blad dla: 0100100000
