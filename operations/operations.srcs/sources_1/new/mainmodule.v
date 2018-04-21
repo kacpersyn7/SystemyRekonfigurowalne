@@ -43,7 +43,7 @@ c_addsub_0 my_add
 
 delay_line #
 (
-    .DELAY(2),
+    .DELAY(3),
     .N(10)
 ) my_delay_line
 (
@@ -57,7 +57,7 @@ mult_gen_0  my_mult
 (
     .CLK(clk),
     .A(Z),
-    .B(C),
+    .B(C_late),
     .CE(ce),
     .P(Y)
 );

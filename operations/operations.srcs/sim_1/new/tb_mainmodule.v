@@ -22,7 +22,7 @@
 
 module tb_mainmodule ();
 
-reg clk=1'b0;
+reg clk=1'b1;
 reg ce=1'b1;
 reg signed [9:0] A;
 reg signed [9:0] B;
@@ -42,6 +42,10 @@ begin
     A = 10'b0001010011;
     B = 10'b0011001010;
     C = 10'b0010010001;
+    #10;
+    A = 10'b0011010011;
+    B = 10'b0011001110;
+    C = 10'b0010010101;
 end
 mainmodule my_main
 (

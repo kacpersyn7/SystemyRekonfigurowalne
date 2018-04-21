@@ -39,7 +39,7 @@ Compiling architecture synth of entity c_addsub_v12_0_11.c_addsub_v12_0_11_viv [
 Compiling architecture xilinx of entity c_addsub_v12_0_11.c_addsub_v12_0_11 [\c_addsub_v12_0_11(c_xdevicefami...]
 Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
 Compiling module xil_defaultlib.register(N=10)
-Compiling module xil_defaultlib.delay_line(DELAY=2,N=10)
+Compiling module xil_defaultlib.delay_line(DELAY=3,N=10)
 Compiling architecture xilinx of entity mult_gen_v12_0_13.delay_line [\delay_line(c_xdevicefamily="zyn...]
 Compiling architecture xilinx of entity mult_gen_v12_0_13.op_resize [\op_resize(ai_width=11,bi_width=...]
 Compiling architecture xilinx of entity mult_gen_v12_0_13.dsp [\dsp(c_xdevicefamily="zynq",c_a_...]
