@@ -1,0 +1,279 @@
+
+*** Running vivado
+    with args -log vp.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vp.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source vp.tcl -notrace
+Command: synth_design -top vp -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8957 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1314.527 ; gain = 84.996 ; free physical = 3850 ; free virtual = 21911
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vp' [/home/lsriw/sr/SynowiecKacper/vp/vp.srcs/sources_1/new/vp.v:23]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_R' [/home/lsriw/sr/SynowiecKacper/vp/vp.runs/synth_1/.Xil/Vivado-8950-debian/realtime/dist_mem_gen_R_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_R' (1#1) [/home/lsriw/sr/SynowiecKacper/vp/vp.runs/synth_1/.Xil/Vivado-8950-debian/realtime/dist_mem_gen_R_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element r_hsync_reg was removed.  [/home/lsriw/sr/SynowiecKacper/vp/vp.srcs/sources_1/new/vp.v:41]
+WARNING: [Synth 8-6014] Unused sequential element r_vsync_reg was removed.  [/home/lsriw/sr/SynowiecKacper/vp/vp.srcs/sources_1/new/vp.v:42]
+WARNING: [Synth 8-3848] Net h_sync_out in module/entity vp does not have driver. [/home/lsriw/sr/SynowiecKacper/vp/vp.srcs/sources_1/new/vp.v:31]
+WARNING: [Synth 8-3848] Net v_sync_out in module/entity vp does not have driver. [/home/lsriw/sr/SynowiecKacper/vp/vp.srcs/sources_1/new/vp.v:32]
+INFO: [Synth 8-256] done synthesizing module 'vp' (2#1) [/home/lsriw/sr/SynowiecKacper/vp/vp.srcs/sources_1/new/vp.v:23]
+WARNING: [Synth 8-3331] design vp has unconnected port h_sync_out
+WARNING: [Synth 8-3331] design vp has unconnected port v_sync_out
+WARNING: [Synth 8-3331] design vp has unconnected port h_sync_in
+WARNING: [Synth 8-3331] design vp has unconnected port v_sync_in
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1356.059 ; gain = 126.527 ; free physical = 3863 ; free virtual = 21925
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1356.059 ; gain = 126.527 ; free physical = 3862 ; free virtual = 21924
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/vp/vp.runs/synth_1/.Xil/Vivado-8950-debian/dcp1/dist_mem_gen_R_in_context.xdc] for cell 'mem_R'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/vp/vp.runs/synth_1/.Xil/Vivado-8950-debian/dcp1/dist_mem_gen_R_in_context.xdc] for cell 'mem_R'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/vp/vp.runs/synth_1/.Xil/Vivado-8950-debian/dcp1/dist_mem_gen_R_in_context.xdc] for cell 'mem_G'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/vp/vp.runs/synth_1/.Xil/Vivado-8950-debian/dcp1/dist_mem_gen_R_in_context.xdc] for cell 'mem_G'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/vp/vp.runs/synth_1/.Xil/Vivado-8950-debian/dcp1/dist_mem_gen_R_in_context.xdc] for cell 'mem_B'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/vp/vp.runs/synth_1/.Xil/Vivado-8950-debian/dcp1/dist_mem_gen_R_in_context.xdc] for cell 'mem_B'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1645.832 ; gain = 0.000 ; free physical = 3628 ; free virtual = 21684
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:42 . Memory (MB): peak = 1645.832 ; gain = 416.301 ; free physical = 3696 ; free virtual = 21752
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:42 . Memory (MB): peak = 1645.832 ; gain = 416.301 ; free physical = 3696 ; free virtual = 21752
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for mem_B. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mem_G. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mem_R. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:42 . Memory (MB): peak = 1645.832 ; gain = 416.301 ; free physical = 3697 ; free virtual = 21753
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:42 . Memory (MB): peak = 1645.832 ; gain = 416.301 ; free physical = 3697 ; free virtual = 21753
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vp 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design vp has unconnected port h_sync_out
+WARNING: [Synth 8-3331] design vp has unconnected port v_sync_out
+WARNING: [Synth 8-3331] design vp has unconnected port h_sync_in
+WARNING: [Synth 8-3331] design vp has unconnected port v_sync_in
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1645.832 ; gain = 416.301 ; free physical = 3688 ; free virtual = 21744
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:52 . Memory (MB): peak = 1648.816 ; gain = 419.285 ; free physical = 3561 ; free virtual = 21617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:52 . Memory (MB): peak = 1648.816 ; gain = 419.285 ; free physical = 3561 ; free virtual = 21617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:52 . Memory (MB): peak = 1658.832 ; gain = 429.301 ; free physical = 3560 ; free virtual = 21616
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1658.832 ; gain = 429.301 ; free physical = 3553 ; free virtual = 21616
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1658.832 ; gain = 429.301 ; free physical = 3553 ; free virtual = 21616
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1658.832 ; gain = 429.301 ; free physical = 3553 ; free virtual = 21616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1658.832 ; gain = 429.301 ; free physical = 3553 ; free virtual = 21616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1658.832 ; gain = 429.301 ; free physical = 3553 ; free virtual = 21616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1658.832 ; gain = 429.301 ; free physical = 3553 ; free virtual = 21616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_R |         3|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |dist_mem_gen_R    |     1|
+|2     |dist_mem_gen_R__1 |     1|
+|3     |dist_mem_gen_R__2 |     1|
+|4     |BUFG              |     1|
+|5     |FDRE              |     1|
+|6     |IBUF              |    26|
+|7     |OBUF              |    25|
+|8     |OBUFT             |     2|
++------+------------------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    79|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1658.832 ; gain = 429.301 ; free physical = 3553 ; free virtual = 21616
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1658.832 ; gain = 139.527 ; free physical = 3610 ; free virtual = 21674
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:53 . Memory (MB): peak = 1658.840 ; gain = 429.301 ; free physical = 3610 ; free virtual = 21674
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:55 . Memory (MB): peak = 1663.832 ; gain = 459.129 ; free physical = 3593 ; free virtual = 21656
+INFO: [Common 17-1381] The checkpoint '/home/lsriw/sr/SynowiecKacper/vp/vp.runs/synth_1/vp.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vp_utilization_synth.rpt -pb vp_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1663.832 ; gain = 0.000 ; free physical = 3595 ; free virtual = 21659
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 16 09:54:17 2018...

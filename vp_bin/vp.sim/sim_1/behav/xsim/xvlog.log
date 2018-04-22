@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kacper/SystemyRekonfigurowalne/vp/vp.srcs/sources_1/ip/dist_mem_gen_R/sim/dist_mem_gen_R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_R
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kacper/SystemyRekonfigurowalne/vp/vp.srcs/sources_1/new/vp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vp
+INFO: [VRFC 10-2458] undeclared symbol hsync_out, assumed default net type wire [/home/kacper/SystemyRekonfigurowalne/vp/vp.srcs/sources_1/new/vp.v:45]
+INFO: [VRFC 10-2458] undeclared symbol vsync_out, assumed default net type wire [/home/kacper/SystemyRekonfigurowalne/vp/vp.srcs/sources_1/new/vp.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kacper/SystemyRekonfigurowalne/vp/vp.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

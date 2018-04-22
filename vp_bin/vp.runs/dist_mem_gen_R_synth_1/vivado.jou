@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr 23 00:59:48 2018
+# Process ID: 30833
+# Current directory: /home/kacper/SystemyRekonfigurowalne/vp_bin/vp.runs/dist_mem_gen_R_synth_1
+# Command line: vivado -log dist_mem_gen_R.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dist_mem_gen_R.tcl
+# Log file: /home/kacper/SystemyRekonfigurowalne/vp_bin/vp.runs/dist_mem_gen_R_synth_1/dist_mem_gen_R.vds
+# Journal file: /home/kacper/SystemyRekonfigurowalne/vp_bin/vp.runs/dist_mem_gen_R_synth_1/vivado.jou
+#-----------------------------------------------------------
+source dist_mem_gen_R.tcl -notrace
