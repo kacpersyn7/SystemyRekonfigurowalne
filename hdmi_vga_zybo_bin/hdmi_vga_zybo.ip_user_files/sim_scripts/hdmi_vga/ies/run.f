@@ -39,6 +39,14 @@
   "../../../bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_1/sim/hdmi_vga_xlconstant_0_1.v" \
   "../../../bd/hdmi_vga/sim/hdmi_vga.v" \
 -endlib
+-makelib ies_lib/dist_mem_gen_v8_0_12 \
+  "../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0_1/src/dist_mem_gen_R/simulation/dist_mem_gen_v8_0.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0_1/src/dist_mem_gen_R/sim/dist_mem_gen_R.v" \
+  "../../../bd/hdmi_vga/ipshared/68f7/src/vp.v" \
+  "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0_1/sim/hdmi_vga_vp_0_0.v" \
+-endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v
 -endlib

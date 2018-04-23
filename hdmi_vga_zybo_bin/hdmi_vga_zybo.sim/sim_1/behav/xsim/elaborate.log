@@ -4,4 +4,15 @@ Running: /opt/Xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto e5904acf00a5
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hdmi_in
+Compiling module xil_defaultlib.hdmi_out
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="z...
+Compiling module xil_defaultlib.dist_mem_gen_R
+Compiling module xil_defaultlib.vp
+Compiling module xil_defaultlib.vp_0
+Compiling module xil_defaultlib.tb_hdmi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_hdmi_behav

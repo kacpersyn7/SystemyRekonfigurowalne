@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr 23 01:48:41 2018" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr 23 10:00:34 2018" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="hdmi_vga" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -705,7 +705,7 @@
     </MODULE>
     <MODULE FULLNAME="/dvi2rgb_0" HWVERSION="1.8" INSTANCE="dvi2rgb_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dvi2rgb" VLNV="digilentinc.com:ip:dvi2rgb:1.8">
       <DOCUMENTS>
-        <DOCUMENT SOURCE="/home/kacper/SystemyRekonfigurowalne/hdmi_vga_ip_repo/dvi2rgb_v1_8/docs/dvi2rgb.pdf"/>
+        <DOCUMENT SOURCE="/home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_ip_repo/dvi2rgb_v1_8/docs/dvi2rgb.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="kEmulateDDC" VALUE="true"/>
@@ -736,32 +736,20 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="vp_0" PORT="pixel_in"/>
           </CONNECTIONS>
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pData"/>
-          </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="vid_pVDE" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVDE">
           <CONNECTIONS>
             <CONNECTION INSTANCE="vp_0" PORT="de_in"/>
-          </CONNECTIONS>
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVDE"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="vid_pHSync" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pHSync">
           <CONNECTIONS>
             <CONNECTION INSTANCE="vp_0" PORT="h_sync_in"/>
           </CONNECTIONS>
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pHSync"/>
-          </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="vid_pVSync" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVSync">
           <CONNECTIONS>
             <CONNECTION INSTANCE="vp_0" PORT="v_sync_in"/>
-          </CONNECTIONS>
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVSync"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="PixelClk" SIGIS="clk" SIGNAME="dvi2rgb_0_PixelClk">
@@ -787,7 +775,7 @@
             <PORTMAP LOGICAL="DATA_N" PHYSICAL="TMDS_Data_n"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="dvi2rgb_0_RGB" NAME="RGB" TYPE="INITIATOR" VLNV="xilinx.com:interface:vid_io:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="RGB" TYPE="INITIATOR" VLNV="xilinx.com:interface:vid_io:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="DATA" PHYSICAL="vid_pData"/>
             <PORTMAP LOGICAL="HSYNC" PHYSICAL="vid_pHSync"/>
@@ -809,7 +797,7 @@
     </MODULE>
     <MODULE FULLNAME="/rgb2vga_0" HWVERSION="1.0" INSTANCE="rgb2vga_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2vga" VLNV="digilentinc.com:ip:rgb2vga:1.0">
       <DOCUMENTS>
-        <DOCUMENT SOURCE="/home/kacper/SystemyRekonfigurowalne/hdmi_vga_ip_repo/rgb2vga_v1_0/docs/rgb2vga_v1_0.pdf"/>
+        <DOCUMENT SOURCE="/home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_ip_repo/rgb2vga_v1_0/docs/rgb2vga_v1_0.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="VID_IN_DATA_WIDTH" VALUE="24"/>
@@ -822,25 +810,21 @@
       <PORTS>
         <PORT DIR="I" LEFT="23" NAME="rgb_pData" RIGHT="0" SIGIS="undef" SIGNAME="vp_0_pixel_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pData"/>
             <CONNECTION INSTANCE="vp_0" PORT="pixel_out"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="rgb_pVDE" SIGIS="undef" SIGNAME="vp_0_de_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pVDE"/>
             <CONNECTION INSTANCE="vp_0" PORT="de_out"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="rgb_pHSync" SIGIS="undef" SIGNAME="vp_0_h_sync_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pHSync"/>
             <CONNECTION INSTANCE="vp_0" PORT="h_sync_out"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="rgb_pVSync" SIGIS="undef" SIGNAME="vp_0_v_sync_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pVSync"/>
             <CONNECTION INSTANCE="vp_0" PORT="v_sync_out"/>
           </CONNECTIONS>
         </PORT>
@@ -876,7 +860,7 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="dvi2rgb_0_RGB" NAME="vid_in" TYPE="TARGET" VLNV="xilinx.com:interface:vid_io:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="vid_in" TYPE="TARGET" VLNV="xilinx.com:interface:vid_io:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="DATA" PHYSICAL="rgb_pData"/>
             <PORTMAP LOGICAL="HSYNC" PHYSICAL="rgb_pHSync"/>

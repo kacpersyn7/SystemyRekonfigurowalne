@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-| Date         : Mon Apr 23 01:52:15 2018
-| Host         : kacper-pc running 64-bit Manjaro Linux
+| Date         : Mon Apr 23 10:03:30 2018
+| Host         : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
 | Command      : report_methodology -file hdmi_vga_wrapper_methodology_drc_routed.rpt -pb hdmi_vga_wrapper_methodology_drc_routed.pb -rpx hdmi_vga_wrapper_methodology_drc_routed.rpx
 | Design       : hdmi_vga_wrapper
 | Device       : xc7z010clg400-1
@@ -321,7 +321,7 @@ Related violations: <none>
 XDCB-5#1 Warning
 Runtime inefficient way to find pin objects  
 The option '-through : [get_pins -filter {NAME =~ */SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '2' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: /home/kacper/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb.xdc (Line: 13)
+Current XDC: /home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb.xdc (Line: 13)
 Related violations: <none>
 
 

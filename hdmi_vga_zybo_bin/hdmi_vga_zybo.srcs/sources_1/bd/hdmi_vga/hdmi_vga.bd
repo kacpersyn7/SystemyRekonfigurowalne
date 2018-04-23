@@ -220,13 +220,7 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
-    <spirit:interconnections>
-      <spirit:interconnection>
-        <spirit:name>dvi2rgb_0_RGB</spirit:name>
-        <spirit:activeInterface spirit:busRef="RGB" spirit:componentRef="dvi2rgb_0"/>
-        <spirit:activeInterface spirit:busRef="vid_in" spirit:componentRef="rgb2vga_0"/>
-      </spirit:interconnection>
-    </spirit:interconnections>
+    <spirit:interconnections/>
     <spirit:adHocConnections>
       <spirit:adHocConnection>
         <spirit:name>sys_clock_1</spirit:name>

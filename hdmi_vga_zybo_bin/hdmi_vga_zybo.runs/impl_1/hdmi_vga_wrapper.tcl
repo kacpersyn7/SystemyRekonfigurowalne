@@ -65,25 +65,26 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7z010clg400-1
   set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/kacper/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.cache/wt [current_project]
-  set_property parent.project_path /home/kacper/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.xpr [current_project]
+  set_property webtalk.parent_dir /home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.cache/wt [current_project]
+  set_property parent.project_path /home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.xpr [current_project]
   set_property ip_repo_paths {
-  /home/kacper/SystemyRekonfigurowalne/hdmi_vga_ip_repo
-  /home/kacper/SystemyRekonfigurowalne/good_vp_bin
+  /home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_ip_repo
+  /home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/good_vp_bin
 } [current_project]
-  set_property ip_output_repo /home/kacper/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.cache/ip [current_project]
+  set_property ip_output_repo /home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet /home/kacper/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.runs/synth_1/hdmi_vga_wrapper.dcp
+  add_files -quiet /home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.runs/synth_1/hdmi_vga_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/kacper/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd
+  add_files /home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd
   set_param project.isImplRun false
-  read_xdc /home/kacper/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc
+  read_xdc /home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc
   set_param project.isImplRun true
   link_design -top hdmi_vga_wrapper -part xc7z010clg400-1
   set_param project.isImplRun false
