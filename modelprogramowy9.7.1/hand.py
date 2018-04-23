@@ -1,7 +1,7 @@
 from scipy.signal import medfilt
 import numpy as np
 import matplotlib.pyplot as plt
-hand = plt.imread('moja.jpg')
+hand = plt.imread('geirangerfjord_64.ppm')
 hand = hand / 255
 plt.imshow(hand)
 plt.show()
