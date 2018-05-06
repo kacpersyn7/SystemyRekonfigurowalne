@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun May  6 19:43:39 2018
+# Process ID: 11800
+# Current directory: D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13112 D:\Users\Kacper\Documents\systemygit\SystemyRekonfigurowalne\hdmi_vga_zybo_YCbCr\hdmi_vga_zybo.xpr
+# Log file: D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/vivado.log
+# Journal file: D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_hdmi [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+file mkdir D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new
+close [ open D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v w ]
+add_files D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v
+update_compile_order -fileset sources_1
+open_project D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd}
+close_project
+create_ip -name mult_gen -vendor xilinx.com -library ip -version 12.0 -module_name mult_gen_0 -dir d:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/ip
+set_property -dict [list CONFIG.Multiplier_Construction {Use_Mults} CONFIG.PipeStages {3}] [get_ips mult_gen_0]
+generate_target {instantiation_template} [get_files d:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci]
+generate_target all [get_files  d:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all mult_gen_0] }
+export_ip_user_files -of_objects [get_files d:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci]
+launch_runs -jobs 2 mult_gen_0_synth_1
+export_simulation -of_objects [get_files d:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci] -directory D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.ip_user_files/sim_scripts -ip_user_files_dir D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.ip_user_files -ipstatic_source_dir D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.cache/compile_simlib/modelsim} {questa=D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.cache/compile_simlib/questa} {riviera=D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.cache/compile_simlib/riviera} {activehdl=D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_project D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/intro/intro.xpr
+update_compile_order -fileset sources_1
+current_project hdmi_vga_zybo
+create_ip -name c_addsub -vendor xilinx.com -library ip -version 12.0 -module_name c_addsub_0 -dir d:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/ip
+set_property -dict [list CONFIG.A_Width {9} CONFIG.B_Width {9} CONFIG.Latency_Configuration {Automatic} CONFIG.Out_Width {9} CONFIG.Latency {1} CONFIG.B_Value {000000000}] [get_ips c_addsub_0]
+generate_target {instantiation_template} [get_files d:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci]
+generate_target all [get_files  d:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci]
+catch { config_ip_cache -export [get_ips -all c_addsub_0] }
+export_ip_user_files -of_objects [get_files d:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci]
+launch_runs -jobs 2 c_addsub_0_synth_1
+export_simulation -of_objects [get_files d:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci] -directory D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.ip_user_files/sim_scripts -ip_user_files_dir D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.ip_user_files -ipstatic_source_dir D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.cache/compile_simlib/modelsim} {questa=D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.cache/compile_simlib/questa} {riviera=D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.cache/compile_simlib/riviera} {activehdl=D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+add_files -norecurse {D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/register.v D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/delay_line.v}
+update_compile_order -fileset sources_1
+current_project intro
+close_project
+set_property -dict [list CONFIG.CE {false}] [get_ips c_addsub_0]
+generate_target all [get_files  d:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci]
+catch { config_ip_cache -export [get_ips -all c_addsub_0] }
+export_ip_user_files -of_objects [get_files d:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci] -no_script -sync -force -quiet
+reset_run c_addsub_0_synth_1
+launch_runs -jobs 2 c_addsub_0_synth_1
+export_simulation -of_objects [get_files d:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci] -directory D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.ip_user_files/sim_scripts -ip_user_files_dir D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.ip_user_files -ipstatic_source_dir D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.cache/compile_simlib/modelsim} {questa=D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.cache/compile_simlib/questa} {riviera=D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.cache/compile_simlib/riviera} {activehdl=D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet

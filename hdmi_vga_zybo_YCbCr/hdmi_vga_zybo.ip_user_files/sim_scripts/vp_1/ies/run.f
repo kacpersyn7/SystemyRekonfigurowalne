@@ -1,0 +1,18 @@
+-makelib ies_lib/xil_defaultlib -sv \
+  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+-endlib
+-makelib ies_lib/xpm \
+  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
+-endlib
+-makelib ies_lib/dist_mem_gen_v8_0_12 \
+  "../../../ipstatic/ip/vp_1/vp/vp.srcs/sources_1/ip/dist_mem_gen_R/simulation/dist_mem_gen_v8_0.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_1/vp/vp.srcs/sources_1/ip/dist_mem_gen_R/sim/dist_mem_gen_R.v" \
+  "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_1/vp/vp.srcs/sources_1/new/vp.v" \
+  "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_1/sim/vp_1.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  glbl.v
+-endlib
+

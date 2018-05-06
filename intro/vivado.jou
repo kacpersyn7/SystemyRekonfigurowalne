@@ -1,12 +1,15 @@
 #-----------------------------------------------------------
-# Vivado v2017.1 (64-bit)
-# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
-# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Wed Mar  7 19:45:28 2018
-# Process ID: 4624
-# Current directory: /home/kacper/SystemyRekonfigurowalne/First/intro
-# Command line: vivado
-# Log file: /home/kacper/SystemyRekonfigurowalne/First/intro/vivado.log
-# Journal file: /home/kacper/SystemyRekonfigurowalne/First/intro/vivado.jou
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun May  6 23:17:51 2018
+# Process ID: 11556
+# Current directory: D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/intro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4620 D:\Users\Kacper\Documents\systemygit\SystemyRekonfigurowalne\intro\intro.xpr
+# Log file: D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/intro/vivado.log
+# Journal file: D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/intro\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/intro/intro.xpr
+update_compile_order -fileset sources_1
+close_project
