@@ -62,13 +62,18 @@ hdmi_in file_input (
 // --------------------------------------
 // Output assigment
 // --------------------------------------
-assign tx_de = rx_de;
-assign tx_hsync = rx_hsync;
-assign tx_vsync = rx_vsync;
-
-assign tx_red = rx_red;
-assign tx_green = rx_green;
-assign tx_blue = rx_blue;
+rgb2ycbcr my_conv
+(
+    .clk(rx_pclk),
+    .de_in(rx_de),
+    .h_sync_in(rx_hsync),
+    .v_sync_in(rx_vsync),
+    .pixel_in({rx_red, rx_green, rx_blue}),
+    .de_out(tx_de),
+    .h_sync_out(tx_hsync),
+    .v_sync_out(tx_vsync),
+    .pixel_out({tx_red, tx_green, tx_blue})
+);	
 	 
 
 // --------------------------------------

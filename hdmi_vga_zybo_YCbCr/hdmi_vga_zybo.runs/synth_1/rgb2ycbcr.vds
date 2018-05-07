@@ -1,0 +1,440 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May  7 10:12:52 2018
+# Process ID: 24561
+# Current directory: /home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1
+# Command line: vivado -log rgb2ycbcr.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rgb2ycbcr.tcl
+# Log file: /home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/rgb2ycbcr.vds
+# Journal file: /home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source rgb2ycbcr.tcl -notrace
+Command: synth_design -top rgb2ycbcr -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24569 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1315.527 ; gain = 84.992 ; free physical = 596 ; free virtual = 20151
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'rgb2ycbcr' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v:23]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (1#1) [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_0' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/realtime/c_addsub_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_0' (2#1) [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/realtime/c_addsub_0_stub.v:6]
+WARNING: [Synth 8-689] width (10) of port connection 'A' does not match port width (9) of module 'c_addsub_0' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v:98]
+WARNING: [Synth 8-689] width (10) of port connection 'B' does not match port width (9) of module 'c_addsub_0' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v:99]
+WARNING: [Synth 8-689] width (10) of port connection 'A' does not match port width (9) of module 'c_addsub_0' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v:98]
+WARNING: [Synth 8-689] width (10) of port connection 'B' does not match port width (9) of module 'c_addsub_0' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v:99]
+WARNING: [Synth 8-689] width (10) of port connection 'A' does not match port width (9) of module 'c_addsub_0' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v:98]
+WARNING: [Synth 8-689] width (10) of port connection 'B' does not match port width (9) of module 'c_addsub_0' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v:99]
+INFO: [Synth 8-638] synthesizing module 'delay_line' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/delay_line.v:23]
+	Parameter DELAY bound to: 2 - type: integer 
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'register' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/register.v:23]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register' (3#1) [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay_line' (4#1) [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/delay_line.v:23]
+WARNING: [Synth 8-689] width (10) of port connection 'idata' does not match port width (9) of module 'delay_line' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v:114]
+WARNING: [Synth 8-689] width (10) of port connection 'A' does not match port width (9) of module 'c_addsub_0' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v:120]
+WARNING: [Synth 8-689] width (10) of port connection 'A' does not match port width (9) of module 'c_addsub_0' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v:128]
+WARNING: [Synth 8-689] width (10) of port connection 'S' does not match port width (9) of module 'c_addsub_0' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v:138]
+WARNING: [Synth 8-689] width (10) of port connection 'S' does not match port width (9) of module 'c_addsub_0' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v:145]
+WARNING: [Synth 8-689] width (10) of port connection 'S' does not match port width (9) of module 'c_addsub_0' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v:153]
+INFO: [Synth 8-638] synthesizing module 'delay_line__parameterized0' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/delay_line.v:23]
+	Parameter DELAY bound to: 6 - type: integer 
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'register__parameterized0' [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/register.v:23]
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized0' (4#1) [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay_line__parameterized0' (4#1) [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/delay_line.v:23]
+INFO: [Synth 8-256] done synthesizing module 'rgb2ycbcr' (5#1) [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/sources_1/new/rgb2ycbcr.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1357.059 ; gain = 126.523 ; free physical = 607 ; free virtual = 20162
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1357.059 ; gain = 126.523 ; free physical = 609 ; free virtual = 20164
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[0].m_i'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[0].m_i'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[1].m_i'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[1].m_i'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[2].m_i'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[2].m_i'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[3].m_i'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[3].m_i'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[4].m_i'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[4].m_i'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[5].m_i'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[5].m_i'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[6].m_i'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[6].m_i'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[7].m_i'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[7].m_i'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[8].m_i'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp2/mult_gen_0_in_context.xdc] for cell 'genblk1.genblk1[8].m_i'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'Cb_B'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'Cb_B'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'Cr_B'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'Cr_B'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'Y_out'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'Y_out'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'Cb_out'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'Cb_out'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'Cr_out'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'Cr_out'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'genblk1.genblk2[0].a_i'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'genblk1.genblk2[0].a_i'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'genblk1.genblk2[3].a_i'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'genblk1.genblk2[3].a_i'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'genblk1.genblk2[6].a_i'
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-24561-debian/dcp3/c_addsub_0_in_context.xdc] for cell 'genblk1.genblk2[6].a_i'
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:6]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -of_objects [get_ports sys_clock]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_n'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[0]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[0]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[0]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[0]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[1]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[1]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[1]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[1]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[2]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[2]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[2]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[2]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_hpd[0]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_hpd[0]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_en'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_scl_io'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_sda_io'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[0]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[0]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[1]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[1]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[2]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[2]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[3]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[3]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[4]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[4]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[0]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[0]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:149]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[1]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[1]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[2]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[2]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:153]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[3]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:154]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[3]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[4]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:156]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[4]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:157]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[5]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:158]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[5]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:159]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[0]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:160]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[0]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:161]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[1]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:162]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[1]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[2]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:164]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[2]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:165]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[3]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[3]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:167]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[4]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:168]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[4]'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'vga_pHSync'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:170]
+WARNING: [Vivado 12-584] No ports matched 'vga_pVSync'. [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:171]
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/rgb2ycbcr_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1711.535 ; gain = 0.000 ; free physical = 360 ; free virtual = 19915
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:42 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 430 ; free virtual = 19985
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:42 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 430 ; free virtual = 19985
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Cb_B. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Cb_out. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Cr_B. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Cr_out. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Y_out. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1.genblk1[0].m_i . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1.genblk1[1].m_i . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1.genblk1[2].m_i . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1.genblk1[3].m_i . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1.genblk1[4].m_i . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1.genblk1[5].m_i . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1.genblk1[6].m_i . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1.genblk1[7].m_i . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1.genblk1[8].m_i . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1.genblk2[0].a_i . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1.genblk2[3].a_i . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for \genblk1.genblk2[6].a_i . (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 431 ; free virtual = 19987
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 431 ; free virtual = 19987
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 2     
+	                3 Bit    Registers := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module register__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:43 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 421 ; free virtual = 19977
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:52 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 294 ; free virtual = 19850
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:52 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 294 ; free virtual = 19850
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:52 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 293 ; free virtual = 19849
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 293 ; free virtual = 19849
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 293 ; free virtual = 19849
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 293 ; free virtual = 19849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 293 ; free virtual = 19849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 293 ; free virtual = 19849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 293 ; free virtual = 19849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|rgb2ycbcr   | sync_delay/genblk1.genblk1[5].reg_i/val_reg[2] | 6      | 3     | NO           | YES                | YES               | 3      | 0       | 
++------------+------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |c_addsub_0    |         8|
+|2     |mult_gen_0    |         9|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |c_addsub_0    |     1|
+|2     |c_addsub_0__1 |     1|
+|3     |c_addsub_0__2 |     1|
+|4     |c_addsub_0__3 |     1|
+|5     |c_addsub_0__4 |     1|
+|6     |c_addsub_0__5 |     1|
+|7     |c_addsub_0__6 |     1|
+|8     |c_addsub_0__7 |     1|
+|9     |mult_gen_0    |     1|
+|10    |mult_gen_0__1 |     1|
+|11    |mult_gen_0__2 |     1|
+|12    |mult_gen_0__3 |     1|
+|13    |mult_gen_0__4 |     1|
+|14    |mult_gen_0__5 |     1|
+|15    |mult_gen_0__6 |     1|
+|16    |mult_gen_0__7 |     1|
+|17    |mult_gen_0__8 |     1|
+|18    |BUFG          |     1|
+|19    |SRL16E        |     3|
+|20    |FDRE          |    24|
+|21    |IBUF          |    28|
+|22    |OBUF          |    27|
++------+--------------+------+
+
+Report Instance Areas: 
++------+-------------------------------+---------------------------+------+
+|      |Instance                       |Module                     |Cells |
++------+-------------------------------+---------------------------+------+
+|1     |top                            |                           |   479|
+|2     |  Y_delay                      |delay_line                 |    18|
+|3     |    \genblk1.genblk1[0].reg_i  |register                   |     9|
+|4     |    \genblk1.genblk1[1].reg_i  |register_2                 |     9|
+|5     |  sync_delay                   |delay_line__parameterized0 |     9|
+|6     |    \genblk1.genblk1[0].reg_i  |register__parameterized0   |     3|
+|7     |    \genblk1.genblk1[4].reg_i  |register__parameterized0_0 |     3|
+|8     |    \genblk1.genblk1[5].reg_i  |register__parameterized0_1 |     3|
++------+-------------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 293 ; free virtual = 19849
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1711.535 ; gain = 126.523 ; free physical = 351 ; free virtual = 19907
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 1711.535 ; gain = 481.000 ; free physical = 353 ; free virtual = 19909
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 71 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:54 . Memory (MB): peak = 1711.535 ; gain = 505.832 ; free physical = 331 ; free virtual = 19887
+INFO: [Common 17-1381] The checkpoint '/home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/synth_1/rgb2ycbcr.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rgb2ycbcr_utilization_synth.rpt -pb rgb2ycbcr_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1711.535 ; gain = 0.000 ; free physical = 333 ; free virtual = 19889
+INFO: [Common 17-206] Exiting Vivado at Mon May  7 10:13:58 2018...

@@ -27,7 +27,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log hdmi_vga_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_vga_wrapper.tcl" );
+         "-log rgb2ycbcr.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rgb2ycbcr.tcl" );
 
 
 
