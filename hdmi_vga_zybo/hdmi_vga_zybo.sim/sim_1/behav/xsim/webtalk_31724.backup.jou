@@ -2,8 +2,8 @@
 # Webtalk v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Wed Apr 25 20:27:18 2018
-# Process ID: 8735
+# Start of session at: Wed Apr 25 19:32:57 2018
+# Process ID: 31724
 # Current directory: /home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_zybo/hdmi_vga_zybo.sim/sim_1/behav/xsim
 # Command line: wbtcv -mode batch -source /home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_zybo/hdmi_vga_zybo.sim/sim_1/behav/xsim/xsim.dir/tb_hdmi_axis_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_zybo/hdmi_vga_zybo.sim/sim_1/behav/xsim/webtalk.log
