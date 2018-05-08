@@ -2,11 +2,11 @@
 # Webtalk v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon May  7 10:22:57 2018
-# Process ID: 25926
-# Current directory: /home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.sim/sim_1/behav/xsim
-# Command line: wbtcv -mode batch -source /home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.sim/sim_1/behav/xsim/xsim.dir/tb_hdmi_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: /home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: /home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.sim/sim_1/behav/xsim/webtalk.jou
+# Start of session at: Tue May  8 22:58:12 2018
+# Process ID: 3833
+# Current directory: /home/kacper/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/kacper/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.sim/sim_1/behav/xsim/xsim.dir/tb_hdmi_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/kacper/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/kacper/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.sim/sim_1/behav/xsim/webtalk.jou
 #-----------------------------------------------------------
-source /home/lsriw/sr/SynowiecKacper/git_again/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.sim/sim_1/behav/xsim/xsim.dir/tb_hdmi_behav/webtalk/xsim_webtalk.tcl -notrace
+source /home/kacper/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.sim/sim_1/behav/xsim/xsim.dir/tb_hdmi_behav/webtalk/xsim_webtalk.tcl -notrace

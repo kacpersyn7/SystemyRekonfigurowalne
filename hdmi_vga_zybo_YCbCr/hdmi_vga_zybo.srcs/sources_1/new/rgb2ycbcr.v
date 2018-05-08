@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module rgb2ycbcr
+module rgb2ycbcr 
 (
     input clk,
     input de_in,
@@ -42,9 +42,9 @@ wire signed [9:0] Cb;
 wire signed [9:0] Cr;
 reg ce = 1'b1;
 wire signed [17:0] RGB [2:0];
-assign RGB[2] = {1'b0,pixel_in[23:16],9'b0};
-assign RGB[1] = {1'b0,pixel_in[15:8], 9'b0};
-assign RGB[0] = {1'b0,pixel_in[7:0], 9'b0};
+assign RGB[2] = {1'b0, pixel_in[23:16],9'b0};
+assign RGB[1] = {1'b0, pixel_in[15:8], 9'b0};
+assign RGB[0] = {1'b0, pixel_in[7:0], 9'b0};
 reg [8:0] value = 9'd128;
 wire [17:0] YCbCr [8:0];
 assign YCbCr[0] = 18'b000000000010011001;
@@ -83,8 +83,8 @@ begin
         //latency 1
         c_addsub_0 a_i
         (
-            .A(mult_out[j][26:16]),
-            .B(mult_out[j+1][26:16]),
+            .A({mult_out[j][35], mult_out[j][25:18]}),
+            .B({mult_out[j+1][35], mult_out[j+1][25:18]}),
             .CLK(clk),
             .S(adder_out[j/3])
         );
@@ -99,13 +99,13 @@ delay_line #
 (
     .clk(clk),
     .ce(ce),
-    .idata(mult_out[2][26:16]),
+    .idata({mult_out[2][35], mult_out[2][25:18]}),
     .odata(Y_B_delay)
 );
 //latency 1
 c_addsub_0 Cb_B
 (
-    .A(mult_out[5][26:16]),
+    .A({mult_out[5][35], mult_out[5][25:18]}),
     .B(value),
     .CLK(clk),
     .S(Cb_B_value)
@@ -113,7 +113,7 @@ c_addsub_0 Cb_B
 //latency 1
 c_addsub_0 Cr_B
 (
-    .A(mult_out[8][26:16]),
+    .A({mult_out[8][35], mult_out[8][25:18]}),
     .B(value),
     .CLK(clk),
     .S(Cr_B_value)
@@ -141,8 +141,8 @@ c_addsub_0 Cr_out
     .S(Cr)
 );
 assign pixel_out[23:16] = Y[7:0];
-assign pixel_out[15:8] = Cb[7:0];
-assign pixel_out[7:0] = Cr[7:0];
+assign pixel_out[15:8] = Cr[7:0];
+assign pixel_out[7:0] = Cb[7:0];
 delay_line #
 (
     .DELAY(6),
