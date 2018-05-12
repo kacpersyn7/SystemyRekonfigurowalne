@@ -62,7 +62,7 @@ hdmi_in file_input (
 // --------------------------------------
 // Output assigment
 // --------------------------------------
-rgb2ycbcr my_conv
+rgb2ycbcr_0 my_conv
 (
     .clk(rx_pclk),
     .de_in(rx_de),

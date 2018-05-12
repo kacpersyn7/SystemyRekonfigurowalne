@@ -119,7 +119,7 @@ begin
 	 //TB only
 	 vsc=vsc+1;
 
-    rgbfile = $fopen("/home/kacper/SystemyRekonfigurowalne/geirangerfjord_64.ppm","rb");
+    rgbfile = $fopen("/home/kacper/SystemyRekonfigurowalne/modelprogramowy10.2/myhand.ppm","rb");
 
 	 // read header file
 	 for(i=0;i<13;i=i+1)

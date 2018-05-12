@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-hand = plt.imread('geirangerfjord_64.ppm')
+hand = plt.imread('myhand.ppm')
 hand = hand / 255
 plt.imshow(hand)
 plt.show()
