@@ -23,7 +23,7 @@ module tb_hdmi(
 	 
 
 wire rx_pclk;
-
+reg [2:0] sw = 3'b001;
 wire rx_de;
 wire rx_hsync;
 wire rx_vsync;
@@ -62,8 +62,9 @@ hdmi_in file_input (
 // --------------------------------------
 // Output assigment
 // --------------------------------------
-rgb2ycbcr_0 my_conv
+vp_0 my_conv
 (
+    .sw(sw),
     .clk(rx_pclk),
     .de_in(rx_de),
     .h_sync_in(rx_hsync),

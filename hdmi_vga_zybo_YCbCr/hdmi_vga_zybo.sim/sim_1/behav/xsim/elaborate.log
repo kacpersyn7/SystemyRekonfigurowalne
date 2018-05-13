@@ -46,6 +46,8 @@ Compiling module xil_defaultlib.register(N=3)
 Compiling module xil_defaultlib.delay_line(DELAY=6,N=3)
 Compiling module xil_defaultlib.rgb2ycbcr_default
 Compiling module xil_defaultlib.rgb2ycbcr_0
+Compiling module xil_defaultlib.vp
+Compiling module xil_defaultlib.vp_0
 Compiling module xil_defaultlib.hdmi_out
 Compiling module xil_defaultlib.tb_hdmi
 Compiling module xil_defaultlib.glbl
