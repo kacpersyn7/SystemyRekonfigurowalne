@@ -1,14 +1,24 @@
 #-----------------------------------------------------------
-# Vivado v2017.1 (64-bit)
-# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
-# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Wed Mar  7 19:45:28 2018
-# Process ID: 4624
-# Current directory: /home/kacper/SystemyRekonfigurowalne/First/intro
-# Command line: vivado
-# Log file: /home/kacper/SystemyRekonfigurowalne/First/intro/vivado.log
-# Journal file: /home/kacper/SystemyRekonfigurowalne/First/intro/vivado.jou
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun May  6 23:17:51 2018
+# Process ID: 11556
+# Current directory: D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/intro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4620 D:\Users\Kacper\Documents\systemygit\SystemyRekonfigurowalne\intro\intro.xpr
+# Log file: D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/intro/vivado.log
+# Journal file: D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/intro\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project D:/Users/Kacper/Documents/systemygit/SystemyRekonfigurowalne/intro/intro.xpr
+INFO: [Project 1-313] Project file moved from '/home/kacper/SystemyRekonfigurowalne/First/intro' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 729.570 ; gain = 50.348
+update_compile_order -fileset sources_1
+close_project
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Mar  7 19:52:17 2018...
+INFO: [Common 17-206] Exiting Vivado at Sun May  6 23:18:46 2018...
