@@ -119,7 +119,7 @@ begin
 	 //TB only
 	 vsc=vsc+1;
 
-    rgbfile = $fopen("/home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/modelprogramowy10.2/myhand.ppm","rb");
+    rgbfile = $fopen("/home/kacper/SystemyRekonfigurowalne/modelprogramowy10.2/myhand.ppm","rb");
 
 	 // read header file
 	 for(i=0;i<13;i=i+1)

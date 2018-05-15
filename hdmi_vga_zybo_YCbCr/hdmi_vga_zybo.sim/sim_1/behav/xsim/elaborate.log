@@ -41,9 +41,9 @@ Compiling architecture synth of entity c_addsub_v12_0_11.c_addsub_v12_0_11_viv [
 Compiling architecture xilinx of entity c_addsub_v12_0_11.c_addsub_v12_0_11 [\c_addsub_v12_0_11(c_xdevicefami...]
 Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
 Compiling module xil_defaultlib.register(N=9)
-Compiling module xil_defaultlib.delay_line(DELAY=2,N=9)
+Compiling module xil_defaultlib.delay_line(DELAY=1,N=9)
 Compiling module xil_defaultlib.register(N=3)
-Compiling module xil_defaultlib.delay_line(DELAY=6,N=3)
+Compiling module xil_defaultlib.delay_line(DELAY=4,N=3)
 Compiling module xil_defaultlib.rgb2ycbcr_default
 Compiling module xil_defaultlib.rgb2ycbcr_0
 Compiling module xil_defaultlib.vp

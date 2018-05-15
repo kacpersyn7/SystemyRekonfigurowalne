@@ -84,8 +84,8 @@ begin
         //latency 1
         c_addsub_0 a_i
         (
-            .A({mult_out[j][35], mult_out[j][26:19]}),
-            .B({mult_out[j+1][35], mult_out[j+1][26:19]}),
+            .A({mult_out[j][35], mult_out[j][25:18]}),
+            .B({mult_out[j+1][35], mult_out[j+1][25:18]}),
             .CLK(clk),
             .S(adder_out[j/3])
         );
@@ -94,18 +94,18 @@ end
 endgenerate
 delay_line #
 (
-    .DELAY(2),
+    .DELAY(1),
     .N(9)
 ) Y_delay
 (
     .clk(clk),
-    .idata({mult_out[2][35], mult_out[2][26:19]}),
+    .idata({mult_out[2][35], mult_out[2][25:18]}),
     .odata(Y_B_delay)
 );
 //latency 1
 c_addsub_0 Cb_B
 (
-    .A({mult_out[5][35], mult_out[5][26:19]}),
+    .A({mult_out[5][35], mult_out[5][25:18]}),
     .B(value),
     .CLK(clk),
     .S(Cb_B_value)
@@ -113,7 +113,7 @@ c_addsub_0 Cb_B
 //latency 1
 c_addsub_0 Cr_B
 (
-    .A({mult_out[8][35], mult_out[8][26:19]}),
+    .A({mult_out[8][35], mult_out[8][25:18]}),
     .B(value),
     .CLK(clk),
     .S(Cr_B_value)
@@ -145,7 +145,7 @@ assign pixel_out[15:8] = Cb[7:0];
 assign pixel_out[7:0] = Cr[7:0];
 delay_line #
 (
-    .DELAY(6),
+    .DELAY(4),
     .N(3)
 ) sync_delay
 (

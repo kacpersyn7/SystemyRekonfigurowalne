@@ -1,6 +1,69 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Wed May 16 00:06:01 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vp_0 (user.org:user:vp:1.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Wed May 16 00:02:58 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vp_0 (user.org:user:vp:1.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Tue May 15 23:28:12 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vp_0 (user.org:user:vp:1.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
 | Date         : Mon May 14 11:12:57 2018
 | Host         : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
 | Command      : upgrade_ip
