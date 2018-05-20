@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.runs/impl_1'
+HD_PWD='/home/kacper/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

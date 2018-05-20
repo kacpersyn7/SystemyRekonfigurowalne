@@ -60,14 +60,13 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   open_checkpoint hdmi_vga_wrapper_routed.dcp
-  set_property webtalk.parent_dir /home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr/hdmi_vga_zybo.cache/wt [current_project]
+  set_property webtalk.parent_dir /home/kacper/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.cache/wt [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   catch { write_mem_info -force hdmi_vga_wrapper.mmi }
   write_bitstream -force hdmi_vga_wrapper.bit 
