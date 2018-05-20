@@ -36,7 +36,7 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="zybo"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="92"/>
+    <Option Name="WTXSimLaunchSim" Val="93"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -72,14 +72,14 @@
         <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_rgb2vga_0_0/hdmi_vga_rgb2vga_0_0.xci">
           <Proxy FileSetName="hdmi_vga_rgb2vga_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0.xci">
-          <Proxy FileSetName="hdmi_vga_dvi2rgb_0_0"/>
+        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_xlconstant_0_0/hdmi_vga_xlconstant_0_0.xci">
+          <Proxy FileSetName="hdmi_vga_xlconstant_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xci">
           <Proxy FileSetName="hdmi_vga_clk_wiz_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_xlconstant_0_0/hdmi_vga_xlconstant_0_0.xci">
-          <Proxy FileSetName="hdmi_vga_xlconstant_0_0"/>
+        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0.xci">
+          <Proxy FileSetName="hdmi_vga_dvi2rgb_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v">

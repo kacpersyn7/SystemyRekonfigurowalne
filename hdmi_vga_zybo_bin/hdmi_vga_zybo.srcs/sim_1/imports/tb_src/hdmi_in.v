@@ -119,7 +119,7 @@ begin
 	 //TB only
 	 vsc=vsc+1;
 
-    rgbfile = $fopen("/home/lsriw/sr/SynowiecKacper/kacper_git/SystemyRekonfigurowalne/hdmi_vga_zybo_src/geirangerfjord_64.ppm","rb");
+    rgbfile = $fopen("../../../../../test_pics/geirangerfjord_64.ppm","rb");
 
 	 // read header file
 	 for(i=0;i<13;i=i+1)
