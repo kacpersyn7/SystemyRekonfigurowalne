@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: user.org:user:ycbcr2bin:1.0
--- IP Revision: 3
+-- IP Revision: 6
 
 -- The following code must appear in the VHDL architecture header.
 

@@ -16,5 +16,7 @@ vhdl xil_defaultlib  \
 "../../../bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/sim/hdmi_vga_dvi2rgb_0_0.vhd" \
 "../../../bd/hdmi_vga/ipshared/69dc/src/rgb2vga.vhd" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_rgb2vga_0_0/sim/hdmi_vga_rgb2vga_0_0.vhd" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0_1/src/rgb2ycbcr_0/src/c_addsub_0/sim/c_addsub_0.vhd" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0_1/src/rgb2ycbcr_0/src/mult_gen_0/sim/mult_gen_0.vhd" \
 
 nosort

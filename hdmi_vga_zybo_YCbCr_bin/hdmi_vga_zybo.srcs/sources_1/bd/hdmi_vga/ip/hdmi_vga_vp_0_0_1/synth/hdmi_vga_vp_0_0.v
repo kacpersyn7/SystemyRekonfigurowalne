@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:vp:1.0
-// IP Revision: 4
+// IP Revision: 7
 
 (* X_CORE_INFO = "vp,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "hdmi_vga_vp_0_0,vp,{}" *)

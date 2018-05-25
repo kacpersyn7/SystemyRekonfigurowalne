@@ -41,13 +41,14 @@ wire signed [8:0] Y;
 wire signed [8:0] Cb;
 wire signed [8:0] Cr;
 wire signed [17:0] RGB [2:0];
-assign RGB[2] = {1'b0, pixel_in[23:16],9'b0};
+assign RGB[0] = {1'b0, pixel_in[23:16],9'b0};   // R
 assign RGB[1] = {1'b0, pixel_in[15:8], 9'b0};
-assign RGB[0] = {1'b0, pixel_in[7:0], 9'b0};
+assign RGB[2] = {1'b0, pixel_in[7:0], 9'b0};
 wire [8:0] value;
 assign value = 9'd128;
 wire [17:0] YCbCr [8:0];
-assign YCbCr[0] = 18'b000000000010011001;
+//B
+assign YCbCr[0] = 18'b000000000010011001;  // z8c9u
 assign YCbCr[1] = 18'b000000000100101101;
 assign YCbCr[2] = 18'b000000000000111010;
 assign YCbCr[3] = 18'b111111111110101010;
@@ -93,7 +94,7 @@ end
 endgenerate
 delay_line #
 (
-    .DELAY(2),
+    .DELAY(1),
     .N(9)
 ) Y_delay
 (
@@ -140,11 +141,11 @@ c_addsub_0 Cr_out
     .S(Cr)
 );
 assign pixel_out[23:16] = Y[7:0];
-assign pixel_out[15:8] = Cr[7:0];
-assign pixel_out[7:0] = Cb[7:0];
+assign pixel_out[15:8] = Cb[7:0];
+assign pixel_out[7:0] = Cr[7:0];
 delay_line #
 (
-    .DELAY(6),
+    .DELAY(4),
     .N(3)
 ) sync_delay
 (
