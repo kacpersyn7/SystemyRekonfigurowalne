@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun May 27 22:27:58 2018
+# Process ID: 22852
+# Current directory: /home/kacper/SystemyRekonfigurowalne/centroid/centroid.runs/synth_1
+# Command line: vivado -log centroid.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source centroid.tcl
+# Log file: /home/kacper/SystemyRekonfigurowalne/centroid/centroid.runs/synth_1/centroid.vds
+# Journal file: /home/kacper/SystemyRekonfigurowalne/centroid/centroid.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source centroid.tcl -notrace
