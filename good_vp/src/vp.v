@@ -41,7 +41,8 @@ wire [23:0] rgb_mux [7:0];
 wire de_mux [7:0];
 wire h_sync_mux [7:0];
 wire v_sync_mux [7:0];
-
+wire [31:0] x_out;
+wire [31:0] y_out;
 //same
 assign rgb_mux[0] = pixel_in;
 assign de_mux[0] = r_de;
@@ -73,6 +74,16 @@ ycbcr2bin_0 my_conv_bin
     .pixel_out(rgb_mux[2])
 );
 
+centroid_0 my_centro
+(
+    .clk(clk),
+    .de(de_mux[2]),
+    .h_sync(h_sync_mux[2]),
+    .v_sync(v_sync_mux[2]),
+    .mask(rgb_mux[2][0]),
+    .x(x_out),
+    .y(y_out)
+);
 
 always @(posedge clk)
 begin

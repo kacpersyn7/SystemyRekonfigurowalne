@@ -1,0 +1,241 @@
+
+*** Running vivado
+    with args -log ycbcr2bin_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ycbcr2bin_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source ycbcr2bin_0.tcl -notrace
+Command: synth_design -top ycbcr2bin_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2440 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1314.535 ; gain = 83.996 ; free physical = 3642 ; free virtual = 21730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ycbcr2bin_0' [/home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/good_vp/src/ycbcr2bin_0/synth/ycbcr2bin_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'ycbcr2bin' [/home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/good_vp/src/ycbcr2bin_0/src/ycbcr2bin.v:23]
+	Parameter Ta bound to: 0 - type: integer 
+	Parameter Tb bound to: 115 - type: integer 
+	Parameter Tc bound to: 145 - type: integer 
+	Parameter Td bound to: 170 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ycbcr2bin' (1#1) [/home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/good_vp/src/ycbcr2bin_0/src/ycbcr2bin.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ycbcr2bin_0' (2#1) [/home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/good_vp/src/ycbcr2bin_0/synth/ycbcr2bin_0.v:56]
+WARNING: [Synth 8-3331] design ycbcr2bin has unconnected port pixel_in[23]
+WARNING: [Synth 8-3331] design ycbcr2bin has unconnected port pixel_in[22]
+WARNING: [Synth 8-3331] design ycbcr2bin has unconnected port pixel_in[21]
+WARNING: [Synth 8-3331] design ycbcr2bin has unconnected port pixel_in[20]
+WARNING: [Synth 8-3331] design ycbcr2bin has unconnected port pixel_in[19]
+WARNING: [Synth 8-3331] design ycbcr2bin has unconnected port pixel_in[18]
+WARNING: [Synth 8-3331] design ycbcr2bin has unconnected port pixel_in[17]
+WARNING: [Synth 8-3331] design ycbcr2bin has unconnected port pixel_in[16]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1356.066 ; gain = 125.527 ; free physical = 3653 ; free virtual = 21741
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1356.066 ; gain = 125.527 ; free physical = 3652 ; free virtual = 21741
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1364.070 ; gain = 133.531 ; free physical = 3652 ; free virtual = 21741
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1372.078 ; gain = 141.539 ; free physical = 3644 ; free virtual = 21733
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design ycbcr2bin_0 has unconnected port pixel_in[23]
+WARNING: [Synth 8-3331] design ycbcr2bin_0 has unconnected port pixel_in[22]
+WARNING: [Synth 8-3331] design ycbcr2bin_0 has unconnected port pixel_in[21]
+WARNING: [Synth 8-3331] design ycbcr2bin_0 has unconnected port pixel_in[20]
+WARNING: [Synth 8-3331] design ycbcr2bin_0 has unconnected port pixel_in[19]
+WARNING: [Synth 8-3331] design ycbcr2bin_0 has unconnected port pixel_in[18]
+WARNING: [Synth 8-3331] design ycbcr2bin_0 has unconnected port pixel_in[17]
+WARNING: [Synth 8-3331] design ycbcr2bin_0 has unconnected port pixel_in[16]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1490.445 ; gain = 259.906 ; free physical = 3381 ; free virtual = 21465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1490.445 ; gain = 259.906 ; free physical = 3379 ; free virtual = 21464
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1490.445 ; gain = 259.906 ; free physical = 3379 ; free virtual = 21463
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 1490.445 ; gain = 259.906 ; free physical = 3376 ; free virtual = 21461
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 1490.445 ; gain = 259.906 ; free physical = 3376 ; free virtual = 21461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 1490.445 ; gain = 259.906 ; free physical = 3376 ; free virtual = 21461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 1490.445 ; gain = 259.906 ; free physical = 3376 ; free virtual = 21461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 1490.445 ; gain = 259.906 ; free physical = 3376 ; free virtual = 21461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 1490.445 ; gain = 259.906 ; free physical = 3376 ; free virtual = 21461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT3 |     1|
+|2     |LUT4 |     1|
+|3     |LUT5 |     2|
+|4     |LUT6 |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |     5|
+|2     |  inst   |ycbcr2bin |     5|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 1490.445 ; gain = 259.906 ; free physical = 3376 ; free virtual = 21461
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 1490.445 ; gain = 259.906 ; free physical = 3377 ; free virtual = 21461
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 1490.453 ; gain = 259.906 ; free physical = 3377 ; free virtual = 21461
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:35 . Memory (MB): peak = 1632.598 ; gain = 426.887 ; free physical = 3334 ; free virtual = 21420
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.tmp/vp_v1_0_project/vp_v1_0_project.runs/ycbcr2bin_0_synth_1/ycbcr2bin_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 2064.133 ; gain = 431.535 ; free physical = 2789 ; free virtual = 20888
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/good_vp/src/ycbcr2bin_0/ycbcr2bin_0.xci
+INFO: [Common 17-1381] The checkpoint '/home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.tmp/vp_v1_0_project/vp_v1_0_project.runs/ycbcr2bin_0_synth_1/ycbcr2bin_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ycbcr2bin_0_utilization_synth.rpt -pb ycbcr2bin_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2068.133 ; gain = 0.000 ; free physical = 2769 ; free virtual = 20868
+INFO: [Common 17-206] Exiting Vivado at Mon May 28 09:43:25 2018...

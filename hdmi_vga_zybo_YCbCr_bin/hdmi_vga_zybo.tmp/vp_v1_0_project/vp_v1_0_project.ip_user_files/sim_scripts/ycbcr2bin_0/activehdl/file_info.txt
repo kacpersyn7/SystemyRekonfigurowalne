@@ -1,0 +1,3 @@
+ycbcr2bin.v,verilog,xil_defaultlib,../../../../../../../good_vp/src/ycbcr2bin_0/src/ycbcr2bin.v,
+ycbcr2bin_0.v,verilog,xil_defaultlib,../../../../../../../good_vp/src/ycbcr2bin_0/sim/ycbcr2bin_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

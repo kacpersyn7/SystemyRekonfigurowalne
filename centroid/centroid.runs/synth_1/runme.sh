@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/kacper/SystemyRekonfigurowalne/centroid/centroid.runs/synth_1'
+HD_PWD='/home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/centroid/centroid.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

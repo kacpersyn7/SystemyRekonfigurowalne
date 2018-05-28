@@ -1,0 +1,11 @@
+verilog xil_defaultlib  \
+"../../../../../../../good_vp/src/centroid_0_2/src/divider_32_20_0/src/divider_32_20.v" \
+"../../../../../../../good_vp/src/centroid_0_2/src/divider_32_20_0/sim/divider_32_20_0.v" \
+"../../../../../../../good_vp/src/centroid_0_2/src/accu.v" \
+"../../../../../../../good_vp/src/centroid_0_2/src/register.v" \
+"../../../../../../../good_vp/src/centroid_0_2/src/centroid.v" \
+"../../../../../../../good_vp/src/centroid_0_2/sim/centroid_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

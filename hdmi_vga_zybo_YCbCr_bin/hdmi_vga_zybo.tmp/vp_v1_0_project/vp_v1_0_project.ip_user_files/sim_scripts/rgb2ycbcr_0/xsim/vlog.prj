@@ -1,0 +1,9 @@
+verilog xil_defaultlib  \
+"../../../../../../../good_vp/src/rgb2ycbcr_0/src/delay_line.v" \
+"../../../../../../../good_vp/src/rgb2ycbcr_0/src/register.v" \
+"../../../../../../../good_vp/src/rgb2ycbcr_0/src/rgb2ycbcr.v" \
+"../../../../../../../good_vp/src/rgb2ycbcr_0/sim/rgb2ycbcr_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
