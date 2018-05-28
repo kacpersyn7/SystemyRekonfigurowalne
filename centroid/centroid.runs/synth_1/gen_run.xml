@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1527493119">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1527496857">
   <File Type="VDS-TIMING-PB" Name="centroid_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="centroid_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="centroid.dcp"/>
@@ -11,6 +11,13 @@
   <File Type="PA-TCL" Name="centroid.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/c_addsub_1/c_addsub_1.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/new/accu.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../accumulator/accumulator.srcs/sources_1/new/accu.v"/>
@@ -53,5 +60,4 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="divider_32_20_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="c_addsub_0"/>
 </GenRun>

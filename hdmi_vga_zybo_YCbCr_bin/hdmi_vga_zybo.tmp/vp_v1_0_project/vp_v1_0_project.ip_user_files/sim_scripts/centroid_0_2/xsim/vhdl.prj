@@ -1,5 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../../../../../good_vp/src/centroid_0_2/src/c_addsub_0/sim/c_addsub_0.vhd" \
-"../../../../../../../good_vp/src/centroid_0_2/src/divider_32_20_0/src/mult_32_20_lm/sim/mult_32_20_lm.vhd" \
-
-nosort

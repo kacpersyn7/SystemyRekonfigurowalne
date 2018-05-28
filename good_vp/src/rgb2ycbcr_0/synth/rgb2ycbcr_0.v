@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:rgb2ycbcr:1.0
-// IP Revision: 9
+// IP Revision: 10
 
 (* X_CORE_INFO = "rgb2ycbcr,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "rgb2ycbcr_0,rgb2ycbcr,{}" *)

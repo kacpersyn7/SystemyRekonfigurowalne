@@ -24,6 +24,12 @@ Compiling package xbip_addsub_v3_0_4.xbip_addsub_v3_0_4_viv_comp
 Compiling package c_addsub_v12_0_11.c_addsub_v12_0_11_pkg
 Compiling package c_addsub_v12_0_11.c_addsub_v12_0_11_pkg_legacy
 Compiling package c_reg_fd_v12_0_4.c_reg_fd_v12_0_4_viv_comp
+Compiling package xbip_dsp48_addsub_v3_0_4.xbip_dsp48_addsub_v3_0_4_viv_com...
+Compiling package xbip_dsp48_addsub_v3_0_4.xbip_dsp48_addsub_v3_0_4_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
 Compiling module xil_defaultlib.hdmi_in
 Compiling architecture xilinx of entity mult_gen_v12_0_13.delay_line [\delay_line(c_xdevicefamily="zyn...]
 Compiling architecture xilinx of entity mult_gen_v12_0_13.op_resize [\op_resize(ai_width=18,bi_width=...]
@@ -48,6 +54,33 @@ Compiling module xil_defaultlib.rgb2ycbcr_default
 Compiling module xil_defaultlib.rgb2ycbcr_0
 Compiling module xil_defaultlib.ycbcr2bin
 Compiling module xil_defaultlib.ycbcr2bin_0
+Compiling module xil_defaultlib.register_c(N=32)
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(acasc...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_4.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_4.xbip_dsp48_addsub_v3_0_4_viv [\xbip_dsp48_addsub_v3_0_4_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_4.xbip_addsub_v3_0_4_viv [\xbip_addsub_v3_0_4_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_4.xbip_pipe_v3_0_4_viv [\xbip_pipe_v3_0_4_viv(c_has_ce=1...]
+Compiling architecture synth of entity c_addsub_v12_0_11.c_addsub_v12_0_11_viv [\c_addsub_v12_0_11_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_11.c_addsub_v12_0_11 [\c_addsub_v12_0_11(c_xdevicefami...]
+Compiling architecture c_addsub_1_arch of entity xil_defaultlib.c_addsub_1 [c_addsub_1_default]
+Compiling module xil_defaultlib.accu_c
+Compiling architecture xilinx of entity mult_gen_v12_0_13.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,carryinreg...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(a_input="CASCADE",bcasc...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.op_resize [\op_resize(ai_width=32,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.dsp [\dsp(c_xdevicefamily="zynq",c_a_...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.mult_gen_v12_0_13_viv [\mult_gen_v12_0_13_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.mult_gen_v12_0_13 [\mult_gen_v12_0_13(c_xdevicefami...]
+Compiling architecture mult_32_20_lm_arch of entity xil_defaultlib.mult_32_20_lm [mult_32_20_lm_default]
+Compiling module xil_defaultlib.divider_32_20
+Compiling module xil_defaultlib.divider_32_20_0
+Compiling module xil_defaultlib.centroid
+Compiling module xil_defaultlib.centroid_0
 Compiling module xil_defaultlib.vp
 Compiling module xil_defaultlib.vp_0
 Compiling module xil_defaultlib.hdmi_out

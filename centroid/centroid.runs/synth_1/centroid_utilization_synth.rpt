@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-| Date         : Mon May 28 09:39:51 2018
+| Date         : Mon May 28 10:42:06 2018
 | Host         : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
 | Command      : report_utilization -file centroid_utilization_synth.rpt -pb centroid_utilization_synth.pb
 | Design       : centroid
@@ -167,7 +167,7 @@ Table of Contents
 |     Ref Name    | Used |
 +-----------------+------+
 | divider_32_20_0 |    2 |
-| c_addsub_0      |    2 |
+| c_addsub_1      |    2 |
 +-----------------+------+
 
 

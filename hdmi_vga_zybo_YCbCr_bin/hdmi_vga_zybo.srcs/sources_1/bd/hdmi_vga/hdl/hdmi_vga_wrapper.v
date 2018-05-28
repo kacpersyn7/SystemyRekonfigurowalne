@@ -1,8 +1,8 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-//Date        : Mon May 21 22:10:08 2018
-//Host        : kacper-pc running 64-bit Manjaro Linux
+//Date        : Mon May 28 11:08:03 2018
+//Host        : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
 //Command     : generate_target hdmi_vga_wrapper.bd
 //Design      : hdmi_vga_wrapper
 //Purpose     : IP block netlist

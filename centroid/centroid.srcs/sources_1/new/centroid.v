@@ -75,7 +75,7 @@ begin
         m_00 = m_00 + mask;
 end
 //m01
-accu m_01_acc
+accu_c m_01_acc
 (
     .clk(clk),
     .rst(eof),
@@ -84,7 +84,7 @@ accu m_01_acc
     .Y(m_01)
 );
 //m10
-accu m_10_acc
+accu_c m_10_acc
 (
     .clk(clk),
     .rst(eof),

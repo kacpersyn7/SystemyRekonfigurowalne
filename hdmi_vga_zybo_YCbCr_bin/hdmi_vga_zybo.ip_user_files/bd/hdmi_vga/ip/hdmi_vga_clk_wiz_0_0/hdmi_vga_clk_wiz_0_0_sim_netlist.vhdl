@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
 -- Date        : Mon Apr  9 10:45:00 2018
 -- Host        : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
--- Command     : write_vhdl -force -mode funcsim
---               /home/lsriw/sr/SynowiecKacper/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top hdmi_vga_clk_wiz_0_0 -prefix
+--               hdmi_vga_clk_wiz_0_0_ hdmi_vga_clk_wiz_0_0_sim_netlist.vhdl
 -- Design      : hdmi_vga_clk_wiz_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -21,8 +21,6 @@ entity hdmi_vga_clk_wiz_0_0_hdmi_vga_clk_wiz_0_0_clk_wiz is
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_vga_clk_wiz_0_0_hdmi_vga_clk_wiz_0_0_clk_wiz : entity is "hdmi_vga_clk_wiz_0_0_clk_wiz";
 end hdmi_vga_clk_wiz_0_0_hdmi_vga_clk_wiz_0_0_clk_wiz;
 
 architecture STRUCTURE of hdmi_vga_clk_wiz_0_0_hdmi_vga_clk_wiz_0_0_clk_wiz is

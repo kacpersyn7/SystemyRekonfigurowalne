@@ -16,6 +16,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -41,7 +43,7 @@ read_verilog -library xil_defaultlib {
   /home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/centroid/centroid.srcs/sources_1/imports/new/register.v
   /home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/centroid/centroid.srcs/sources_1/new/centroid.v
 }
-read_ip -quiet /home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/centroid/centroid.srcs/sources_1/ip/c_addsub_0/c_addsub_0.xci
+read_ip -quiet /home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/centroid/centroid.srcs/sources_1/ip/c_addsub_1/c_addsub_1.xci
 
 read_ip -quiet /home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/centroid/centroid.srcs/sources_1/ip/divider_32_20_0/divider_32_20_0.xci
 
@@ -53,6 +55,8 @@ read_ip -quiet /home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 
 synth_design -top centroid -part xc7z010clg400-1
 

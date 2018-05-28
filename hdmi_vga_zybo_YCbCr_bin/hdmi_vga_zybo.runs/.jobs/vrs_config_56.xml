@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="hdmi_vga_vp_0_0_synth_1" LaunchDir="/home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="hdmi_vga_vp_0_0_synth_1"/>
+	</Run>
+</Runs>
+

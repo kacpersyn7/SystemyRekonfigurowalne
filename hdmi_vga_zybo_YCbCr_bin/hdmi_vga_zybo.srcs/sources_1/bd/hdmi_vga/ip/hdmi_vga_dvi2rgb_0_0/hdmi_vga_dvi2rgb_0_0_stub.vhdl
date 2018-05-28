@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
 -- Date        : Mon Apr  9 10:45:07 2018
 -- Host        : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
--- Command     : write_vhdl -force -mode synth_stub
---               /home/lsriw/sr/SynowiecKacper/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top hdmi_vga_dvi2rgb_0_0 -prefix
+--               hdmi_vga_dvi2rgb_0_0_ hdmi_vga_dvi2rgb_0_0_stub.vhdl
 -- Design      : hdmi_vga_dvi2rgb_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1
