@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="hdmi_vga" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1527498971"/>
-    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1527498971"/>
-    <Generation Name="SIMULATION" State="RESET" Timestamp="1527498971"/>
-    <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1527498971"/>
+    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1527499439"/>
+    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1527499439"/>
+    <Generation Name="SIMULATION" State="RESET" Timestamp="1527499439"/>
+    <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1527499439"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0.xci" Type="IP">
         <Instance HierarchyPath="dvi2rgb_0"/>

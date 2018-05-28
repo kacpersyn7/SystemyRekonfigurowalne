@@ -42,7 +42,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e92400b4</spirit:value>
+            <spirit:value>55687d63</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -64,7 +64,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e92400b4</spirit:value>
+            <spirit:value>55687d63</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -211,7 +211,7 @@
       <spirit:file>
         <spirit:name>src/centroid.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_08bf2184</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_932ce0be</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -310,8 +310,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>centroid_v1_2</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>3</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2018-05-28T09:15:15Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>4</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2018-05-28T09:23:12Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="user.org:user:centroid:1.0_ARCHIVE_LOCATION">/home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/centroid_ip_new</xilinx:tag>
       </xilinx:tags>
@@ -319,7 +319,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.4</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a88d4390"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cf432c1c"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6eaf076d"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="a1a4754a"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="8aef8a3f"/>
     </xilinx:packagingInfo>

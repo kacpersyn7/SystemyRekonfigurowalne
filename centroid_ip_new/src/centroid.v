@@ -30,8 +30,8 @@ module centroid
     output [31:0] x,
     output [31:0] y
 );
-wire [31:0] x_sc = 0;
-wire [31:0] y_sc = 0;
+wire [31:0] x_sc;
+wire [31:0] y_sc;
 reg [31:0] x_sc_reg = 0;
 reg [31:0] y_sc_reg = 0;
 reg [10:0] x_pos = 0;

@@ -48,7 +48,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c661d6cd</spirit:value>
+            <spirit:value>488ccf57</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -76,7 +76,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c661d6cd</spirit:value>
+            <spirit:value>488ccf57</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -389,8 +389,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>vp_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>14</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2018-05-28T09:15:56Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>15</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2018-05-28T09:23:47Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="user.org:user:vp:1.0_ARCHIVE_LOCATION">/home/lsriw/sr/SynowiecKacper/kacper_git2/SystemyRekonfigurowalne/good_vp</xilinx:tag>
       </xilinx:tags>
@@ -398,7 +398,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.4</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a88d4390"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="ea8f79fb"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f0f1a92b"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="dd86ed7d"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="2d01aa17"/>
     </xilinx:packagingInfo>
