@@ -36,9 +36,10 @@ reg [31:0] x_sc_reg = 0;
 reg [31:0] y_sc_reg = 0;
 reg [10:0] x_pos = 0;
 reg [10:0] y_pos = 0;
-reg [19:0] m_00 = 0;
+reg [19:0] m_00_reg = 0;
 wire [31:0] m_01;
 wire [31:0] m_10;
+wire [19:0] m_00;
 wire eof;
 wire start_x;
 wire start_y;
@@ -66,20 +67,21 @@ begin
     prev_v_sync <= v_sync;
 end
 assign eof=(prev_v_sync==1'b0 && v_sync==1'b1)?1'b1:1'b0;
+assign m_00 = m_00_reg;
 //m00
 always @(posedge clk)
 begin
     if(eof == 1'b1)
-        m_00 = 0;
-    else if(mask == 1'b1)
-        m_00 = m_00 + 1;
+        m_00_reg = 0;
+    else if(mask == 1'b1 && de == 1'b1)
+        m_00_reg = m_00_reg + 1;
 end
 //m01
 accu_c m_01_acc
 (
     .clk(clk),
     .rst(eof),
-    .ce(mask),
+    .ce(mask&de),
     .A(x_pos),
     .Y(m_01)
 );
@@ -88,7 +90,7 @@ accu_c m_10_acc
 (
     .clk(clk),
     .rst(eof),
-    .ce(mask),
+    .ce(mask&de),
     .A(y_pos),
     .Y(m_10)
 );

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:centroid:1.0
-// IP Revision: 4
+// IP Revision: 6
 
 (* X_CORE_INFO = "centroid,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "centroid_0,centroid,{}" *)

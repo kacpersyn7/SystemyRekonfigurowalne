@@ -70,6 +70,101 @@
     </spirit:busInterface>
   </spirit:busInterfaces>
   <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_veriloginstantiationtemplate</spirit:name>
+        <spirit:displayName>Verilog Instantiation Template</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.template</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_veriloginstantiationtemplate_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon May 28 18:40:11 UTC 2018</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>7:d314ceb9</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon May 28 18:40:11 UTC 2018</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>7:d314ceb9</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
+        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon May 28 18:40:11 UTC 2018</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>7:d314ceb9</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon May 28 18:40:11 UTC 2018</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>7:bd911eee</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon May 28 18:40:11 UTC 2018</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>7:bd911eee</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
     <spirit:ports>
       <spirit:port>
         <spirit:name>clk</spirit:name>
@@ -78,7 +173,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -90,7 +186,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -106,7 +203,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -122,7 +220,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -138,7 +237,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -150,7 +250,8 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic</spirit:typeName>
-              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -179,6 +280,57 @@
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_veriloginstantiationtemplate_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>divider_32_20_0.vho</spirit:name>
+        <spirit:userFileType>vhdlTemplate</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>divider_32_20_0.veo</spirit:name>
+        <spirit:userFileType>verilogTemplate</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/mult_32_20_lm/mult_32_20_lm.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/divider_32_20.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/divider_32_20_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/mult_32_20_lm/mult_32_20_lm.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/divider_32_20.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/divider_32_20_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
   <spirit:description>divider_32_20_v1_0</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
