@@ -1,6 +1,279 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Sat Jun  2 01:22:30 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of vp_0 (user.org:user:vp:1.0) from (Rev. 22) to (Rev. 23)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Sat Jun  2 01:22:29 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'hdmi_vga_vp_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of hdmi_vga_vp_0_0 (user.org:user:vp:1.0) from (Rev. 22) to (Rev. 23)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Sat Jun  2 01:18:51 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of vp_0 (user.org:user:vp:1.0) from (Rev. 21) to (Rev. 22)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Sat Jun  2 01:18:51 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'hdmi_vga_vp_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of hdmi_vga_vp_0_0 (user.org:user:vp:1.0) from (Rev. 21) to (Rev. 22)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Sat Jun  2 01:13:51 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of vp_0 (user.org:user:vp:1.0) from (Rev. 20) to (Rev. 21)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Sat Jun  2 01:13:51 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'hdmi_vga_vp_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of hdmi_vga_vp_0_0 (user.org:user:vp:1.0) from (Rev. 20) to (Rev. 21)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Sat Jun  2 01:11:18 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of vp_0 (user.org:user:vp:1.0) from (Rev. 19) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Sat Jun  2 01:11:17 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'hdmi_vga_vp_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of hdmi_vga_vp_0_0 (user.org:user:vp:1.0) from (Rev. 19) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Sat Jun  2 01:07:16 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of vp_0 (user.org:user:vp:1.0) from (Rev. 18) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Sat Jun  2 01:07:15 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'hdmi_vga_vp_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of hdmi_vga_vp_0_0 (user.org:user:vp:1.0) from (Rev. 18) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Sat Jun  2 00:57:15 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of vp_0 (user.org:user:vp:1.0) from (Rev. 17) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Sat Jun  2 00:57:15 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'hdmi_vga_vp_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of hdmi_vga_vp_0_0 (user.org:user:vp:1.0) from (Rev. 17) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Sat Jun  2 00:22:30 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vp_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vp_0 (user.org:user:vp:1.0 (Rev. 17)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
 | Date         : Mon May 28 20:42:56 2018
 | Host         : kacper-pc running 64-bit Manjaro Linux
 | Command      : upgrade_ip

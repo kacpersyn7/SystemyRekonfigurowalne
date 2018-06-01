@@ -41,8 +41,8 @@ wire [23:0] rgb_mux [7:0];
 wire de_mux [7:0];
 wire h_sync_mux [7:0];
 wire v_sync_mux [7:0];
-wire [31:0] x_out;
-wire [31:0] y_out;
+wire [31:0] x;
+wire [31:0] y;
 //same
 assign rgb_mux[0] = pixel_in;
 assign de_mux[0] = r_de;
@@ -81,8 +81,23 @@ centroid_0 my_centro
     .h_sync(h_sync_mux[2]),
     .v_sync(v_sync_mux[2]),
     .mask(rgb_mux[2][0]),
-    .x(x_out),
-    .y(y_out)
+    .x(x),
+    .y(y)
+);
+
+vis_centroid_0 my_vis
+(
+    .clk(clk),
+    .de(de_mux[2]),
+    .h_sync(h_sync_mux[2]),
+    .v_sync(v_sync_mux[2]),
+    .mask(rgb_mux[2][7:0]),
+    .x(x),
+    .y(y),
+    .de_out(de_mux[3]),
+    .h_sync_out(h_sync_mux[3]),
+    .v_sync_out(v_sync_mux[3]),
+    .pixel_out(rgb_mux[3])
 );
 
 always @(posedge clk)

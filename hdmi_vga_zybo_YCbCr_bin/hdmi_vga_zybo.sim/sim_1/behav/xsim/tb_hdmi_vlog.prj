@@ -12,6 +12,8 @@ verilog xil_defaultlib  --include "../../../../hdmi_vga_zybo.srcs/sources_1/bd/h
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/register.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/centroid.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/sim/centroid_0.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/src/vis_centroid.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/sim/vis_centroid_0.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/sim/vp_0.v" \
 "../../../../hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_in.v" \

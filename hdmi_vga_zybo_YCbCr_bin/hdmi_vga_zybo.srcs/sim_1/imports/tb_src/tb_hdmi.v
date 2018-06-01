@@ -23,7 +23,7 @@ module tb_hdmi(
 	 
 
 wire rx_pclk;
-reg [2:0] sw = 3'b010;
+reg [2:0] sw = 3'b011;
 wire rx_de;
 wire rx_hsync;
 wire rx_vsync;
