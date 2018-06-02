@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
--- Date        : Mon Apr  9 10:45:07 2018
--- Host        : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
--- Command     : write_vhdl -force -mode funcsim -rename_top hdmi_vga_dvi2rgb_0_0 -prefix
---               hdmi_vga_dvi2rgb_0_0_ hdmi_vga_dvi2rgb_0_0_sim_netlist.vhdl
+-- Date        : Sun Jun  3 00:23:24 2018
+-- Host        : kacper-pc running 64-bit Manjaro Linux
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_sim_netlist.vhdl
 -- Design      : hdmi_vga_dvi2rgb_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -29,6 +29,8 @@ entity hdmi_vga_dvi2rgb_0_0_ChannelBond is
     pRdy_1 : in STD_LOGIC;
     pDataInRaw : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_ChannelBond : entity is "ChannelBond";
 end hdmi_vga_dvi2rgb_0_0_ChannelBond;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_ChannelBond is
@@ -70,7 +72,7 @@ architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_ChannelBond is
   attribute SOFT_HLUTNM of \pDataIn[4]_i_1__0\ : label is "soft_lutpair61";
   attribute SOFT_HLUTNM of \pDataIn[5]_i_1__0\ : label is "soft_lutpair60";
   attribute SOFT_HLUTNM of \pDataIn[6]_i_1__0\ : label is "soft_lutpair60";
-  attribute SOFT_HLUTNM of \pDataIn[7]_i_1__0\ : label is "soft_lutpair62";
+  attribute SOFT_HLUTNM of \pDataIn[7]_i_1__1\ : label is "soft_lutpair62";
   attribute SOFT_HLUTNM of \pDataIn[7]_i_5\ : label is "soft_lutpair64";
   attribute METHODOLOGY_DRC_VIOS : string;
   attribute METHODOLOGY_DRC_VIOS of pFIFO_reg_0_31_0_5 : label is "";
@@ -276,7 +278,7 @@ pBlnkBgnFlag_reg: unisim.vcomponents.FDRE
       I3 => pDataInBnd(6),
       O => D(6)
     );
-\pDataIn[7]_i_1__0\: unisim.vcomponents.LUT3
+\pDataIn[7]_i_1__1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"7F"
     )
@@ -680,11 +682,11 @@ architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_ChannelBond_10 is
   signal \pMeRdy_int_i_1__1_n_0\ : STD_LOGIC;
   signal \^pmerdy_int_reg_0\ : STD_LOGIC;
   signal pRdA : STD_LOGIC_VECTOR ( 4 downto 0 );
-  signal \pRdA[0]_i_1__1_n_0\ : STD_LOGIC;
-  signal \pRdA[1]_i_1__1_n_0\ : STD_LOGIC;
-  signal \pRdA[2]_i_1__1_n_0\ : STD_LOGIC;
-  signal \pRdA[3]_i_1__1_n_0\ : STD_LOGIC;
-  signal \pRdA[4]_i_1__1_n_0\ : STD_LOGIC;
+  signal \pRdA[0]_i_1__0_n_0\ : STD_LOGIC;
+  signal \pRdA[1]_i_1__0_n_0\ : STD_LOGIC;
+  signal \pRdA[2]_i_1__0_n_0\ : STD_LOGIC;
+  signal \pRdA[3]_i_1__0_n_0\ : STD_LOGIC;
+  signal \pRdA[4]_i_1__0_n_0\ : STD_LOGIC;
   signal pRdEn : STD_LOGIC;
   signal \pRdEn_i_1__0_n_0\ : STD_LOGIC;
   signal pTokenFlag : STD_LOGIC;
@@ -713,10 +715,10 @@ architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_ChannelBond_10 is
   attribute METHODOLOGY_DRC_VIOS of pFIFO_reg_0_31_0_5 : label is "";
   attribute METHODOLOGY_DRC_VIOS of pFIFO_reg_0_31_6_9 : label is "";
   attribute SOFT_HLUTNM of \pMeRdy_int_i_1__1\ : label is "soft_lutpair36";
-  attribute SOFT_HLUTNM of \pRdA[1]_i_1__1\ : label is "soft_lutpair38";
-  attribute SOFT_HLUTNM of \pRdA[2]_i_1__1\ : label is "soft_lutpair38";
-  attribute SOFT_HLUTNM of \pRdA[3]_i_1__1\ : label is "soft_lutpair30";
-  attribute SOFT_HLUTNM of \pRdA[4]_i_1__1\ : label is "soft_lutpair30";
+  attribute SOFT_HLUTNM of \pRdA[1]_i_1__0\ : label is "soft_lutpair38";
+  attribute SOFT_HLUTNM of \pRdA[2]_i_1__0\ : label is "soft_lutpair38";
+  attribute SOFT_HLUTNM of \pRdA[3]_i_1__0\ : label is "soft_lutpair30";
+  attribute SOFT_HLUTNM of \pRdA[4]_i_1__0\ : label is "soft_lutpair30";
   attribute SOFT_HLUTNM of \pTokenFlag_i_1__1\ : label is "soft_lutpair34";
   attribute SOFT_HLUTNM of \pTokenFlag_i_4__0\ : label is "soft_lutpair35";
   attribute SOFT_HLUTNM of \pWrA[1]_i_1__0\ : label is "soft_lutpair37";
@@ -970,24 +972,24 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
       Q => \^pmerdy_int_reg_0\,
       R => SR(0)
     );
-\pRdA[0]_i_1__1\: unisim.vcomponents.LUT1
+\pRdA[0]_i_1__0\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => pRdA(0),
-      O => \pRdA[0]_i_1__1_n_0\
+      O => \pRdA[0]_i_1__0_n_0\
     );
-\pRdA[1]_i_1__1\: unisim.vcomponents.LUT2
+\pRdA[1]_i_1__0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => pRdA(0),
       I1 => pRdA(1),
-      O => \pRdA[1]_i_1__1_n_0\
+      O => \pRdA[1]_i_1__0_n_0\
     );
-\pRdA[2]_i_1__1\: unisim.vcomponents.LUT3
+\pRdA[2]_i_1__0\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"6A"
     )
@@ -995,9 +997,9 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
       I0 => pRdA(2),
       I1 => pRdA(1),
       I2 => pRdA(0),
-      O => \pRdA[2]_i_1__1_n_0\
+      O => \pRdA[2]_i_1__0_n_0\
     );
-\pRdA[3]_i_1__1\: unisim.vcomponents.LUT4
+\pRdA[3]_i_1__0\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"6AAA"
     )
@@ -1006,9 +1008,9 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
       I1 => pRdA(0),
       I2 => pRdA(1),
       I3 => pRdA(2),
-      O => \pRdA[3]_i_1__1_n_0\
+      O => \pRdA[3]_i_1__0_n_0\
     );
-\pRdA[4]_i_1__1\: unisim.vcomponents.LUT5
+\pRdA[4]_i_1__0\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"6AAAAAAA"
     )
@@ -1018,13 +1020,13 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
       I2 => pRdA(1),
       I3 => pRdA(0),
       I4 => pRdA(3),
-      O => \pRdA[4]_i_1__1_n_0\
+      O => \pRdA[4]_i_1__0_n_0\
     );
 \pRdA_reg[0]\: unisim.vcomponents.FDRE
      port map (
       C => PixelClk_int,
       CE => pRdEn,
-      D => \pRdA[0]_i_1__1_n_0\,
+      D => \pRdA[0]_i_1__0_n_0\,
       Q => pRdA(0),
       R => SR(0)
     );
@@ -1032,7 +1034,7 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
      port map (
       C => PixelClk_int,
       CE => pRdEn,
-      D => \pRdA[1]_i_1__1_n_0\,
+      D => \pRdA[1]_i_1__0_n_0\,
       Q => pRdA(1),
       R => SR(0)
     );
@@ -1040,7 +1042,7 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
      port map (
       C => PixelClk_int,
       CE => pRdEn,
-      D => \pRdA[2]_i_1__1_n_0\,
+      D => \pRdA[2]_i_1__0_n_0\,
       Q => pRdA(2),
       R => SR(0)
     );
@@ -1048,7 +1050,7 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
      port map (
       C => PixelClk_int,
       CE => pRdEn,
-      D => \pRdA[3]_i_1__1_n_0\,
+      D => \pRdA[3]_i_1__0_n_0\,
       Q => pRdA(3),
       R => SR(0)
     );
@@ -1056,7 +1058,7 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
      port map (
       C => PixelClk_int,
       CE => pRdEn,
-      D => \pRdA[4]_i_1__1_n_0\,
+      D => \pRdA[4]_i_1__0_n_0\,
       Q => pRdA(4),
       R => SR(0)
     );
@@ -1267,11 +1269,11 @@ architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_ChannelBond_17 is
   signal \pMeRdy_int_i_1__0_n_0\ : STD_LOGIC;
   signal \^pmerdy_int_reg_0\ : STD_LOGIC;
   signal pRdA : STD_LOGIC_VECTOR ( 4 downto 0 );
-  signal \pRdA[0]_i_1__0_n_0\ : STD_LOGIC;
-  signal \pRdA[1]_i_1__0_n_0\ : STD_LOGIC;
-  signal \pRdA[2]_i_1__0_n_0\ : STD_LOGIC;
-  signal \pRdA[3]_i_1__0_n_0\ : STD_LOGIC;
-  signal \pRdA[4]_i_1__0_n_0\ : STD_LOGIC;
+  signal \pRdA[0]_i_1__1_n_0\ : STD_LOGIC;
+  signal \pRdA[1]_i_1__1_n_0\ : STD_LOGIC;
+  signal \pRdA[2]_i_1__1_n_0\ : STD_LOGIC;
+  signal \pRdA[3]_i_1__1_n_0\ : STD_LOGIC;
+  signal \pRdA[4]_i_1__1_n_0\ : STD_LOGIC;
   signal pRdEn : STD_LOGIC;
   signal \pRdEn_i_1__1_n_0\ : STD_LOGIC;
   signal pTokenFlag : STD_LOGIC;
@@ -1294,16 +1296,16 @@ architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_ChannelBond_17 is
   attribute SOFT_HLUTNM of \pDataIn[4]_i_1\ : label is "soft_lutpair2";
   attribute SOFT_HLUTNM of \pDataIn[5]_i_1\ : label is "soft_lutpair2";
   attribute SOFT_HLUTNM of \pDataIn[6]_i_1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \pDataIn[7]_i_1__1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \pDataIn[7]_i_1__0\ : label is "soft_lutpair8";
   attribute SOFT_HLUTNM of \pDataIn[7]_i_2\ : label is "soft_lutpair5";
   attribute METHODOLOGY_DRC_VIOS : string;
   attribute METHODOLOGY_DRC_VIOS of pFIFO_reg_0_31_0_5 : label is "";
   attribute METHODOLOGY_DRC_VIOS of pFIFO_reg_0_31_6_9 : label is "";
   attribute SOFT_HLUTNM of \pMeRdy_int_i_1__0\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \pRdA[1]_i_1__0\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \pRdA[2]_i_1__0\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \pRdA[3]_i_1__0\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \pRdA[4]_i_1__0\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \pRdA[1]_i_1__1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \pRdA[2]_i_1__1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \pRdA[3]_i_1__1\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \pRdA[4]_i_1__1\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of pTokenFlag_i_1 : label is "soft_lutpair10";
   attribute SOFT_HLUTNM of pVde_i_1 : label is "soft_lutpair10";
   attribute SOFT_HLUTNM of \pWrA[1]_i_1__1\ : label is "soft_lutpair7";
@@ -1506,7 +1508,7 @@ pC1_i_1: unisim.vcomponents.LUT4
       I3 => pC0_1,
       O => D(6)
     );
-\pDataIn[7]_i_1__1\: unisim.vcomponents.LUT3
+\pDataIn[7]_i_1__0\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"7F"
     )
@@ -1578,24 +1580,24 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
       Q => \^pmerdy_int_reg_0\,
       R => pAligned_reg
     );
-\pRdA[0]_i_1__0\: unisim.vcomponents.LUT1
+\pRdA[0]_i_1__1\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => pRdA(0),
-      O => \pRdA[0]_i_1__0_n_0\
+      O => \pRdA[0]_i_1__1_n_0\
     );
-\pRdA[1]_i_1__0\: unisim.vcomponents.LUT2
+\pRdA[1]_i_1__1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => pRdA(0),
       I1 => pRdA(1),
-      O => \pRdA[1]_i_1__0_n_0\
+      O => \pRdA[1]_i_1__1_n_0\
     );
-\pRdA[2]_i_1__0\: unisim.vcomponents.LUT3
+\pRdA[2]_i_1__1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"6A"
     )
@@ -1603,9 +1605,9 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
       I0 => pRdA(2),
       I1 => pRdA(1),
       I2 => pRdA(0),
-      O => \pRdA[2]_i_1__0_n_0\
+      O => \pRdA[2]_i_1__1_n_0\
     );
-\pRdA[3]_i_1__0\: unisim.vcomponents.LUT4
+\pRdA[3]_i_1__1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"6AAA"
     )
@@ -1614,9 +1616,9 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
       I1 => pRdA(0),
       I2 => pRdA(1),
       I3 => pRdA(2),
-      O => \pRdA[3]_i_1__0_n_0\
+      O => \pRdA[3]_i_1__1_n_0\
     );
-\pRdA[4]_i_1__0\: unisim.vcomponents.LUT5
+\pRdA[4]_i_1__1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"6AAAAAAA"
     )
@@ -1626,13 +1628,13 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
       I2 => pRdA(1),
       I3 => pRdA(0),
       I4 => pRdA(3),
-      O => \pRdA[4]_i_1__0_n_0\
+      O => \pRdA[4]_i_1__1_n_0\
     );
 \pRdA_reg[0]\: unisim.vcomponents.FDRE
      port map (
       C => PixelClk_int,
       CE => pRdEn,
-      D => \pRdA[0]_i_1__0_n_0\,
+      D => \pRdA[0]_i_1__1_n_0\,
       Q => pRdA(0),
       R => pAligned_reg
     );
@@ -1640,7 +1642,7 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
      port map (
       C => PixelClk_int,
       CE => pRdEn,
-      D => \pRdA[1]_i_1__0_n_0\,
+      D => \pRdA[1]_i_1__1_n_0\,
       Q => pRdA(1),
       R => pAligned_reg
     );
@@ -1648,7 +1650,7 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
      port map (
       C => PixelClk_int,
       CE => pRdEn,
-      D => \pRdA[2]_i_1__0_n_0\,
+      D => \pRdA[2]_i_1__1_n_0\,
       Q => pRdA(2),
       R => pAligned_reg
     );
@@ -1656,7 +1658,7 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
      port map (
       C => PixelClk_int,
       CE => pRdEn,
-      D => \pRdA[3]_i_1__0_n_0\,
+      D => \pRdA[3]_i_1__1_n_0\,
       Q => pRdA(3),
       R => pAligned_reg
     );
@@ -1664,7 +1666,7 @@ pMeRdy_int_reg: unisim.vcomponents.FDRE
      port map (
       C => PixelClk_int,
       CE => pRdEn,
-      D => \pRdA[4]_i_1__0_n_0\,
+      D => \pRdA[4]_i_1__1_n_0\,
       Q => pRdA(4),
       R => pAligned_reg
     );
@@ -1851,6 +1853,8 @@ entity hdmi_vga_dvi2rgb_0_0_GlitchFilter is
     RefClk : in STD_LOGIC;
     SS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_GlitchFilter : entity is "GlitchFilter";
 end hdmi_vga_dvi2rgb_0_0_GlitchFilter;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_GlitchFilter is
@@ -2170,6 +2174,8 @@ entity hdmi_vga_dvi2rgb_0_0_InputSERDES is
     CLKB : in STD_LOGIC;
     \out\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_InputSERDES : entity is "InputSERDES";
 end hdmi_vga_dvi2rgb_0_0_InputSERDES;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_InputSERDES is
@@ -2775,6 +2781,8 @@ entity hdmi_vga_dvi2rgb_0_0_PhaseAlign is
     pIDLY_CE_reg_0 : in STD_LOGIC_VECTOR ( 4 downto 0 );
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_PhaseAlign : entity is "PhaseAlign";
 end hdmi_vga_dvi2rgb_0_0_PhaseAlign;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_PhaseAlign is
@@ -7624,6 +7632,8 @@ entity hdmi_vga_dvi2rgb_0_0_ResyncToBUFG is
     pC1 : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_ResyncToBUFG : entity is "ResyncToBUFG";
 end hdmi_vga_dvi2rgb_0_0_ResyncToBUFG;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_ResyncToBUFG is
@@ -7864,6 +7874,8 @@ entity hdmi_vga_dvi2rgb_0_0_SyncAsync is
     RefClk : in STD_LOGIC;
     AS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_SyncAsync : entity is "SyncAsync";
 end hdmi_vga_dvi2rgb_0_0_SyncAsync;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_SyncAsync is
@@ -8512,6 +8524,8 @@ entity hdmi_vga_dvi2rgb_0_0_ResetBridge is
     in0 : in STD_LOGIC;
     PixelClk_int : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_ResetBridge : entity is "ResetBridge";
 end hdmi_vga_dvi2rgb_0_0_ResetBridge;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_ResetBridge is
@@ -8610,6 +8624,8 @@ entity hdmi_vga_dvi2rgb_0_0_SyncBase is
     rTimeoutCnt_reg : in STD_LOGIC_VECTOR ( 23 downto 0 );
     PixelClk_int : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_SyncBase : entity is "SyncBase";
 end hdmi_vga_dvi2rgb_0_0_SyncBase;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_SyncBase is
@@ -9052,6 +9068,8 @@ entity hdmi_vga_dvi2rgb_0_0_TWI_SlaveCtl is
     SDA_I : in STD_LOGIC;
     SCL_I : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_TWI_SlaveCtl : entity is "TWI_SlaveCtl";
 end hdmi_vga_dvi2rgb_0_0_TWI_SlaveCtl;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_TWI_SlaveCtl is
@@ -9984,6 +10002,8 @@ entity hdmi_vga_dvi2rgb_0_0_EEPROM_8b is
     SDA_I : in STD_LOGIC;
     SCL_I : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_EEPROM_8b : entity is "EEPROM_8b";
 end hdmi_vga_dvi2rgb_0_0_EEPROM_8b;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_EEPROM_8b is
@@ -10965,6 +10985,8 @@ entity hdmi_vga_dvi2rgb_0_0_TMDS_Clocking is
     TMDS_Clk_p : in STD_LOGIC;
     TMDS_Clk_n : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_TMDS_Clocking : entity is "TMDS_Clocking";
 end hdmi_vga_dvi2rgb_0_0_TMDS_Clocking;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_TMDS_Clocking is
@@ -11400,6 +11422,8 @@ entity hdmi_vga_dvi2rgb_0_0_TMDS_Decoder is
     pRst : in STD_LOGIC;
     pAllVldBgnFlag : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_TMDS_Decoder : entity is "TMDS_Decoder";
 end hdmi_vga_dvi2rgb_0_0_TMDS_Decoder;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_TMDS_Decoder is
@@ -13325,6 +13349,8 @@ entity hdmi_vga_dvi2rgb_0_0_dvi2rgb is
     pRst : in STD_LOGIC;
     pRst_n : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_dvi2rgb : entity is "dvi2rgb";
   attribute kAddBUFG : string;
   attribute kAddBUFG of hdmi_vga_dvi2rgb_0_0_dvi2rgb : entity is "TRUE";
   attribute kClkRange : integer;
@@ -13382,7 +13408,7 @@ begin
       AS(0) => pLockLostRst,
       CLKB => \^serialclk\,
       PixelClk_int => PixelClk_int,
-      Q(7 downto 0) => piData(15 downto 8),
+      Q(7 downto 0) => piData(7 downto 0),
       RefClk => RefClk,
       SR(0) => \DataDecoders[2].DecoderX_n_8\,
       TMDS_Data_n(0) => TMDS_Data_n(0),
@@ -13409,7 +13435,7 @@ begin
       AS(0) => pLockLostRst,
       CLKB => \^serialclk\,
       PixelClk_int => PixelClk_int,
-      Q(7 downto 0) => piData(7 downto 0),
+      Q(7 downto 0) => piData(15 downto 8),
       RefClk => RefClk,
       SR(0) => \DataDecoders[1].DecoderX_n_8\,
       TMDS_Data_n(0) => TMDS_Data_n(1),

@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-// Date        : Mon Apr  9 10:45:00 2018
-// Host        : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
-// Command     : write_verilog -force -mode funcsim -rename_top hdmi_vga_rgb2vga_0_0 -prefix
-//               hdmi_vga_rgb2vga_0_0_ hdmi_vga_rgb2vga_0_0_sim_netlist.v
+// Date        : Sun Jun  3 00:27:57 2018
+// Host        : kacper-pc running 64-bit Manjaro Linux
+// Command     : write_verilog -force -mode funcsim
+//               /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_rgb2vga_0_0/hdmi_vga_rgb2vga_0_0_sim_netlist.v
 // Design      : hdmi_vga_rgb2vga_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -49,7 +49,7 @@ module hdmi_vga_rgb2vga_0_0
 
   hdmi_vga_rgb2vga_0_0_rgb2vga U0
        (.PixelClk(PixelClk),
-        .rgb_pData({rgb_pData[23:19],rgb_pData[15:11],rgb_pData[7:2]}),
+        .rgb_pData({rgb_pData[23:19],rgb_pData[15:10],rgb_pData[7:3]}),
         .rgb_pHSync(rgb_pHSync),
         .rgb_pVDE(rgb_pVDE),
         .rgb_pVSync(rgb_pVSync),
@@ -60,10 +60,11 @@ module hdmi_vga_rgb2vga_0_0
         .vga_pVSync(vga_pVSync));
 endmodule
 
+(* ORIG_REF_NAME = "rgb2vga" *) 
 module hdmi_vga_rgb2vga_0_0_rgb2vga
    (vga_pRed,
-    vga_pBlue,
     vga_pGreen,
+    vga_pBlue,
     vga_pHSync,
     vga_pVSync,
     rgb_pData,
@@ -72,8 +73,8 @@ module hdmi_vga_rgb2vga_0_0_rgb2vga
     rgb_pHSync,
     rgb_pVSync);
   output [4:0]vga_pRed;
-  output [4:0]vga_pBlue;
   output [5:0]vga_pGreen;
+  output [4:0]vga_pBlue;
   output vga_pHSync;
   output vga_pVSync;
   input [15:0]rgb_pData;
@@ -99,35 +100,41 @@ module hdmi_vga_rgb2vga_0_0_rgb2vga
     \int_pData[23]_i_1 
        (.I0(rgb_pVDE),
         .O(\int_pData[23]_i_1_n_0 ));
+  FDRE \int_pData_reg[10] 
+       (.C(PixelClk),
+        .CE(1'b1),
+        .D(rgb_pData[5]),
+        .Q(vga_pGreen[0]),
+        .R(\int_pData[23]_i_1_n_0 ));
   FDRE \int_pData_reg[11] 
        (.C(PixelClk),
         .CE(1'b1),
         .D(rgb_pData[6]),
-        .Q(vga_pBlue[0]),
+        .Q(vga_pGreen[1]),
         .R(\int_pData[23]_i_1_n_0 ));
   FDRE \int_pData_reg[12] 
        (.C(PixelClk),
         .CE(1'b1),
         .D(rgb_pData[7]),
-        .Q(vga_pBlue[1]),
+        .Q(vga_pGreen[2]),
         .R(\int_pData[23]_i_1_n_0 ));
   FDRE \int_pData_reg[13] 
        (.C(PixelClk),
         .CE(1'b1),
         .D(rgb_pData[8]),
-        .Q(vga_pBlue[2]),
+        .Q(vga_pGreen[3]),
         .R(\int_pData[23]_i_1_n_0 ));
   FDRE \int_pData_reg[14] 
        (.C(PixelClk),
         .CE(1'b1),
         .D(rgb_pData[9]),
-        .Q(vga_pBlue[3]),
+        .Q(vga_pGreen[4]),
         .R(\int_pData[23]_i_1_n_0 ));
   FDRE \int_pData_reg[15] 
        (.C(PixelClk),
         .CE(1'b1),
         .D(rgb_pData[10]),
-        .Q(vga_pBlue[4]),
+        .Q(vga_pGreen[5]),
         .R(\int_pData[23]_i_1_n_0 ));
   FDRE \int_pData_reg[19] 
        (.C(PixelClk),
@@ -159,41 +166,35 @@ module hdmi_vga_rgb2vga_0_0_rgb2vga
         .D(rgb_pData[15]),
         .Q(vga_pRed[4]),
         .R(\int_pData[23]_i_1_n_0 ));
-  FDRE \int_pData_reg[2] 
-       (.C(PixelClk),
-        .CE(1'b1),
-        .D(rgb_pData[0]),
-        .Q(vga_pGreen[0]),
-        .R(\int_pData[23]_i_1_n_0 ));
   FDRE \int_pData_reg[3] 
        (.C(PixelClk),
         .CE(1'b1),
-        .D(rgb_pData[1]),
-        .Q(vga_pGreen[1]),
+        .D(rgb_pData[0]),
+        .Q(vga_pBlue[0]),
         .R(\int_pData[23]_i_1_n_0 ));
   FDRE \int_pData_reg[4] 
        (.C(PixelClk),
         .CE(1'b1),
-        .D(rgb_pData[2]),
-        .Q(vga_pGreen[2]),
+        .D(rgb_pData[1]),
+        .Q(vga_pBlue[1]),
         .R(\int_pData[23]_i_1_n_0 ));
   FDRE \int_pData_reg[5] 
        (.C(PixelClk),
         .CE(1'b1),
-        .D(rgb_pData[3]),
-        .Q(vga_pGreen[3]),
+        .D(rgb_pData[2]),
+        .Q(vga_pBlue[2]),
         .R(\int_pData[23]_i_1_n_0 ));
   FDRE \int_pData_reg[6] 
        (.C(PixelClk),
         .CE(1'b1),
-        .D(rgb_pData[4]),
-        .Q(vga_pGreen[4]),
+        .D(rgb_pData[3]),
+        .Q(vga_pBlue[3]),
         .R(\int_pData[23]_i_1_n_0 ));
   FDRE \int_pData_reg[7] 
        (.C(PixelClk),
         .CE(1'b1),
-        .D(rgb_pData[5]),
-        .Q(vga_pGreen[5]),
+        .D(rgb_pData[4]),
+        .Q(vga_pBlue[4]),
         .R(\int_pData[23]_i_1_n_0 ));
   FDRE vga_pHSync_reg
        (.C(PixelClk),

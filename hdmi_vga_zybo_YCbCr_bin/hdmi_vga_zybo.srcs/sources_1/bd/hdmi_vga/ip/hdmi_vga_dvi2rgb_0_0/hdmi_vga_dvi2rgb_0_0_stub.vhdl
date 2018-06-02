@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
--- Date        : Mon Apr  9 10:45:07 2018
--- Host        : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
--- Command     : write_vhdl -force -mode synth_stub -rename_top hdmi_vga_dvi2rgb_0_0 -prefix
---               hdmi_vga_dvi2rgb_0_0_ hdmi_vga_dvi2rgb_0_0_stub.vhdl
+-- Date        : Sun Jun  3 00:23:24 2018
+-- Host        : kacper-pc running 64-bit Manjaro Linux
+-- Command     : write_vhdl -force -mode synth_stub
+--               /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_stub.vhdl
 -- Design      : hdmi_vga_dvi2rgb_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

@@ -16,8 +16,8 @@ preplace portBus vga_pBlue -pg 1 -y 340 -defaultsOSRD
 preplace inst GND -pg 1 -lvl 1 -y -110 -defaultsOSRD
 preplace inst vp_0 -pg 1 -lvl 3 -y 430 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 3 -y 0 -defaultsOSRD
-preplace inst VCC -pg 1 -lvl 1 -y 530 -defaultsOSRD
 preplace inst dvi2rgb_0 -pg 1 -lvl 2 -y 400 -defaultsOSRD
+preplace inst VCC -pg 1 -lvl 1 -y 530 -defaultsOSRD
 preplace inst rgb2vga_0 -pg 1 -lvl 4 -y 360 -defaultsOSRD
 preplace netloc rgb2vga_0_vga_pRed 1 4 1 790
 preplace netloc VCC_dout 1 1 4 NJ 530 NJ 530 450J 500 N

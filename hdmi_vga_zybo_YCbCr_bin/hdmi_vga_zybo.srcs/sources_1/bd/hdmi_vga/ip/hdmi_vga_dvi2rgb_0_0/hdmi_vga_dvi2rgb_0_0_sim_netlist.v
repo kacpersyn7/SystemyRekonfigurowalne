@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-// Date        : Mon Apr  9 10:45:07 2018
-// Host        : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
-// Command     : write_verilog -force -mode funcsim -rename_top hdmi_vga_dvi2rgb_0_0 -prefix
-//               hdmi_vga_dvi2rgb_0_0_ hdmi_vga_dvi2rgb_0_0_sim_netlist.v
+// Date        : Sun Jun  3 00:23:24 2018
+// Host        : kacper-pc running 64-bit Manjaro Linux
+// Command     : write_verilog -force -mode funcsim
+//               /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_sim_netlist.v
 // Design      : hdmi_vga_dvi2rgb_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,6 +12,102 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
+(* CHECK_LICENSE_TYPE = "hdmi_vga_dvi2rgb_0_0,dvi2rgb,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "dvi2rgb,Vivado 2017.4" *) 
+(* NotValidForBitStream *)
+module hdmi_vga_dvi2rgb_0_0
+   (TMDS_Clk_p,
+    TMDS_Clk_n,
+    TMDS_Data_p,
+    TMDS_Data_n,
+    RefClk,
+    aRst,
+    vid_pData,
+    vid_pVDE,
+    vid_pHSync,
+    vid_pVSync,
+    PixelClk,
+    aPixelClkLckd,
+    SDA_I,
+    SDA_O,
+    SDA_T,
+    SCL_I,
+    SCL_O,
+    SCL_T,
+    pRst);
+  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS CLK_P, xilinx.com:signal:clock:1.0 TMDS_Clk_p CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME TMDS, BOARD.ASSOCIATED_PARAM TMDS_BOARD_INTERFACE, XIL_INTERFACENAME TMDS_Clk_p, ASSOCIATED_RESET pRst, FREQ_HZ 100000000, PHASE 0.000" *) input TMDS_Clk_p;
+  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS CLK_N, xilinx.com:signal:clock:1.0 TMDS_Clk_n CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME TMDS_Clk_n, ASSOCIATED_RESET aRst_n, FREQ_HZ 100000000, PHASE 0.000" *) input TMDS_Clk_n;
+  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS DATA_P" *) input [2:0]TMDS_Data_p;
+  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS DATA_N" *) input [2:0]TMDS_Data_n;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 RefClk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME RefClk, FREQ_HZ 200000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1" *) input RefClk;
+  input aRst;
+  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB DATA" *) output [23:0]vid_pData;
+  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB ACTIVE_VIDEO" *) output vid_pVDE;
+  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB HSYNC" *) output vid_pHSync;
+  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB VSYNC" *) output vid_pVSync;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 PixelClk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME PixelClk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN hdmi_vga_dvi2rgb_0_0_PixelClk" *) output PixelClk;
+  output aPixelClkLckd;
+  (* x_interface_info = "xilinx.com:interface:iic:1.0 DDC SDA_I" *) (* x_interface_parameter = "XIL_INTERFACENAME DDC, BOARD.ASSOCIATED_PARAM IIC_BOARD_INTERFACE" *) input SDA_I;
+  (* x_interface_info = "xilinx.com:interface:iic:1.0 DDC SDA_O" *) output SDA_O;
+  (* x_interface_info = "xilinx.com:interface:iic:1.0 DDC SDA_T" *) output SDA_T;
+  (* x_interface_info = "xilinx.com:interface:iic:1.0 DDC SCL_I" *) input SCL_I;
+  (* x_interface_info = "xilinx.com:interface:iic:1.0 DDC SCL_O" *) output SCL_O;
+  (* x_interface_info = "xilinx.com:interface:iic:1.0 DDC SCL_T" *) output SCL_T;
+  input pRst;
+
+  wire PixelClk;
+  wire RefClk;
+  wire SCL_I;
+  wire SCL_O;
+  wire SCL_T;
+  wire SDA_I;
+  wire SDA_O;
+  wire SDA_T;
+  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) (* IOSTANDARD = "TMDS_33" *) wire TMDS_Clk_n;
+  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) (* IOSTANDARD = "TMDS_33" *) wire TMDS_Clk_p;
+  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) (* IOSTANDARD = "TMDS_33" *) wire [2:0]TMDS_Data_n;
+  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) (* IOSTANDARD = "TMDS_33" *) wire [2:0]TMDS_Data_p;
+  wire aPixelClkLckd;
+  wire aRst;
+  wire pRst;
+  wire [23:0]vid_pData;
+  wire vid_pHSync;
+  wire vid_pVDE;
+  wire vid_pVSync;
+  wire NLW_U0_SerialClk_UNCONNECTED;
+
+  (* kAddBUFG = "TRUE" *) 
+  (* kClkRange = "2" *) 
+  (* kEdidFileName = "dgl_720p_cea.data" *) 
+  (* kEmulateDDC = "TRUE" *) 
+  (* kIDLY_TapValuePs = "78" *) 
+  (* kIDLY_TapWidth = "5" *) 
+  (* kRstActiveHigh = "TRUE" *) 
+  hdmi_vga_dvi2rgb_0_0_dvi2rgb U0
+       (.PixelClk(PixelClk),
+        .RefClk(RefClk),
+        .SCL_I(SCL_I),
+        .SCL_O(SCL_O),
+        .SCL_T(SCL_T),
+        .SDA_I(SDA_I),
+        .SDA_O(SDA_O),
+        .SDA_T(SDA_T),
+        .SerialClk(NLW_U0_SerialClk_UNCONNECTED),
+        .TMDS_Clk_n(TMDS_Clk_n),
+        .TMDS_Clk_p(TMDS_Clk_p),
+        .TMDS_Data_n(TMDS_Data_n),
+        .TMDS_Data_p(TMDS_Data_p),
+        .aPixelClkLckd(aPixelClkLckd),
+        .aRst(aRst),
+        .aRst_n(1'b1),
+        .pRst(pRst),
+        .pRst_n(1'b1),
+        .vid_pData(vid_pData),
+        .vid_pHSync(vid_pHSync),
+        .vid_pVDE(vid_pVDE),
+        .vid_pVSync(vid_pVSync));
+endmodule
+
+(* ORIG_REF_NAME = "ChannelBond" *) 
 module hdmi_vga_dvi2rgb_0_0_ChannelBond
    (pAllVld_q,
     pAllVldBgnFlag,
@@ -228,7 +324,7 @@ module hdmi_vga_dvi2rgb_0_0_ChannelBond
   (* SOFT_HLUTNM = "soft_lutpair62" *) 
   LUT3 #(
     .INIT(8'h7F)) 
-    \pDataIn[7]_i_1__0 
+    \pDataIn[7]_i_1__1 
        (.I0(pMeRdy_int_reg_0),
         .I1(pRdy_0),
         .I2(pRdy_1),
@@ -556,11 +652,11 @@ module hdmi_vga_dvi2rgb_0_0_ChannelBond_10
   wire pMeRdy_int_i_1__1_n_0;
   wire pMeRdy_int_reg_0;
   wire [4:0]pRdA;
-  wire \pRdA[0]_i_1__1_n_0 ;
-  wire \pRdA[1]_i_1__1_n_0 ;
-  wire \pRdA[2]_i_1__1_n_0 ;
-  wire \pRdA[3]_i_1__1_n_0 ;
-  wire \pRdA[4]_i_1__1_n_0 ;
+  wire \pRdA[0]_i_1__0_n_0 ;
+  wire \pRdA[1]_i_1__0_n_0 ;
+  wire \pRdA[2]_i_1__0_n_0 ;
+  wire \pRdA[3]_i_1__0_n_0 ;
+  wire \pRdA[4]_i_1__0_n_0 ;
   wire pRdEn;
   wire pRdEn_i_1__0_n_0;
   wire pRdy_0;
@@ -776,71 +872,71 @@ module hdmi_vga_dvi2rgb_0_0_ChannelBond_10
         .R(SR));
   LUT1 #(
     .INIT(2'h1)) 
-    \pRdA[0]_i_1__1 
+    \pRdA[0]_i_1__0 
        (.I0(pRdA[0]),
-        .O(\pRdA[0]_i_1__1_n_0 ));
+        .O(\pRdA[0]_i_1__0_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair38" *) 
   LUT2 #(
     .INIT(4'h6)) 
-    \pRdA[1]_i_1__1 
+    \pRdA[1]_i_1__0 
        (.I0(pRdA[0]),
         .I1(pRdA[1]),
-        .O(\pRdA[1]_i_1__1_n_0 ));
+        .O(\pRdA[1]_i_1__0_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair38" *) 
   LUT3 #(
     .INIT(8'h6A)) 
-    \pRdA[2]_i_1__1 
+    \pRdA[2]_i_1__0 
        (.I0(pRdA[2]),
         .I1(pRdA[1]),
         .I2(pRdA[0]),
-        .O(\pRdA[2]_i_1__1_n_0 ));
+        .O(\pRdA[2]_i_1__0_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair30" *) 
   LUT4 #(
     .INIT(16'h6AAA)) 
-    \pRdA[3]_i_1__1 
+    \pRdA[3]_i_1__0 
        (.I0(pRdA[3]),
         .I1(pRdA[0]),
         .I2(pRdA[1]),
         .I3(pRdA[2]),
-        .O(\pRdA[3]_i_1__1_n_0 ));
+        .O(\pRdA[3]_i_1__0_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair30" *) 
   LUT5 #(
     .INIT(32'h6AAAAAAA)) 
-    \pRdA[4]_i_1__1 
+    \pRdA[4]_i_1__0 
        (.I0(pRdA[4]),
         .I1(pRdA[2]),
         .I2(pRdA[1]),
         .I3(pRdA[0]),
         .I4(pRdA[3]),
-        .O(\pRdA[4]_i_1__1_n_0 ));
+        .O(\pRdA[4]_i_1__0_n_0 ));
   FDRE \pRdA_reg[0] 
        (.C(PixelClk_int),
         .CE(pRdEn),
-        .D(\pRdA[0]_i_1__1_n_0 ),
+        .D(\pRdA[0]_i_1__0_n_0 ),
         .Q(pRdA[0]),
         .R(SR));
   FDRE \pRdA_reg[1] 
        (.C(PixelClk_int),
         .CE(pRdEn),
-        .D(\pRdA[1]_i_1__1_n_0 ),
+        .D(\pRdA[1]_i_1__0_n_0 ),
         .Q(pRdA[1]),
         .R(SR));
   FDRE \pRdA_reg[2] 
        (.C(PixelClk_int),
         .CE(pRdEn),
-        .D(\pRdA[2]_i_1__1_n_0 ),
+        .D(\pRdA[2]_i_1__0_n_0 ),
         .Q(pRdA[2]),
         .R(SR));
   FDRE \pRdA_reg[3] 
        (.C(PixelClk_int),
         .CE(pRdEn),
-        .D(\pRdA[3]_i_1__1_n_0 ),
+        .D(\pRdA[3]_i_1__0_n_0 ),
         .Q(pRdA[3]),
         .R(SR));
   FDRE \pRdA_reg[4] 
        (.C(PixelClk_int),
         .CE(pRdEn),
-        .D(\pRdA[4]_i_1__1_n_0 ),
+        .D(\pRdA[4]_i_1__0_n_0 ),
         .Q(pRdA[4]),
         .R(SR));
   LUT6 #(
@@ -1028,11 +1124,11 @@ module hdmi_vga_dvi2rgb_0_0_ChannelBond_17
   wire pMeRdy_int_i_1__0_n_0;
   wire pMeRdy_int_reg_0;
   wire [4:0]pRdA;
-  wire \pRdA[0]_i_1__0_n_0 ;
-  wire \pRdA[1]_i_1__0_n_0 ;
-  wire \pRdA[2]_i_1__0_n_0 ;
-  wire \pRdA[3]_i_1__0_n_0 ;
-  wire \pRdA[4]_i_1__0_n_0 ;
+  wire \pRdA[0]_i_1__1_n_0 ;
+  wire \pRdA[1]_i_1__1_n_0 ;
+  wire \pRdA[2]_i_1__1_n_0 ;
+  wire \pRdA[3]_i_1__1_n_0 ;
+  wire \pRdA[4]_i_1__1_n_0 ;
   wire pRdEn;
   wire pRdEn_i_1__1_n_0;
   wire pRdy_1;
@@ -1203,7 +1299,7 @@ module hdmi_vga_dvi2rgb_0_0_ChannelBond_17
   (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT3 #(
     .INIT(8'h7F)) 
-    \pDataIn[7]_i_1__1 
+    \pDataIn[7]_i_1__0 
        (.I0(pMeRdy_int_reg_0),
         .I1(pRdy_1),
         .I2(pRdy_2),
@@ -1264,71 +1360,71 @@ module hdmi_vga_dvi2rgb_0_0_ChannelBond_17
         .R(pAligned_reg));
   LUT1 #(
     .INIT(2'h1)) 
-    \pRdA[0]_i_1__0 
+    \pRdA[0]_i_1__1 
        (.I0(pRdA[0]),
-        .O(\pRdA[0]_i_1__0_n_0 ));
+        .O(\pRdA[0]_i_1__1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT2 #(
     .INIT(4'h6)) 
-    \pRdA[1]_i_1__0 
+    \pRdA[1]_i_1__1 
        (.I0(pRdA[0]),
         .I1(pRdA[1]),
-        .O(\pRdA[1]_i_1__0_n_0 ));
+        .O(\pRdA[1]_i_1__1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT3 #(
     .INIT(8'h6A)) 
-    \pRdA[2]_i_1__0 
+    \pRdA[2]_i_1__1 
        (.I0(pRdA[2]),
         .I1(pRdA[1]),
         .I2(pRdA[0]),
-        .O(\pRdA[2]_i_1__0_n_0 ));
+        .O(\pRdA[2]_i_1__1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
     .INIT(16'h6AAA)) 
-    \pRdA[3]_i_1__0 
+    \pRdA[3]_i_1__1 
        (.I0(pRdA[3]),
         .I1(pRdA[0]),
         .I2(pRdA[1]),
         .I3(pRdA[2]),
-        .O(\pRdA[3]_i_1__0_n_0 ));
+        .O(\pRdA[3]_i_1__1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT5 #(
     .INIT(32'h6AAAAAAA)) 
-    \pRdA[4]_i_1__0 
+    \pRdA[4]_i_1__1 
        (.I0(pRdA[4]),
         .I1(pRdA[2]),
         .I2(pRdA[1]),
         .I3(pRdA[0]),
         .I4(pRdA[3]),
-        .O(\pRdA[4]_i_1__0_n_0 ));
+        .O(\pRdA[4]_i_1__1_n_0 ));
   FDRE \pRdA_reg[0] 
        (.C(PixelClk_int),
         .CE(pRdEn),
-        .D(\pRdA[0]_i_1__0_n_0 ),
+        .D(\pRdA[0]_i_1__1_n_0 ),
         .Q(pRdA[0]),
         .R(pAligned_reg));
   FDRE \pRdA_reg[1] 
        (.C(PixelClk_int),
         .CE(pRdEn),
-        .D(\pRdA[1]_i_1__0_n_0 ),
+        .D(\pRdA[1]_i_1__1_n_0 ),
         .Q(pRdA[1]),
         .R(pAligned_reg));
   FDRE \pRdA_reg[2] 
        (.C(PixelClk_int),
         .CE(pRdEn),
-        .D(\pRdA[2]_i_1__0_n_0 ),
+        .D(\pRdA[2]_i_1__1_n_0 ),
         .Q(pRdA[2]),
         .R(pAligned_reg));
   FDRE \pRdA_reg[3] 
        (.C(PixelClk_int),
         .CE(pRdEn),
-        .D(\pRdA[3]_i_1__0_n_0 ),
+        .D(\pRdA[3]_i_1__1_n_0 ),
         .Q(pRdA[3]),
         .R(pAligned_reg));
   FDRE \pRdA_reg[4] 
        (.C(PixelClk_int),
         .CE(pRdEn),
-        .D(\pRdA[4]_i_1__0_n_0 ),
+        .D(\pRdA[4]_i_1__1_n_0 ),
         .Q(pRdA[4]),
         .R(pAligned_reg));
   LUT6 #(
@@ -1463,6 +1559,7 @@ module hdmi_vga_dvi2rgb_0_0_ChannelBond_17
         .R(pAligned_reg));
 endmodule
 
+(* ORIG_REF_NAME = "EEPROM_8b" *) 
 module hdmi_vga_dvi2rgb_0_0_EEPROM_8b
    (SDA_T,
     RefClk,
@@ -2219,6 +2316,7 @@ module hdmi_vga_dvi2rgb_0_0_EEPROM_8b
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "GlitchFilter" *) 
 module hdmi_vga_dvi2rgb_0_0_GlitchFilter
    (\Filter.sOut_reg_0 ,
     dScl_reg,
@@ -2458,6 +2556,7 @@ module hdmi_vga_dvi2rgb_0_0_GlitchFilter_6
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "InputSERDES" *) 
 module hdmi_vga_dvi2rgb_0_0_InputSERDES
    (D,
     pDataInRaw,
@@ -3057,6 +3156,7 @@ module hdmi_vga_dvi2rgb_0_0_InputSERDES_18
         .REGRST(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "PhaseAlign" *) 
 module hdmi_vga_dvi2rgb_0_0_PhaseAlign
    (\pEyeOpenCnt_reg[4]_0 ,
     \pEyeOpenCnt_reg[4]_1 ,
@@ -6859,6 +6959,7 @@ module hdmi_vga_dvi2rgb_0_0_PhaseAlign_19
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "ResetBridge" *) 
 module hdmi_vga_dvi2rgb_0_0_ResetBridge
    (out,
     in0,
@@ -6935,6 +7036,7 @@ module hdmi_vga_dvi2rgb_0_0_ResetBridge_3
         .O(aRst_int));
 endmodule
 
+(* ORIG_REF_NAME = "ResyncToBUFG" *) 
 module hdmi_vga_dvi2rgb_0_0_ResyncToBUFG
    (CLK,
     vid_pVDE,
@@ -7136,6 +7238,7 @@ module hdmi_vga_dvi2rgb_0_0_ResyncToBUFG
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "SyncAsync" *) 
 module hdmi_vga_dvi2rgb_0_0_SyncAsync
    (out,
     RefClk,
@@ -7646,6 +7749,7 @@ module hdmi_vga_dvi2rgb_0_0_SyncAsync__parameterized1_23
         .Q(oSyncStages[1]));
 endmodule
 
+(* ORIG_REF_NAME = "SyncBase" *) 
 module hdmi_vga_dvi2rgb_0_0_SyncBase
    (out,
     iIn_q_reg_0,
@@ -8026,6 +8130,7 @@ module hdmi_vga_dvi2rgb_0_0_SyncBase__parameterized0_21
         .Q(iIn_q_reg_n_0));
 endmodule
 
+(* ORIG_REF_NAME = "TMDS_Clocking" *) 
 module hdmi_vga_dvi2rgb_0_0_TMDS_Clocking
    (\pDataQ_reg[8] ,
     PixelClk_int,
@@ -8373,6 +8478,7 @@ module hdmi_vga_dvi2rgb_0_0_TMDS_Clocking
         .Q(rMMCM_Reset_q[1]));
 endmodule
 
+(* ORIG_REF_NAME = "TMDS_Decoder" *) 
 module hdmi_vga_dvi2rgb_0_0_TMDS_Decoder
    (pVde,
     \pEyeSize[0] ,
@@ -9942,6 +10048,7 @@ module hdmi_vga_dvi2rgb_0_0_TMDS_Decoder_1
         .R(rTimeoutRst));
 endmodule
 
+(* ORIG_REF_NAME = "TWI_SlaveCtl" *) 
 module hdmi_vga_dvi2rgb_0_0_TWI_SlaveCtl
    (sI2C_End,
     sI2C_Done,
@@ -10687,9 +10794,9 @@ module hdmi_vga_dvi2rgb_0_0_TWI_SlaveCtl
         .O(D[7]));
 endmodule
 
-(* kAddBUFG = "TRUE" *) (* kClkRange = "2" *) (* kEdidFileName = "dgl_720p_cea.data" *) 
-(* kEmulateDDC = "TRUE" *) (* kIDLY_TapValuePs = "78" *) (* kIDLY_TapWidth = "5" *) 
-(* kRstActiveHigh = "TRUE" *) 
+(* ORIG_REF_NAME = "dvi2rgb" *) (* kAddBUFG = "TRUE" *) (* kClkRange = "2" *) 
+(* kEdidFileName = "dgl_720p_cea.data" *) (* kEmulateDDC = "TRUE" *) (* kIDLY_TapValuePs = "78" *) 
+(* kIDLY_TapWidth = "5" *) (* kRstActiveHigh = "TRUE" *) 
 module hdmi_vga_dvi2rgb_0_0_dvi2rgb
    (TMDS_Clk_p,
     TMDS_Clk_n,
@@ -10786,7 +10893,7 @@ module hdmi_vga_dvi2rgb_0_0_dvi2rgb
        (.AS(pLockLostRst),
         .CLKB(SerialClk),
         .PixelClk_int(PixelClk_int),
-        .Q(piData[15:8]),
+        .Q(piData[7:0]),
         .RefClk(RefClk),
         .SR(\DataDecoders[2].DecoderX_n_8 ),
         .TMDS_Data_n(TMDS_Data_n[0]),
@@ -10811,7 +10918,7 @@ module hdmi_vga_dvi2rgb_0_0_dvi2rgb
        (.AS(pLockLostRst),
         .CLKB(SerialClk),
         .PixelClk_int(PixelClk_int),
-        .Q(piData[7:0]),
+        .Q(piData[15:8]),
         .RefClk(RefClk),
         .SR(\DataDecoders[1].DecoderX_n_8 ),
         .TMDS_Data_n(TMDS_Data_n[1]),
@@ -10884,101 +10991,6 @@ module hdmi_vga_dvi2rgb_0_0_dvi2rgb
         .\pDataQ_reg[8] (SerialClk));
   VCC VCC
        (.P(\<const1> ));
-endmodule
-
-(* CHECK_LICENSE_TYPE = "hdmi_vga_dvi2rgb_0_0,dvi2rgb,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "dvi2rgb,Vivado 2017.4" *) 
-(* NotValidForBitStream *)
-module hdmi_vga_dvi2rgb_0_0
-   (TMDS_Clk_p,
-    TMDS_Clk_n,
-    TMDS_Data_p,
-    TMDS_Data_n,
-    RefClk,
-    aRst,
-    vid_pData,
-    vid_pVDE,
-    vid_pHSync,
-    vid_pVSync,
-    PixelClk,
-    aPixelClkLckd,
-    SDA_I,
-    SDA_O,
-    SDA_T,
-    SCL_I,
-    SCL_O,
-    SCL_T,
-    pRst);
-  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS CLK_P, xilinx.com:signal:clock:1.0 TMDS_Clk_p CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME TMDS, BOARD.ASSOCIATED_PARAM TMDS_BOARD_INTERFACE, XIL_INTERFACENAME TMDS_Clk_p, ASSOCIATED_RESET pRst, FREQ_HZ 100000000, PHASE 0.000" *) input TMDS_Clk_p;
-  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS CLK_N, xilinx.com:signal:clock:1.0 TMDS_Clk_n CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME TMDS_Clk_n, ASSOCIATED_RESET aRst_n, FREQ_HZ 100000000, PHASE 0.000" *) input TMDS_Clk_n;
-  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS DATA_P" *) input [2:0]TMDS_Data_p;
-  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS DATA_N" *) input [2:0]TMDS_Data_n;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 RefClk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME RefClk, FREQ_HZ 200000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1" *) input RefClk;
-  input aRst;
-  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB DATA" *) output [23:0]vid_pData;
-  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB ACTIVE_VIDEO" *) output vid_pVDE;
-  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB HSYNC" *) output vid_pHSync;
-  (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB VSYNC" *) output vid_pVSync;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 PixelClk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME PixelClk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN hdmi_vga_dvi2rgb_0_0_PixelClk" *) output PixelClk;
-  output aPixelClkLckd;
-  (* x_interface_info = "xilinx.com:interface:iic:1.0 DDC SDA_I" *) (* x_interface_parameter = "XIL_INTERFACENAME DDC, BOARD.ASSOCIATED_PARAM IIC_BOARD_INTERFACE" *) input SDA_I;
-  (* x_interface_info = "xilinx.com:interface:iic:1.0 DDC SDA_O" *) output SDA_O;
-  (* x_interface_info = "xilinx.com:interface:iic:1.0 DDC SDA_T" *) output SDA_T;
-  (* x_interface_info = "xilinx.com:interface:iic:1.0 DDC SCL_I" *) input SCL_I;
-  (* x_interface_info = "xilinx.com:interface:iic:1.0 DDC SCL_O" *) output SCL_O;
-  (* x_interface_info = "xilinx.com:interface:iic:1.0 DDC SCL_T" *) output SCL_T;
-  input pRst;
-
-  wire PixelClk;
-  wire RefClk;
-  wire SCL_I;
-  wire SCL_O;
-  wire SCL_T;
-  wire SDA_I;
-  wire SDA_O;
-  wire SDA_T;
-  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) (* IOSTANDARD = "TMDS_33" *) wire TMDS_Clk_n;
-  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) (* IOSTANDARD = "TMDS_33" *) wire TMDS_Clk_p;
-  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) (* IOSTANDARD = "TMDS_33" *) wire [2:0]TMDS_Data_n;
-  (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) (* IOSTANDARD = "TMDS_33" *) wire [2:0]TMDS_Data_p;
-  wire aPixelClkLckd;
-  wire aRst;
-  wire pRst;
-  wire [23:0]vid_pData;
-  wire vid_pHSync;
-  wire vid_pVDE;
-  wire vid_pVSync;
-  wire NLW_U0_SerialClk_UNCONNECTED;
-
-  (* kAddBUFG = "TRUE" *) 
-  (* kClkRange = "2" *) 
-  (* kEdidFileName = "dgl_720p_cea.data" *) 
-  (* kEmulateDDC = "TRUE" *) 
-  (* kIDLY_TapValuePs = "78" *) 
-  (* kIDLY_TapWidth = "5" *) 
-  (* kRstActiveHigh = "TRUE" *) 
-  hdmi_vga_dvi2rgb_0_0_dvi2rgb U0
-       (.PixelClk(PixelClk),
-        .RefClk(RefClk),
-        .SCL_I(SCL_I),
-        .SCL_O(SCL_O),
-        .SCL_T(SCL_T),
-        .SDA_I(SDA_I),
-        .SDA_O(SDA_O),
-        .SDA_T(SDA_T),
-        .SerialClk(NLW_U0_SerialClk_UNCONNECTED),
-        .TMDS_Clk_n(TMDS_Clk_n),
-        .TMDS_Clk_p(TMDS_Clk_p),
-        .TMDS_Data_n(TMDS_Data_n),
-        .TMDS_Data_p(TMDS_Data_p),
-        .aPixelClkLckd(aPixelClkLckd),
-        .aRst(aRst),
-        .aRst_n(1'b1),
-        .pRst(pRst),
-        .pRst_n(1'b1),
-        .vid_pData(vid_pData),
-        .vid_pHSync(vid_pHSync),
-        .vid_pVDE(vid_pVDE),
-        .vid_pVSync(vid_pVSync));
 endmodule
 `ifndef GLBL
 `define GLBL
