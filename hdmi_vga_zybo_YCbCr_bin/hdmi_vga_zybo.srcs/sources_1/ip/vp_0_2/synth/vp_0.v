@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:vp:1.0
-// IP Revision: 23
+// IP Revision: 29
 
 (* X_CORE_INFO = "vp,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "vp_0,vp,{}" *)

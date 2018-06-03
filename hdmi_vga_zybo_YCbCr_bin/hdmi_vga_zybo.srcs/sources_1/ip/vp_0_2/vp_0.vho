@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: user.org:user:vp:1.0
--- IP Revision: 23
+-- IP Revision: 29
 
 -- The following code must appear in the VHDL architecture header.
 

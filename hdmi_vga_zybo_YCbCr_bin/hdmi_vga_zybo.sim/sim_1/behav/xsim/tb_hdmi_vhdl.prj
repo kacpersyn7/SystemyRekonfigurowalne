@@ -1,37 +1,11 @@
 # compile vhdl design source files
-vhdl xbip_utils_v3_0_8  \
-"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
-
-vhdl c_reg_fd_v12_0_4  \
-"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/c_reg_fd_v12_0_vh_rfs.vhd" \
-
-vhdl xbip_dsp48_wrapper_v3_0_4  \
-"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
-
-vhdl xbip_pipe_v3_0_4  \
-"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
-
-vhdl xbip_dsp48_addsub_v3_0_4  \
-"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
-
-vhdl xbip_addsub_v3_0_4  \
-"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/xbip_addsub_v3_0_vh_rfs.vhd" \
-
-vhdl c_addsub_v12_0_11  \
-"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/c_addsub_v12_0_vh_rfs.vhd" \
-
 vhdl xil_defaultlib  \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/c_addsub_0/sim/c_addsub_0.vhd" \
-
-vhdl xbip_bram18k_v3_0_4  \
-"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
-
-vhdl mult_gen_v12_0_13  \
-"../../../../hdmi_vga_zybo.ip_user_files/ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd" \
-
-vhdl xil_defaultlib  \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/mult_gen_0/sim/mult_gen_0.vhd" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/c_addsub_1/sim/c_addsub_1.vhd" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/circle_0/src/c_addsub_circle/sim/c_addsub_circle.vhd" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/circle_0/src/mult_gen_square/sim/mult_gen_square.vhd" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/circle_0/src/c_addsub_square/sim/c_addsub_square.vhd" \
 
 # Do not sort compile order
 nosort

@@ -26,6 +26,10 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kacper/sr/SystemyRekonfigurow
 INFO: [VRFC 10-311] analyzing module vis_centroid
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/sim/vis_centroid_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module vis_centroid_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/circle_0/src/circle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module circle
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/circle_0/sim/circle_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module circle_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module vp
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/sim/vp_0.v" into library xil_defaultlib

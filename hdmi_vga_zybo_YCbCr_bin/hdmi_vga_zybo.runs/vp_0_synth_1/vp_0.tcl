@@ -38,6 +38,7 @@ set_property ip_repo_paths {
   /home/kacper/sr/SystemyRekonfigurowalne/my_ip_cores/ycbcr2bin_ip
   /home/kacper/sr/SystemyRekonfigurowalne/upel_ip_cores
   /home/kacper/sr/SystemyRekonfigurowalne/my_ip_cores/vis_centroid_ip
+  /home/kacper/sr/SystemyRekonfigurowalne/my_ip_cores/circle_ip
 } [current_project]
 set_property ip_output_repo /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

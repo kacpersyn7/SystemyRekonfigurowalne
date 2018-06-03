@@ -31,6 +31,18 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mult_32_20_lm |
 # IP: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/vis_centroid_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==vis_centroid_0 || ORIG_REF_NAME==vis_centroid_0} -quiet] -quiet
 
+# IP: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/circle_0/circle_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==circle_0 || ORIG_REF_NAME==circle_0} -quiet] -quiet
+
+# IP: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/circle_0/src/c_addsub_circle/c_addsub_circle.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==c_addsub_circle || ORIG_REF_NAME==c_addsub_circle} -quiet] -quiet
+
+# IP: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/circle_0/src/mult_gen_square/mult_gen_square.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mult_gen_square || ORIG_REF_NAME==mult_gen_square} -quiet] -quiet
+
+# IP: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/circle_0/src/c_addsub_square/c_addsub_square.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==c_addsub_square || ORIG_REF_NAME==c_addsub_square} -quiet] -quiet
+
 # IP: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/vp_0.xci
 # IP: The module: 'vp_0' is the root of the design. Do not add the DONT_TOUCH constraint.
 
@@ -60,3 +72,15 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==vis_centroid_0 
 
 # IP: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/vis_centroid_0.xci
 #dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==vis_centroid_0 || ORIG_REF_NAME==vis_centroid_0} -quiet] -quiet
+
+# IP: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/circle_0/circle_0.xci
+#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==circle_0 || ORIG_REF_NAME==circle_0} -quiet] -quiet
+
+# IP: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/circle_0/src/c_addsub_circle/c_addsub_circle.xci
+#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==c_addsub_circle || ORIG_REF_NAME==c_addsub_circle} -quiet] -quiet
+
+# IP: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/circle_0/src/mult_gen_square/mult_gen_square.xci
+#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mult_gen_square || ORIG_REF_NAME==mult_gen_square} -quiet] -quiet
+
+# IP: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/circle_0/src/c_addsub_square/c_addsub_square.xci
+#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==c_addsub_square || ORIG_REF_NAME==c_addsub_square} -quiet] -quiet
