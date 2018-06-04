@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:circle:1.0
-// IP Revision: 7
+// IP Revision: 8
 
 (* X_CORE_INFO = "circle,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "circle_0,circle,{}" *)
