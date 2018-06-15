@@ -1,10 +1,18 @@
 Vivado Simulator 2017.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto e5904acf00a54a1e9a3fb0dd3d2b91cb --incr --debug typical --relax --mt 8 -L xbip_utils_v3_0_8 -L c_reg_fd_v12_0_4 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_4 -L xbip_dsp48_addsub_v3_0_4 -L xbip_addsub_v3_0_4 -L c_addsub_v12_0_11 -L xil_defaultlib -L xbip_bram18k_v3_0_4 -L mult_gen_v12_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_hdmi_behav xil_defaultlib.tb_hdmi xil_defaultlib.glbl -log elaborate.log 
+Running: /opt/Xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto e5904acf00a54a1e9a3fb0dd3d2b91cb --incr --debug typical --relax --mt 8 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L xbip_utils_v3_0_8 -L c_reg_fd_v12_0_4 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_4 -L xbip_dsp48_addsub_v3_0_4 -L xbip_addsub_v3_0_4 -L c_addsub_v12_0_11 -L xbip_bram18k_v3_0_4 -L mult_gen_v12_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_hdmi_behav xil_defaultlib.tb_hdmi xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 11 for port x [/home/lsriw/sr/SynowiecKacper/git_ktorystam/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:95]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 11 for port y [/home/lsriw/sr/SynowiecKacper/git_ktorystam/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:96]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 11 for port x [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:95]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 11 for port y [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:96]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port rst [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:70]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 13 for port h_size [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:74]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 11 for port addra [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:69]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 17 for port dina [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:70]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 17 for port douta [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:71]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port rst [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:57]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -85,6 +93,18 @@ Compiling module xil_defaultlib.centroid
 Compiling module xil_defaultlib.centroid_0
 Compiling module xil_defaultlib.vis_centroid
 Compiling module xil_defaultlib.vis_centroid_0
+Compiling module xil_defaultlib.register_median
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.delayLineBRAM
+Compiling module xil_defaultlib.delayLineBRAM_WP
+Compiling module xil_defaultlib.register_median(N=3)
+Compiling module xil_defaultlib.delay_line_median(DELAY=2,N=3)
+Compiling module xil_defaultlib.median5x5_default
+Compiling module xil_defaultlib.median5x5_0
 Compiling module xil_defaultlib.vp
 Compiling module xil_defaultlib.vp_0
 Compiling module xil_defaultlib.hdmi_out

@@ -100,6 +100,18 @@ vis_centroid_0 my_vis
     .pixel_out(rgb_mux[3])
 );
 
+median5x5_0 my_median
+(
+    .clk(clk),
+    .de_in(de_mux[2]),
+    .h_sync_in(h_sync_mux[2]),
+    .v_sync_in(v_sync_mux[2]),
+    .mask(rgb_mux[2][0]),
+    .de_out(de_mux[4]),
+    .h_sync_out(h_sync_mux[4]),
+    .v_sync_out(v_sync_mux[4]),
+    .pixel_out(rgb_mux[4])
+);
 
 always @(posedge clk)
 begin

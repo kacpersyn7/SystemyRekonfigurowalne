@@ -27,7 +27,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log delayLinieBRAM_WP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source delayLinieBRAM_WP.tcl" );
+         "-log median5x5.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source median5x5.tcl" );
 
 
 

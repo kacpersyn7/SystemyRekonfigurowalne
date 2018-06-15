@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
--- Date        : Mon Jun  4 09:53:04 2018
--- Host        : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
+-- Date        : Fri Jun 15 19:28:16 2018
+-- Host        : kacper-pc running 64-bit Manjaro Linux
 -- Command     : write_vhdl -force -mode synth_stub
---               /home/lsriw/sr/SynowiecKacper/git_ktorystam/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/vp_0_stub.vhdl
+--               /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/vp_0_stub.vhdl
 -- Design      : vp_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

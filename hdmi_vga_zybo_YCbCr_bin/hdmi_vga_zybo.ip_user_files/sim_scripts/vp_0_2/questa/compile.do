@@ -3,6 +3,7 @@ vlib questa_lib/msim
 
 vlib questa_lib/msim/xil_defaultlib
 vlib questa_lib/msim/xpm
+vlib questa_lib/msim/blk_mem_gen_v8_4_1
 vlib questa_lib/msim/xbip_utils_v3_0_8
 vlib questa_lib/msim/c_reg_fd_v12_0_4
 vlib questa_lib/msim/xbip_dsp48_wrapper_v3_0_4
@@ -15,6 +16,7 @@ vlib questa_lib/msim/mult_gen_v12_0_13
 
 vmap xil_defaultlib questa_lib/msim/xil_defaultlib
 vmap xpm questa_lib/msim/xpm
+vmap blk_mem_gen_v8_4_1 questa_lib/msim/blk_mem_gen_v8_4_1
 vmap xbip_utils_v3_0_8 questa_lib/msim/xbip_utils_v3_0_8
 vmap c_reg_fd_v12_0_4 questa_lib/msim/c_reg_fd_v12_0_4
 vmap xbip_dsp48_wrapper_v3_0_4 questa_lib/msim/xbip_dsp48_wrapper_v3_0_4
@@ -27,9 +29,21 @@ vmap mult_gen_v12_0_13 questa_lib/msim/mult_gen_v12_0_13
 
 vlog -work xil_defaultlib -64 -sv \
 "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -64 -93 \
 "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
+
+vlog -work blk_mem_gen_v8_4_1 -64 \
+"../../../ipstatic/simulation/blk_mem_gen_v8_4.v" \
+
+vlog -work xil_defaultlib -64 \
+"../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM/sim/delayLineBRAM.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/sim/median5x5_0.v" \
 
 vcom -work xbip_utils_v3_0_8 -64 -93 \
 "../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
@@ -74,6 +88,7 @@ vlog -work xil_defaultlib -64 \
 
 vcom -work xil_defaultlib -64 -93 \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/c_addsub_1/sim/c_addsub_1.vhd" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/mult_32_20_lm/sim/mult_32_20_lm.vhd" \
 
 vlog -work xil_defaultlib -64 \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/divider_32_20.v" \
@@ -82,6 +97,8 @@ vlog -work xil_defaultlib -64 \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/register.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/centroid.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/sim/centroid_0.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/src/vis_centroid.v" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/sim/vis_centroid_0.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/sim/vp_0.v" \
 

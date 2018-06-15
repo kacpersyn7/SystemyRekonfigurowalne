@@ -6,4 +6,4 @@
 # Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log delayLinieBRAM_WP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source delayLinieBRAM_WP.tcl
+vivado -log median5x5.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source median5x5.tcl

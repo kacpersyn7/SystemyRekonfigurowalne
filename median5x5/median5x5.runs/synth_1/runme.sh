@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/lsriw/sr/SynowiecKacper/git_ktorystam/SystemyRekonfigurowalne/median5x5/median5x5.runs/synth_1'
+HD_PWD='/home/kacper/sr/SystemyRekonfigurowalne/median5x5/median5x5.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log delayLinieBRAM_WP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source delayLinieBRAM_WP.tcl
+EAStep vivado -log median5x5.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source median5x5.tcl
