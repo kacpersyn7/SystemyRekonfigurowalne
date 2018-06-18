@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: user.org:user:median5x5:1.0
--- IP Revision: 8
+-- IP Revision: 10
 
 -- The following code must appear in the VHDL architecture header.
 

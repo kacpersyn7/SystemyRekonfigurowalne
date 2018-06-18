@@ -2,46 +2,43 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri Jun 15 19:25:36 2018
-# Process ID: 15601
-# Current directory: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/vp_0_synth_1
+# Start of session at: Mon Jun 18 10:15:07 2018
+# Process ID: 7869
+# Current directory: /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/vp_0_synth_1
 # Command line: vivado -log vp_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vp_0.tcl
-# Log file: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/vp_0_synth_1/vp_0.vds
-# Journal file: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/vp_0_synth_1/vivado.jou
+# Log file: /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/vp_0_synth_1/vp_0.vds
+# Journal file: /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/vp_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source vp_0.tcl -notrace
 Command: synth_design -top vp_0 -part xc7z010clg400-1 -mode out_of_context
 Starting synth_design
-INFO: [IP_Flow 19-2162] IP 'vp_0' is locked:
-* IP 'vp_0' contains one or more locked subcores.
-Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 CRITICAL WARNING: [filemgmt 20-1741] File 'delay_line.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:
-* median5x5_0 (/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v)
-* rgb2ycbcr_0 (/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/delay_line.v)
+* median5x5_0 (/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v)
+* rgb2ycbcr_0 (/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/delay_line.v)
 Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
 CRITICAL WARNING: [filemgmt 20-1741] File 'register.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:
-* median5x5_0 (/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v)
-* rgb2ycbcr_0 (/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v)
+* median5x5_0 (/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v)
+* rgb2ycbcr_0 (/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v)
 Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
 CRITICAL WARNING: [filemgmt 20-1741] File 'register.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:
-* median5x5_0 (/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v)
-* rgb2ycbcr_0 (/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v)
-* centroid_0 (/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/register.v)
+* median5x5_0 (/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v)
+* rgb2ycbcr_0 (/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v)
+* centroid_0 (/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/register.v)
 Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15645 
+INFO: Helper process launched with PID 7899 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1268.316 ; gain = 86.000 ; free physical = 243 ; free virtual = 6802
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 1320.527 ; gain = 89.996 ; free physical = 3817 ; free virtual = 22386
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'vp_0' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/synth/vp_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'vp' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:23]
-INFO: [Synth 8-638] synthesizing module 'rgb2ycbcr_0' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/synth/rgb2ycbcr_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'rgb2ycbcr' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/rgb2ycbcr.v:23]
-INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/mult_gen_0/synth/mult_gen_0.vhd:68]
-WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/mult_gen_0/synth/mult_gen_0.vhd:71]
-WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/mult_gen_0/synth/mult_gen_0.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'vp_0' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/synth/vp_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'vp' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:23]
+INFO: [Synth 8-638] synthesizing module 'rgb2ycbcr_0' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/synth/rgb2ycbcr_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'rgb2ycbcr' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/rgb2ycbcr.v:23]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/mult_gen_0/synth/mult_gen_0.vhd:68]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/mult_gen_0/synth/mult_gen_0.vhd:71]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/mult_gen_0/synth/mult_gen_0.vhd:71]
 	Parameter C_VERBOSITY bound to: 0 - type: integer 
 	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
 	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
@@ -62,10 +59,10 @@ WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/home/
 	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
 	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
 	Parameter C_ROUND_PT bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'mult_gen_v12_0_13' declared at '/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/mult_gen_0/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_13' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/mult_gen_0/synth/mult_gen_0.vhd:120]
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_13' declared at '/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/mult_gen_0/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_13' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/mult_gen_0/synth/mult_gen_0.vhd:120]
 WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
-INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (6#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/mult_gen_0/synth/mult_gen_0.vhd:68]
-INFO: [Synth 8-638] synthesizing module 'c_addsub_0' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/c_addsub_0/synth/c_addsub_0.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (6#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/mult_gen_0/synth/mult_gen_0.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_0' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/c_addsub_0/synth/c_addsub_0.vhd:68]
 	Parameter C_VERBOSITY bound to: 0 - type: integer 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
@@ -92,39 +89,39 @@ INFO: [Synth 8-638] synthesizing module 'c_addsub_0' [/home/kacper/sr/SystemyRek
 	Parameter C_HAS_SCLR bound to: 0 - type: integer 
 	Parameter C_HAS_SSET bound to: 0 - type: integer 
 	Parameter C_HAS_SINIT bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'c_addsub_v12_0_11' declared at '/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/c_addsub_0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_11' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/c_addsub_0/synth/c_addsub_0.vhd:133]
-INFO: [Synth 8-256] done synthesizing module 'c_addsub_0' (13#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/c_addsub_0/synth/c_addsub_0.vhd:68]
-INFO: [Synth 8-638] synthesizing module 'delay_line' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/delay_line.v:23]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_11' declared at '/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/c_addsub_0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_11' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/c_addsub_0/synth/c_addsub_0.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_0' (13#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/c_addsub_0/synth/c_addsub_0.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'delay_line' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/delay_line.v:23]
 	Parameter DELAY bound to: 1 - type: integer 
 	Parameter N bound to: 9 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'register' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v:23]
+INFO: [Synth 8-638] synthesizing module 'register' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v:23]
 	Parameter N bound to: 9 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'register' (14#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v:23]
-INFO: [Synth 8-256] done synthesizing module 'delay_line' (15#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/delay_line.v:23]
-INFO: [Synth 8-638] synthesizing module 'delay_line__parameterized0' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/delay_line.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register' (14#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay_line' (15#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/delay_line.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay_line__parameterized0' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/delay_line.v:23]
 	Parameter DELAY bound to: 4 - type: integer 
 	Parameter N bound to: 3 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'register__parameterized0' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized0' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v:23]
 	Parameter N bound to: 3 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'register__parameterized0' (15#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v:23]
-INFO: [Synth 8-256] done synthesizing module 'delay_line__parameterized0' (15#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/delay_line.v:23]
-INFO: [Synth 8-256] done synthesizing module 'rgb2ycbcr' (16#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/rgb2ycbcr.v:23]
-INFO: [Synth 8-256] done synthesizing module 'rgb2ycbcr_0' (17#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/synth/rgb2ycbcr_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'ycbcr2bin_0' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/ycbcr2bin_0/synth/ycbcr2bin_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'ycbcr2bin' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/ycbcr2bin_0/src/ycbcr2bin.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized0' (15#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay_line__parameterized0' (15#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/delay_line.v:23]
+INFO: [Synth 8-256] done synthesizing module 'rgb2ycbcr' (16#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/rgb2ycbcr.v:23]
+INFO: [Synth 8-256] done synthesizing module 'rgb2ycbcr_0' (17#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/synth/rgb2ycbcr_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'ycbcr2bin_0' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/ycbcr2bin_0/synth/ycbcr2bin_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'ycbcr2bin' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/ycbcr2bin_0/src/ycbcr2bin.v:23]
 	Parameter Ta bound to: 0 - type: integer 
 	Parameter Tb bound to: 115 - type: integer 
 	Parameter Tc bound to: 145 - type: integer 
 	Parameter Td bound to: 170 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'ycbcr2bin' (18#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/ycbcr2bin_0/src/ycbcr2bin.v:23]
-INFO: [Synth 8-256] done synthesizing module 'ycbcr2bin_0' (19#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/ycbcr2bin_0/synth/ycbcr2bin_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'centroid_0' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/synth/centroid_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'centroid' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/centroid.v:23]
-INFO: [Synth 8-638] synthesizing module 'accu_c' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/accu.v:23]
-INFO: [Synth 8-638] synthesizing module 'register_c' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/register.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ycbcr2bin' (18#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/ycbcr2bin_0/src/ycbcr2bin.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ycbcr2bin_0' (19#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/ycbcr2bin_0/synth/ycbcr2bin_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'centroid_0' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/synth/centroid_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'centroid' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/centroid.v:23]
+INFO: [Synth 8-638] synthesizing module 'accu_c' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/accu.v:23]
+INFO: [Synth 8-638] synthesizing module 'register_c' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/register.v:23]
 	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'register_c' (20#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/register.v:23]
-INFO: [Synth 8-638] synthesizing module 'c_addsub_1' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/c_addsub_1/synth/c_addsub_1.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'register_c' (20#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/register.v:23]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_1' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/c_addsub_1/synth/c_addsub_1.vhd:67]
 	Parameter C_VERBOSITY bound to: 0 - type: integer 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_IMPLEMENTATION bound to: 1 - type: integer 
@@ -151,11 +148,11 @@ INFO: [Synth 8-638] synthesizing module 'c_addsub_1' [/home/kacper/sr/SystemyRek
 	Parameter C_HAS_SCLR bound to: 0 - type: integer 
 	Parameter C_HAS_SSET bound to: 0 - type: integer 
 	Parameter C_HAS_SINIT bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'c_addsub_v12_0_11' declared at '/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/c_addsub_0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_11' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/c_addsub_1/synth/c_addsub_1.vhd:130]
-INFO: [Synth 8-256] done synthesizing module 'c_addsub_1' (26#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/c_addsub_1/synth/c_addsub_1.vhd:67]
-INFO: [Synth 8-256] done synthesizing module 'accu_c' (27#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/accu.v:23]
-INFO: [Synth 8-638] synthesizing module 'divider_32_20_0' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/synth/divider_32_20_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'divider_32_20' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/divider_32_20.v:8]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_11' declared at '/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/c_addsub_0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_11' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/c_addsub_1/synth/c_addsub_1.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_1' (26#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/c_addsub_1/synth/c_addsub_1.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'accu_c' (27#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/accu.v:23]
+INFO: [Synth 8-638] synthesizing module 'divider_32_20_0' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/synth/divider_32_20_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'divider_32_20' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/divider_32_20.v:8]
 	Parameter LATENCY bound to: 4 - type: integer 
 	Parameter DIVIDEND_W bound to: 32 - type: integer 
 	Parameter DIVISOR_W bound to: 20 - type: integer 
@@ -164,9 +161,9 @@ INFO: [Synth 8-638] synthesizing module 'divider_32_20' [/home/kacper/sr/Systemy
 	Parameter DIV bound to: 2'b01 
 	Parameter NOP bound to: 2'b10 
 	Parameter END bound to: 2'b11 
-INFO: [Synth 8-638] synthesizing module 'mult_32_20_lm' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:68]
-WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:71]
-WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'mult_32_20_lm' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:68]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:71]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:71]
 	Parameter C_VERBOSITY bound to: 0 - type: integer 
 	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
 	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
@@ -187,29 +184,29 @@ WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/home/
 	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
 	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
 	Parameter C_ROUND_PT bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'mult_gen_v12_0_13' declared at '/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/mult_gen_0/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_13' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:120]
-INFO: [Synth 8-256] done synthesizing module 'mult_32_20_lm' (28#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:68]
-INFO: [Synth 8-256] done synthesizing module 'divider_32_20' (29#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/divider_32_20.v:8]
-INFO: [Synth 8-256] done synthesizing module 'divider_32_20_0' (30#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/synth/divider_32_20_0.v:56]
-INFO: [Synth 8-256] done synthesizing module 'centroid' (31#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/centroid.v:23]
-INFO: [Synth 8-256] done synthesizing module 'centroid_0' (32#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/synth/centroid_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'vis_centroid_0' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/synth/vis_centroid_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'vis_centroid' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/src/vis_centroid.v:23]
-WARNING: [Synth 8-6014] Unused sequential element prev_v_sync_reg was removed.  [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/src/vis_centroid.v:63]
-INFO: [Synth 8-256] done synthesizing module 'vis_centroid' (33#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/src/vis_centroid.v:23]
-INFO: [Synth 8-256] done synthesizing module 'vis_centroid_0' (34#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/synth/vis_centroid_0.v:56]
-WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (11) of module 'vis_centroid_0' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:95]
-WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (11) of module 'vis_centroid_0' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:96]
-INFO: [Synth 8-638] synthesizing module 'median5x5_0' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/synth/median5x5_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'median5x5' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:23]
-	Parameter H_SIZE bound to: 83 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'register_median' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v:23]
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_13' declared at '/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/mult_gen_0/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_13' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'mult_32_20_lm' (28#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'divider_32_20' (29#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/divider_32_20.v:8]
+INFO: [Synth 8-256] done synthesizing module 'divider_32_20_0' (30#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/synth/divider_32_20_0.v:56]
+INFO: [Synth 8-256] done synthesizing module 'centroid' (31#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/centroid.v:23]
+INFO: [Synth 8-256] done synthesizing module 'centroid_0' (32#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/synth/centroid_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'vis_centroid_0' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/synth/vis_centroid_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'vis_centroid' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/src/vis_centroid.v:23]
+WARNING: [Synth 8-6014] Unused sequential element prev_v_sync_reg was removed.  [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/src/vis_centroid.v:63]
+INFO: [Synth 8-256] done synthesizing module 'vis_centroid' (33#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/src/vis_centroid.v:23]
+INFO: [Synth 8-256] done synthesizing module 'vis_centroid_0' (34#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/synth/vis_centroid_0.v:56]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (11) of module 'vis_centroid_0' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:95]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (11) of module 'vis_centroid_0' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:96]
+INFO: [Synth 8-638] synthesizing module 'median5x5_0' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/synth/median5x5_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'median5x5' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:23]
+	Parameter H_SIZE bound to: 1650 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'register_median' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v:23]
 	Parameter N bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'register_median' (35#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v:23]
-INFO: [Synth 8-638] synthesizing module 'delayLineBRAM_WP' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:21]
+INFO: [Synth 8-256] done synthesizing module 'register_median' (35#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v:23]
+INFO: [Synth 8-638] synthesizing module 'delayLineBRAM_WP' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:21]
 	Parameter WIDTH bound to: 16 - type: integer 
 	Parameter BRAM_SIZE_W bound to: 13 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'delayLineBRAM' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM/synth/delayLineBRAM.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'delayLineBRAM' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM/synth/delayLineBRAM.vhd:69]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -283,37 +280,37 @@ INFO: [Synth 8-638] synthesizing module 'delayLineBRAM' [/home/kacper/sr/Systemy
 	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.8620000000000001 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at '/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM/synth/delayLineBRAM.vhd:232]
-INFO: [Synth 8-256] done synthesizing module 'delayLineBRAM' (44#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM/synth/delayLineBRAM.vhd:69]
-WARNING: [Synth 8-689] width (13) of port connection 'addra' does not match port width (11) of module 'delayLineBRAM' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:69]
-WARNING: [Synth 8-689] width (16) of port connection 'dina' does not match port width (17) of module 'delayLineBRAM' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:70]
-WARNING: [Synth 8-689] width (16) of port connection 'douta' does not match port width (17) of module 'delayLineBRAM' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:71]
-INFO: [Synth 8-256] done synthesizing module 'delayLineBRAM_WP' (45#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:21]
-INFO: [Synth 8-638] synthesizing module 'delay_line_median' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v:23]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at '/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM/synth/delayLineBRAM.vhd:232]
+INFO: [Synth 8-256] done synthesizing module 'delayLineBRAM' (44#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM/synth/delayLineBRAM.vhd:69]
+WARNING: [Synth 8-689] width (13) of port connection 'addra' does not match port width (11) of module 'delayLineBRAM' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:69]
+WARNING: [Synth 8-689] width (16) of port connection 'dina' does not match port width (17) of module 'delayLineBRAM' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:70]
+WARNING: [Synth 8-689] width (16) of port connection 'douta' does not match port width (17) of module 'delayLineBRAM' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:71]
+INFO: [Synth 8-256] done synthesizing module 'delayLineBRAM_WP' (45#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:21]
+INFO: [Synth 8-638] synthesizing module 'delay_line_median' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v:23]
 	Parameter DELAY bound to: 2 - type: integer 
 	Parameter N bound to: 3 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'register_median__parameterized0' [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v:23]
+INFO: [Synth 8-638] synthesizing module 'register_median__parameterized0' [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v:23]
 	Parameter N bound to: 3 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'register_median__parameterized0' (45#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v:23]
-WARNING: [Synth 8-350] instance 'reg_i' of module 'register_median' requires 5 connections, but only 4 given [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v:45]
-WARNING: [Synth 8-350] instance 'reg_i' of module 'register_median' requires 5 connections, but only 4 given [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v:45]
-INFO: [Synth 8-256] done synthesizing module 'delay_line_median' (46#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v:23]
-INFO: [Synth 8-256] done synthesizing module 'median5x5' (47#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:23]
-INFO: [Synth 8-256] done synthesizing module 'median5x5_0' (48#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/synth/median5x5_0.v:56]
-WARNING: [Synth 8-3848] Net de_mux[7] in module/entity vp does not have driver. [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:41]
-WARNING: [Synth 8-3848] Net de_mux[6] in module/entity vp does not have driver. [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:41]
-WARNING: [Synth 8-3848] Net de_mux[5] in module/entity vp does not have driver. [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:41]
-WARNING: [Synth 8-3848] Net h_sync_mux[7] in module/entity vp does not have driver. [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:42]
-WARNING: [Synth 8-3848] Net h_sync_mux[6] in module/entity vp does not have driver. [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:42]
-WARNING: [Synth 8-3848] Net h_sync_mux[5] in module/entity vp does not have driver. [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:42]
-WARNING: [Synth 8-3848] Net v_sync_mux[7] in module/entity vp does not have driver. [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:43]
-WARNING: [Synth 8-3848] Net v_sync_mux[6] in module/entity vp does not have driver. [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:43]
-WARNING: [Synth 8-3848] Net v_sync_mux[5] in module/entity vp does not have driver. [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:43]
-WARNING: [Synth 8-3848] Net rgb_mux[7] in module/entity vp does not have driver. [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:40]
-WARNING: [Synth 8-3848] Net rgb_mux[6] in module/entity vp does not have driver. [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:40]
-WARNING: [Synth 8-3848] Net rgb_mux[5] in module/entity vp does not have driver. [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:40]
-INFO: [Synth 8-256] done synthesizing module 'vp' (49#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:23]
-INFO: [Synth 8-256] done synthesizing module 'vp_0' (50#1) [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/synth/vp_0.v:56]
+INFO: [Synth 8-256] done synthesizing module 'register_median__parameterized0' (45#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v:23]
+WARNING: [Synth 8-350] instance 'reg_i' of module 'register_median' requires 5 connections, but only 4 given [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v:45]
+WARNING: [Synth 8-350] instance 'reg_i' of module 'register_median' requires 5 connections, but only 4 given [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v:45]
+INFO: [Synth 8-256] done synthesizing module 'delay_line_median' (46#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v:23]
+INFO: [Synth 8-256] done synthesizing module 'median5x5' (47#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:23]
+INFO: [Synth 8-256] done synthesizing module 'median5x5_0' (48#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/synth/median5x5_0.v:56]
+WARNING: [Synth 8-3848] Net de_mux[7] in module/entity vp does not have driver. [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:41]
+WARNING: [Synth 8-3848] Net de_mux[6] in module/entity vp does not have driver. [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:41]
+WARNING: [Synth 8-3848] Net de_mux[5] in module/entity vp does not have driver. [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:41]
+WARNING: [Synth 8-3848] Net h_sync_mux[7] in module/entity vp does not have driver. [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:42]
+WARNING: [Synth 8-3848] Net h_sync_mux[6] in module/entity vp does not have driver. [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:42]
+WARNING: [Synth 8-3848] Net h_sync_mux[5] in module/entity vp does not have driver. [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:42]
+WARNING: [Synth 8-3848] Net v_sync_mux[7] in module/entity vp does not have driver. [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:43]
+WARNING: [Synth 8-3848] Net v_sync_mux[6] in module/entity vp does not have driver. [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:43]
+WARNING: [Synth 8-3848] Net v_sync_mux[5] in module/entity vp does not have driver. [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:43]
+WARNING: [Synth 8-3848] Net rgb_mux[7] in module/entity vp does not have driver. [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:40]
+WARNING: [Synth 8-3848] Net rgb_mux[6] in module/entity vp does not have driver. [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:40]
+WARNING: [Synth 8-3848] Net rgb_mux[5] in module/entity vp does not have driver. [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:40]
+INFO: [Synth 8-256] done synthesizing module 'vp' (49#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vp.v:23]
+INFO: [Synth 8-256] done synthesizing module 'vp_0' (50#1) [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/synth/vp_0.v:56]
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SSRA
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port CLKB
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SSRB
@@ -416,7 +413,7 @@ WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[15]
 WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[14]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:25 ; elapsed = 00:01:39 . Memory (MB): peak = 1521.465 ; gain = 339.148 ; free physical = 428 ; free virtual = 6865
+Finished RTL Elaboration : Time (s): cpu = 00:01:24 ; elapsed = 00:01:43 . Memory (MB): peak = 1574.676 ; gain = 344.145 ; free physical = 3770 ; free virtual = 22310
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -425,10 +422,10 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin genblk1.genblk1[0].reg_i:rst to constant 0 [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v:45]
-WARNING: [Synth 8-3295] tying undriven pin genblk1.genblk1[1].reg_i:rst to constant 0 [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v:45]
+WARNING: [Synth 8-3295] tying undriven pin genblk1.genblk1[0].reg_i:rst to constant 0 [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v:45]
+WARNING: [Synth 8-3295] tying undriven pin genblk1.genblk1[1].reg_i:rst to constant 0 [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v:45]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:25 ; elapsed = 00:01:39 . Memory (MB): peak = 1521.465 ; gain = 339.148 ; free physical = 433 ; free virtual = 6871
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:24 ; elapsed = 00:01:44 . Memory (MB): peak = 1574.676 ; gain = 344.145 ; free physical = 3777 ; free virtual = 22317
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 143 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -437,36 +434,36 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/vp_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/vp_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/vp_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/vp_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1597.480 ; gain = 0.000 ; free physical = 163 ; free virtual = 6609
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1688.832 ; gain = 0.000 ; free physical = 3125 ; free virtual = 21685
 CRITICAL WARNING: [filemgmt 20-1741] File 'delay_line.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:
-* median5x5_0 (/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v)
-* rgb2ycbcr_0 (/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/delay_line.v)
+* median5x5_0 (/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delay_line.v)
+* rgb2ycbcr_0 (/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/delay_line.v)
 Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
 CRITICAL WARNING: [filemgmt 20-1741] File 'register.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:
-* median5x5_0 (/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v)
-* rgb2ycbcr_0 (/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v)
+* median5x5_0 (/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v)
+* rgb2ycbcr_0 (/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v)
 Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
 CRITICAL WARNING: [filemgmt 20-1741] File 'register.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:
-* median5x5_0 (/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v)
-* rgb2ycbcr_0 (/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v)
-* centroid_0 (/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/register.v)
+* median5x5_0 (/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/register.v)
+* rgb2ycbcr_0 (/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/rgb2ycbcr_0/src/register.v)
+* centroid_0 (/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/register.v)
 Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:42 ; elapsed = 00:02:10 . Memory (MB): peak = 1597.480 ; gain = 415.164 ; free physical = 236 ; free virtual = 6685
+Finished Constraint Validation : Time (s): cpu = 00:01:41 ; elapsed = 00:02:20 . Memory (MB): peak = 1688.832 ; gain = 458.301 ; free physical = 3204 ; free virtual = 21764
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:42 ; elapsed = 00:02:10 . Memory (MB): peak = 1597.480 ; gain = 415.164 ; free physical = 236 ; free virtual = 6685
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:41 ; elapsed = 00:02:20 . Memory (MB): peak = 1688.832 ; gain = 458.301 ; free physical = 3204 ; free virtual = 21764
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -501,23 +498,23 @@ Applied set_property DONT_TOUCH = true for inst/my_median. (constraint file  aut
 Applied set_property DONT_TOUCH = true for inst/my_median/inst/long_delay/BRAM. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/my_vis. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:42 ; elapsed = 00:02:10 . Memory (MB): peak = 1597.480 ; gain = 415.164 ; free physical = 238 ; free virtual = 6687
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:41 ; elapsed = 00:02:20 . Memory (MB): peak = 1688.832 ; gain = 458.301 ; free physical = 3206 ; free virtual = 21766
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element x_pos_reg was removed.  [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/centroid.v:52]
-WARNING: [Synth 8-6014] Unused sequential element m_00_reg_reg was removed.  [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/centroid.v:70]
-WARNING: [Synth 8-6014] Unused sequential element x_pos_reg was removed.  [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/src/vis_centroid.v:48]
-WARNING: [Synth 8-6014] Unused sequential element position_reg was removed.  [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:51]
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:82]
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:79]
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:80]
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:81]
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:78]
+WARNING: [Synth 8-6014] Unused sequential element x_pos_reg was removed.  [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/centroid.v:52]
+WARNING: [Synth 8-6014] Unused sequential element m_00_reg_reg was removed.  [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/centroid.v:70]
+WARNING: [Synth 8-6014] Unused sequential element x_pos_reg was removed.  [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/src/vis_centroid.v:48]
+WARNING: [Synth 8-6014] Unused sequential element position_reg was removed.  [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:51]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:82]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:79]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:80]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:81]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/median5x5.v:78]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:43 ; elapsed = 00:02:11 . Memory (MB): peak = 1597.480 ; gain = 415.164 ; free physical = 227 ; free virtual = 6676
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:41 ; elapsed = 00:02:20 . Memory (MB): peak = 1688.832 ; gain = 458.301 ; free physical = 3197 ; free virtual = 21757
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -551,10 +548,10 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "inst/i" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "inst/i" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element inst/m_00_reg_reg was removed.  [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/centroid.v:70]
-WARNING: [Synth 8-6014] Unused sequential element inst/x_pos_reg was removed.  [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/centroid.v:52]
-WARNING: [Synth 8-6014] Unused sequential element inst/x_pos_reg was removed.  [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/src/vis_centroid.v:48]
-WARNING: [Synth 8-6014] Unused sequential element inst/long_delay/position_reg was removed.  [/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:51]
+WARNING: [Synth 8-6014] Unused sequential element inst/m_00_reg_reg was removed.  [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/centroid.v:70]
+WARNING: [Synth 8-6014] Unused sequential element inst/x_pos_reg was removed.  [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/centroid.v:52]
+WARNING: [Synth 8-6014] Unused sequential element inst/x_pos_reg was removed.  [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/vis_centroid_0/src/vis_centroid.v:48]
+WARNING: [Synth 8-6014] Unused sequential element inst/long_delay/position_reg was removed.  [/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/median5x5_0/src/delayLineBRAM_WP.v:51]
 INFO: [Synth 8-3332] Sequential element (inst/genblk1.genblk1[24].genblk1[0].r_i/val_reg[1]) is unused and will be removed from module median5x5_0.
 INFO: [Synth 8-3332] Sequential element (inst/genblk1.genblk1[24].genblk1[0].r_i/val_reg[0]) is unused and will be removed from module median5x5_0.
 INFO: [Synth 8-3332] Sequential element (inst/genblk1.genblk1[24].genblk1[1].r_i/val_reg[1]) is unused and will be removed from module median5x5_0.
@@ -566,7 +563,7 @@ INFO: [Synth 8-3332] Sequential element (inst/genblk1.genblk1[24].genblk1[3].r_i
 INFO: [Synth 8-3332] Sequential element (inst/genblk1.genblk1[24].genblk1[4].r_i/val_reg[1]) is unused and will be removed from module median5x5_0.
 INFO: [Synth 8-3332] Sequential element (inst/genblk1.genblk1[24].genblk1[4].r_i/val_reg[0]) is unused and will be removed from module median5x5_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:45 ; elapsed = 00:02:13 . Memory (MB): peak = 1597.480 ; gain = 415.164 ; free physical = 234 ; free virtual = 6682
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:43 ; elapsed = 00:02:23 . Memory (MB): peak = 1688.832 ; gain = 458.301 ; free physical = 3184 ; free virtual = 21744
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -578,13 +575,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:52 ; elapsed = 00:02:23 . Memory (MB): peak = 1663.480 ; gain = 481.164 ; free physical = 126 ; free virtual = 6504
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:52 ; elapsed = 00:02:35 . Memory (MB): peak = 1722.816 ; gain = 492.285 ; free physical = 2895 ; free virtual = 21445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:52 ; elapsed = 00:02:23 . Memory (MB): peak = 1664.480 ; gain = 482.164 ; free physical = 125 ; free virtual = 6504
+Finished Timing Optimization : Time (s): cpu = 00:01:52 ; elapsed = 00:02:35 . Memory (MB): peak = 1722.816 ; gain = 492.285 ; free physical = 2895 ; free virtual = 21445
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -602,7 +599,7 @@ INFO: [Synth 8-3886] merging instance 'inst/my_median/inst/genblk1.genblk1[12].g
 INFO: [Synth 8-3886] merging instance 'inst/my_median/inst/synch_delay/genblk1.genblk1[0].reg_i/val_reg[2]' (FDR) to 'inst/my_median/inst/genblk1.genblk1[12].genblk1[3].r_i/val_reg[2]'
 INFO: [Synth 8-3886] merging instance 'inst/my_median/inst/genblk1.genblk1[12].genblk1[4].r_i/val_reg[2]' (FDR) to 'inst/my_median/inst/synch_delay/genblk1.genblk1[1].reg_i/val_reg[2]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:53 ; elapsed = 00:02:24 . Memory (MB): peak = 1685.520 ; gain = 503.203 ; free physical = 133 ; free virtual = 6501
+Finished Technology Mapping : Time (s): cpu = 00:01:52 ; elapsed = 00:02:36 . Memory (MB): peak = 1744.855 ; gain = 514.324 ; free physical = 2859 ; free virtual = 21409
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -626,7 +623,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:53 ; elapsed = 00:02:25 . Memory (MB): peak = 1685.520 ; gain = 503.203 ; free physical = 132 ; free virtual = 6500
+Finished IO Insertion : Time (s): cpu = 00:01:53 ; elapsed = 00:02:37 . Memory (MB): peak = 1744.855 ; gain = 514.324 ; free physical = 2850 ; free virtual = 21400
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -639,7 +636,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:53 ; elapsed = 00:02:25 . Memory (MB): peak = 1685.520 ; gain = 503.203 ; free physical = 132 ; free virtual = 6500
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:53 ; elapsed = 00:02:37 . Memory (MB): peak = 1744.855 ; gain = 514.324 ; free physical = 2849 ; free virtual = 21400
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -651,25 +648,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:53 ; elapsed = 00:02:25 . Memory (MB): peak = 1685.520 ; gain = 503.203 ; free physical = 132 ; free virtual = 6500
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:53 ; elapsed = 00:02:37 . Memory (MB): peak = 1744.855 ; gain = 514.324 ; free physical = 2846 ; free virtual = 21396
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:53 ; elapsed = 00:02:25 . Memory (MB): peak = 1685.520 ; gain = 503.203 ; free physical = 132 ; free virtual = 6500
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:53 ; elapsed = 00:02:37 . Memory (MB): peak = 1744.855 ; gain = 514.324 ; free physical = 2845 ; free virtual = 21395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:54 ; elapsed = 00:02:25 . Memory (MB): peak = 1685.520 ; gain = 503.203 ; free physical = 132 ; free virtual = 6500
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:53 ; elapsed = 00:02:37 . Memory (MB): peak = 1744.855 ; gain = 514.324 ; free physical = 2846 ; free virtual = 21396
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:54 ; elapsed = 00:02:25 . Memory (MB): peak = 1685.520 ; gain = 503.203 ; free physical = 132 ; free virtual = 6500
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:53 ; elapsed = 00:02:37 . Memory (MB): peak = 1744.855 ; gain = 514.324 ; free physical = 2847 ; free virtual = 21397
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -705,11 +702,11 @@ Report Cell Usage:
 |18    |FDSE      |    10|
 +------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:54 ; elapsed = 00:02:25 . Memory (MB): peak = 1685.520 ; gain = 503.203 ; free physical = 132 ; free virtual = 6500
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:53 ; elapsed = 00:02:37 . Memory (MB): peak = 1744.855 ; gain = 514.324 ; free physical = 2847 ; free virtual = 21397
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 203 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:44 ; elapsed = 00:02:03 . Memory (MB): peak = 1685.520 ; gain = 427.188 ; free physical = 211 ; free virtual = 6579
-Synthesis Optimization Complete : Time (s): cpu = 00:01:54 ; elapsed = 00:02:25 . Memory (MB): peak = 1685.527 ; gain = 503.203 ; free physical = 211 ; free virtual = 6579
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:43 ; elapsed = 00:02:08 . Memory (MB): peak = 1744.855 ; gain = 400.168 ; free physical = 2929 ; free virtual = 21479
+Synthesis Optimization Complete : Time (s): cpu = 00:01:54 ; elapsed = 00:02:37 . Memory (MB): peak = 1744.863 ; gain = 514.324 ; free physical = 2936 ; free virtual = 21486
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 206 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -720,13 +717,13 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   (MUXCY,XORCY) => CARRY4: 24 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-105 Infos, 135 Warnings, 6 Critical Warnings and 0 Errors encountered.
+104 Infos, 135 Warnings, 6 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:55 ; elapsed = 00:02:26 . Memory (MB): peak = 1685.527 ; gain = 528.035 ; free physical = 214 ; free virtual = 6584
-INFO: [Common 17-1381] The checkpoint '/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/vp_0_synth_1/vp_0.dcp' has been generated.
-INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/vp_0.xci
+synth_design: Time (s): cpu = 00:01:56 ; elapsed = 00:02:39 . Memory (MB): peak = 1776.871 ; gain = 571.168 ; free physical = 2930 ; free virtual = 21480
+INFO: [Common 17-1381] The checkpoint '/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/vp_0_synth_1/vp_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/vp_0.xci
 INFO: [Coretcl 2-1174] Renamed 176 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/vp_0_synth_1/vp_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/vp_0_synth_1/vp_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file vp_0_utilization_synth.rpt -pb vp_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1709.531 ; gain = 0.000 ; free physical = 278 ; free virtual = 6545
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 15 19:28:17 2018...
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1800.883 ; gain = 0.000 ; free physical = 2932 ; free virtual = 21484
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 18 10:18:02 2018...

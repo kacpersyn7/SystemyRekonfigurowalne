@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:median5x5:1.0
-// IP Revision: 9
+// IP Revision: 10
 
 `timescale 1ns/1ps
 
@@ -78,7 +78,7 @@ output wire v_sync_out;
 output wire [23 : 0] pixel_out;
 
   median5x5 #(
-    .H_SIZE(83)
+    .H_SIZE(1650)
   ) inst (
     .clk(clk),
     .de_in(de_in),

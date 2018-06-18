@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:median5x5:1.0
-// IP Revision: 9
+// IP Revision: 10
 
 (* X_CORE_INFO = "median5x5,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "median5x5_0,median5x5,{}" *)
@@ -78,7 +78,7 @@ output wire v_sync_out;
 output wire [23 : 0] pixel_out;
 
   median5x5 #(
-    .H_SIZE(83)
+    .H_SIZE(1650)
   ) inst (
     .clk(clk),
     .de_in(de_in),

@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module median5x5 # (parameter H_SIZE = 83) 
+module median5x5 # (parameter H_SIZE = 1650) 
 (
     input clk,
     input de_in,
@@ -75,11 +75,11 @@ delayLineBRAM_WP  long_delay
 );
 always @(posedge clk)
 begin 
-    part_sum_0 <= D[1] + D[2] + D[3] + D[4] + D[5];
-    part_sum_1 <= D[7] + D[8] + D[9] + D[10] + D[11];
-    part_sum_2 <= D[13] + D[14] + D[15] + D[16] + D[17];
-    part_sum_3 <= D[19] + D[20] + D[21] + D[22] + D[23];
-    part_sum_4 <= D[25] + D[26] + D[27] + D[28] + D[29];
+    part_sum_0 <= D[1][3] + D[2][3] + D[3][3] + D[4][3] + D[5][3];
+    part_sum_1 <= D[7][3] + D[8][3] + D[9][3] + D[10][3] + D[11][3];
+    part_sum_2 <= D[13][3] + D[14][3] + D[15][3] + D[16][3] + D[17][3];
+    part_sum_3 <= D[19][3] + D[20][3] + D[21][3] + D[22][3] + D[23][3];
+    part_sum_4 <= D[25][3] + D[26][3] + D[27][3] + D[28][3] + D[29][3];
     sum <= part_sum_0 + part_sum_1 + part_sum_2 + part_sum_3 + part_sum_4;
 end
 assign context_valid = D[1][2] & D[2][2] & D[3][2] & D[4][2] & D[5][2] &

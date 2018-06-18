@@ -88,7 +88,6 @@ vlog -work xil_defaultlib -64 \
 
 vcom -work xil_defaultlib -64 -93 \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/c_addsub_1/sim/c_addsub_1.vhd" \
-"../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/mult_32_20_lm/sim/mult_32_20_lm.vhd" \
 
 vlog -work xil_defaultlib -64 \
 "../../../../hdmi_vga_zybo.srcs/sources_1/ip/vp_0_2/src/centroid_0_3/src/divider_32_20_0/src/divider_32_20.v" \

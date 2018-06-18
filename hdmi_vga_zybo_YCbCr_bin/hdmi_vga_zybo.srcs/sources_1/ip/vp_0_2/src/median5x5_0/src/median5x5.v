@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module median5x5 # (parameter H_SIZE = 83) 
+module median5x5 # (parameter H_SIZE = 1650) 
 (
     input clk,
     input de_in,
