@@ -24,6 +24,7 @@ module processor
 (
     input clk
 );
+wire [25:0] instr;
 wire [1:0] pc_op;
 wire [1:0] alu_op;
 wire [2:0] rx_op;
@@ -47,8 +48,11 @@ wire [7:0] r3_out;
 wire [7:0] r4_out;
 wire [7:0] r5_out;
 wire [7:0] r6_out;
-wire [7:0] r7_out;
-
+wire [7:0] pc_addr;
+wire [7:0] counter_out;
+wire [7:0] pc_mux_out;
+wire jump_condition;
+reg [7:0] r7_plus;
 decoder dec
 (
     .x(d_op),
@@ -60,8 +64,14 @@ mux_2 rd_mux
     .a(rd_op),
     .y(rd_mux_out)
 );
+mux_2 pc_mux
+(
+    .x({alu_res, counter_out}),//test this
+    .a(jump_condition),
+    .y(pc_mux_out)
+);
 
-
+//registers
 register r0
 (
     .clk(clk),
@@ -104,4 +114,24 @@ register r5
     .d(rd_mux_out),
     .q(r5_out)
 );
+register r6
+(
+    .clk(clk),
+    .ce(decoder_out[6]),
+    .d(0),
+    .q(r6_out)
+);
+register r7
+(
+    .clk(clk),
+    .ce(1'b1),
+    .d(pc_mux_out),
+    .q(pc_addr)
+);
+
+always @(posedge clk)
+begin 
+    r7_plus <= pc_addr + 1;    
+end
+assign counter_out = r7_plus;
 endmodule
