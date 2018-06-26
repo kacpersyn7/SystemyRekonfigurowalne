@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Tue Jun 26 23:08:50 2018
-# Process ID: 7817
+# Start of session at: Tue Jun 26 23:07:21 2018
+# Process ID: 6059
 # Current directory: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/impl_1
 # Command line: vivado -log hdmi_vga_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source hdmi_vga_wrapper.tcl -notrace
 # Log file: /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.runs/impl_1/hdmi_vga_wrapper.vdi

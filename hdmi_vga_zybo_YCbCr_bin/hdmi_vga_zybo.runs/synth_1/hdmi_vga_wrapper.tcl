@@ -22,34 +22,34 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.cache/wt [current_project]
-set_property parent.project_path /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.xpr [current_project]
+set_property webtalk.parent_dir /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.cache/wt [current_project]
+set_property parent.project_path /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
 set_property ip_repo_paths {
-  /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_ip_repo
-  /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/my_ip_cores/median_ip
-  /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/centroid_ip_new
-  /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/rgb2ycbcr_ip
-  /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/good_vp
-  /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/my_ip_cores/ycbcr2bin_ip
-  /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/upel_ip_cores
-  /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/my_ip_cores/vis_centroid_ip
-  /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/my_ip_cores/circle_ip
+  /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_ip_repo
+  /home/kacper/sr/SystemyRekonfigurowalne/my_ip_cores/median_ip
+  /home/kacper/sr/SystemyRekonfigurowalne/centroid_ip_new
+  /home/kacper/sr/SystemyRekonfigurowalne/rgb2ycbcr_ip
+  /home/kacper/sr/SystemyRekonfigurowalne/good_vp
+  /home/kacper/sr/SystemyRekonfigurowalne/my_ip_cores/ycbcr2bin_ip
+  /home/kacper/sr/SystemyRekonfigurowalne/upel_ip_cores
+  /home/kacper/sr/SystemyRekonfigurowalne/my_ip_cores/vis_centroid_ip
+  /home/kacper/sr/SystemyRekonfigurowalne/my_ip_cores/circle_ip
 } [current_project]
-set_property ip_output_repo /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.cache/ip [current_project]
+set_property ip_output_repo /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v
-add_files /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd
-set_property used_in_implementation false [get_files -all /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb.xdc]
-set_property used_in_implementation false [get_files -all /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0_1/src/median5x5_0/src/delayLineBRAM/delayLineBRAM_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdmi_vga_ooc.xdc]
+read_verilog -library xil_defaultlib /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v
+add_files /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd
+set_property used_in_implementation false [get_files -all /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb.xdc]
+set_property used_in_implementation false [get_files -all /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0_1/src/median5x5_0/src/delayLineBRAM/delayLineBRAM_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdmi_vga_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -59,8 +59,8 @@ set_property used_in_implementation false [get_files -all /home/lsriw/sr/Synowie
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc
-set_property used_in_implementation false [get_files /home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
+read_xdc /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc
+set_property used_in_implementation false [get_files /home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

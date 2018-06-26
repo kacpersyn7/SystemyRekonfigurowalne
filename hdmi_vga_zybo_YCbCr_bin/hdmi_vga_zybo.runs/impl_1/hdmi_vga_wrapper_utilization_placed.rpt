@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-| Date         : Mon Jun 18 10:22:20 2018
-| Host         : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
+| Date         : Tue Jun 26 23:08:24 2018
+| Host         : kacper-pc running 64-bit Manjaro Linux
 | Command      : report_utilization -file hdmi_vga_wrapper_utilization_placed.rpt -pb hdmi_vga_wrapper_utilization_placed.pb
 | Design       : hdmi_vga_wrapper
 | Device       : 7z010clg400-1

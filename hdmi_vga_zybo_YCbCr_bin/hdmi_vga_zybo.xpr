@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="35" Path="/home/lsriw/sr/SynowiecKacper/git_ostatni/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.xpr">
+<Project Version="7" Minor="35" Path="/home/kacper/sr/SystemyRekonfigurowalne/hdmi_vga_zybo_YCbCr_bin/hdmi_vga_zybo.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="e5904acf00a54a1e9a3fb0dd3d2b91cb"/>
@@ -48,13 +48,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="73"/>
-    <Option Name="WTModelSimExportSim" Val="73"/>
-    <Option Name="WTQuestaExportSim" Val="73"/>
-    <Option Name="WTIesExportSim" Val="73"/>
-    <Option Name="WTVcsExportSim" Val="73"/>
-    <Option Name="WTRivieraExportSim" Val="73"/>
-    <Option Name="WTActivehdlExportSim" Val="73"/>
+    <Option Name="WTXSimExportSim" Val="74"/>
+    <Option Name="WTModelSimExportSim" Val="74"/>
+    <Option Name="WTQuestaExportSim" Val="74"/>
+    <Option Name="WTIesExportSim" Val="74"/>
+    <Option Name="WTVcsExportSim" Val="74"/>
+    <Option Name="WTRivieraExportSim" Val="74"/>
+    <Option Name="WTActivehdlExportSim" Val="74"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -71,11 +71,11 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_rgb2vga_0_0/hdmi_vga_rgb2vga_0_0.xci">
-          <Proxy FileSetName="hdmi_vga_rgb2vga_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0.xci">
           <Proxy FileSetName="hdmi_vga_dvi2rgb_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_rgb2vga_0_0/hdmi_vga_rgb2vga_0_0.xci">
+          <Proxy FileSetName="hdmi_vga_rgb2vga_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v">
@@ -86,6 +86,14 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/ip/ycbcr2bin_0/ycbcr2bin_0.xci">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/vp_0_2/vp_0.xci">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -194,20 +202,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="vp_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vp_0">
-      <File Path="$PSRCDIR/sources_1/ip/vp_0_2/vp_0.xci">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="vp_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -258,15 +252,6 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="vp_0_synth_1" Type="Ft3:Synth" SrcSet="vp_0" Part="xc7z010clg400-1" ConstrsSet="vp_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/vp_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
@@ -301,22 +286,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="hdmi_vga_rgb2vga_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_vga_rgb2vga_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="hdmi_vga_rgb2vga_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="vp_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="vp_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="vp_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
