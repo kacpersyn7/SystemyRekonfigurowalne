@@ -40,7 +40,9 @@ wire [7:0] data_out;
 
 wire [7:0] rd_mux_out;
 wire [7:0] decoder_out;
-
+wire [7:0] rx_mux_out;
+wire [7:0] ry_mux_out;
+wire [7:0] imm_mux_out;
 wire [7:0] r0_out;
 wire [7:0] r1_out;
 wire [7:0] r2_out;
@@ -53,6 +55,7 @@ wire [7:0] counter_out;
 wire [7:0] pc_mux_out;
 wire jump_condition;
 reg [7:0] r7_plus;
+
 decoder dec
 (
     .x(d_op),
@@ -128,10 +131,29 @@ register r7
     .d(pc_mux_out),
     .q(pc_addr)
 );
-
+//pc
 always @(posedge clk)
 begin 
     r7_plus <= pc_addr + 1;    
 end
 assign counter_out = r7_plus;
+//muxes
+mux_8 rx_mux
+(
+    .x({r0_out, r1_out, r2_out, r3_out, r4_out, r5_out, r6_out, pc_addr}),
+    .a(rx_op),
+    .y(rx_mux_out)
+);
+mux_8 ry_mux
+(
+    .x({r0_out, r1_out, r2_out, r3_out, r4_out, r5_out, r6_out, pc_addr}),
+    .a(ry_op),
+    .y(ry_mux_out)
+);
+mux_2 imm_mux
+(
+    .x({ry_mux_out, imm}),
+    .a(imm_op),
+    .y(imm_mux_out)
+);
 endmodule

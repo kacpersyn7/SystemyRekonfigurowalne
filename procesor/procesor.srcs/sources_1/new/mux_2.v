@@ -22,7 +22,7 @@
 
 module mux_2
 (
-    input [1:0][7:0] x,
+    input [0:1][7:0] x,
     input a,
     output [7:0] y
 );

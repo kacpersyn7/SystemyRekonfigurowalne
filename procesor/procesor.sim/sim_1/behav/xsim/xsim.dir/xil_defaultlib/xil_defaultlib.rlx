@@ -1,0 +1,11 @@
+0.6
+2017.4
+Dec 15 2017
+20:57:24
+/home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+/home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.srcs/sim_1/new/tb_mux_8.v,1530046070,verilog,,,,tb_mux_8,,,,,,,,
+/home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.srcs/sources_1/imports/new/register.v,1529957103,verilog,,/home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.srcs/sources_1/new/processor.v,,register,,,,,,,,
+/home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.srcs/sources_1/new/decoder.v,1529957103,verilog,,/home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.srcs/sources_1/new/mux_2.v,,decoder,,,,,,,,
+/home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.srcs/sources_1/new/mux_2.v,1529957103,verilog,,/home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.srcs/sources_1/imports/new/register.v,,mux_2,,,,,,,,
+/home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.srcs/sources_1/new/mux_8.v,1530046165,verilog,,/home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.srcs/sim_1/new/tb_mux_8.v,,mux_8,,,,,,,,
+/home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.srcs/sources_1/new/processor.v,1530044564,verilog,,,,processor,,,,,,,,

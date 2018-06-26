@@ -22,7 +22,7 @@
 
 module mux_4
 (
-    input [3:0][7:0] x,
+    input [0:3][7:0] x,
     input [1:0] a,
     output [7:0] y
 );

@@ -22,7 +22,7 @@
 
 module mux_8
 (
-    input [7:0][7:0] x,
+    input [0:7][7:0] x,
     input [2:0]a,
     output [7:0] y
 );
