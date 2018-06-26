@@ -53,8 +53,21 @@ wire [7:0] r6_out;
 wire [7:0] pc_addr;
 wire [7:0] counter_out;
 wire [7:0] pc_mux_out;
-wire jump_condition;
+wire jump_condition_addr;
+wire [7:0] alu_and;
+wire [7:0] alu_sum;
+wire [7:0] alu_zero;
 reg [7:0] r7_plus;
+
+//assign instr
+assign pc_op = instr[25:24];
+assign alu_op = instr[21:20];
+assign rx_op = instr[18:16];
+assign imm_op = instr[15];
+assign ry_op = instr[14:12];
+assign rd_op = instr[11];
+assign d_op = instr[10:8];
+assign imm = instr[7:0];
 
 decoder dec
 (
@@ -70,7 +83,7 @@ mux_2 rd_mux
 mux_2 pc_mux
 (
     .x({alu_res, counter_out}),//test this
-    .a(jump_condition),
+    .a(jump_condition_addr),
     .y(pc_mux_out)
 );
 
@@ -155,5 +168,27 @@ mux_2 imm_mux
     .x({ry_mux_out, imm}),
     .a(imm_op),
     .y(imm_mux_out)
+);
+//alu
+alu my_alu
+(
+    .rx(rx_mux_out),
+    .ry(ry_mux_out),
+    .and_out(alu_and),
+    .adder_out(alu_sum),
+    .is_zero_out(alu_zero)
+);
+mux_4 alu_mux
+(
+    .x({alu_and, alu_sum, alu_zero, imm_mux_out}),
+    .a(alu_op),
+    .y(alu_res)
+);
+//jump
+jump_condition my_cond
+(
+    .cmp_res(alu_zero),
+    .pc_op(pc_op),
+    .cond_out(jump_condition_addr)
 );
 endmodule

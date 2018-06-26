@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 06/26/2018 11:05:41 PM
+// Create Date: 06/27/2018 12:05:42 AM
 // Design Name: 
-// Module Name: alu
+// Module Name: jump_condition
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,16 +20,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module alu
+module jump_condition
 (
-    input [7:0] rx,
-    input [7:0] ry,
-    output [7:0] and_out,
-    output [7:0] adder_out,
-    output [7:0] is_zero_out
+    input [7:0] cmp_res,
+    input [1:0] pc_op,
+    output cond_out
 );
-assign and_out = rx & ry;
-assign is_zero_out = rx == 0 ? 8'h01 : 0;
-assign adder_out = rx+ry;
-
+assign cond_out = pc_op == 0 ? 0 : 
+                  pc_op == 2'b01 ? 0 :
+                  pc_op == 2'b10 && cmp_res == 0 ? 0 : 
+                  pc_op == 2'b11 && cmp_res == 8'h01 ? 0 : 1'b1;
 endmodule
