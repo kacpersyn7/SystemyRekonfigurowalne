@@ -57,7 +57,6 @@ wire jump_condition_addr;
 wire [7:0] alu_and;
 wire [7:0] alu_sum;
 wire [7:0] alu_zero;
-reg [7:0] r7_plus;
 
 //assign instr
 assign pc_op = instr[25:24];
@@ -68,7 +67,18 @@ assign ry_op = instr[14:12];
 assign rd_op = instr[11];
 assign d_op = instr[10:8];
 assign imm = instr[7:0];
-
+//memory
+d_mem data_mem
+(
+    .address(alu_res),
+    .data(data_out)
+);
+i_mem instruction_mem
+(
+    .address(pc_addr),
+    .data(instr)
+);
+//
 decoder dec
 (
     .x(d_op),
@@ -82,7 +92,7 @@ mux_2 rd_mux
 );
 mux_2 pc_mux
 (
-    .x({alu_res, counter_out}),//test this
+    .x({counter_out,  alu_res}),//test this
     .a(jump_condition_addr),
     .y(pc_mux_out)
 );
@@ -145,11 +155,7 @@ register r7
     .q(pc_addr)
 );
 //pc
-always @(posedge clk)
-begin 
-    r7_plus <= pc_addr + 1;    
-end
-assign counter_out = r7_plus;
+assign counter_out = pc_addr + 1;
 //muxes
 mux_8 rx_mux
 (
@@ -173,7 +179,7 @@ mux_2 imm_mux
 alu my_alu
 (
     .rx(rx_mux_out),
-    .ry(ry_mux_out),
+    .ry(imm_mux_out),
     .and_out(alu_and),
     .adder_out(alu_sum),
     .is_zero_out(alu_zero)

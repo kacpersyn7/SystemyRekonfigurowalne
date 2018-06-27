@@ -27,7 +27,7 @@ module jump_condition
     output cond_out
 );
 assign cond_out = pc_op == 0 ? 0 : 
-                  pc_op == 2'b01 ? 0 :
-                  pc_op == 2'b10 && cmp_res == 0 ? 0 : 
-                  pc_op == 2'b11 && cmp_res == 8'h01 ? 0 : 1'b1;
+                  pc_op == 2'b01 ? 1'b1 :
+                  pc_op == 2'b11 && cmp_res == 8'h01 ? 1'b1 : 
+                  pc_op == 2'b10 && cmp_res == 0 ? 1'b1 : 0;
 endmodule

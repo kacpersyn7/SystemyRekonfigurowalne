@@ -30,6 +30,5 @@ module alu
 );
 assign and_out = rx & ry;
 assign is_zero_out = rx == 0 ? 8'h01 : 0;
-assign adder_out = rx+ry;
-
+assign adder_out = rx + ry;
 endmodule

@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir /home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.sim/sim_1/behav/xsim/xsim.dir/tb_mux_8_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Tue Jun 26 22:52:00 2018" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Wed Jun 27 11:41:23 2018" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2017.4 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2086221" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "LIN64" -context "software_version_and_target_device"
@@ -14,11 +14,11 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "6b6816fb-7c91-4fef-930c-e616786a5f62" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "6ad43671c3a54946b01819d4c6c9d55a" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "6" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "7" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "ManjaroLinux" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "Manjaro Linux" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz" -context "user_environment"
-webtalk_add_data -client project -key cpu_speed -value "2370.635 MHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "2782.771 MHz" -context "user_environment"
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "8.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
@@ -28,5 +28,5 @@ webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Time -value "0.01_sec" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Memory -value "129232_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 365030483 -regid "" -xml /home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.sim/sim_1/behav/xsim/xsim.dir/tb_mux_8_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.sim/sim_1/behav/xsim/xsim.dir/tb_mux_8_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.sim/sim_1/behav/xsim/xsim.dir/tb_mux_8_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_transmit -clientid 1671833251 -regid "" -xml /home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.sim/sim_1/behav/xsim/xsim.dir/tb_mux_8_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.sim/sim_1/behav/xsim/xsim.dir/tb_mux_8_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/kacper/sr/SystemyRekonfigurowalne/procesor/procesor.sim/sim_1/behav/xsim/xsim.dir/tb_mux_8_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
